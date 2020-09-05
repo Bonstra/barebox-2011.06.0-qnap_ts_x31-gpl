@@ -1,0 +1,3661 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 common/built-in.o
+ .text.mktime   0x00000000       0x90 common/built-in.o
+ .text.pvalloc  0x00000000       0x18 common/built-in.o
+ .text.calloc   0x00000000       0x78 common/built-in.o
+ .text.cfree    0x00000000        0x4 common/built-in.o
+ .text.malloc_usable_size
+                0x00000000       0x40 common/built-in.o
+ .text.fgetc    0x00000000       0x24 common/built-in.o
+ .text.console_flush
+                0x00000000       0x40 common/built-in.o
+ .text.export   0x00000000       0x5c common/built-in.o
+ .text.shutdown_barebox
+                0x00000000       0x10 common/built-in.o
+ .text.get_ram_size
+                0x00000000       0xfc common/built-in.o
+ .rodata.default_environment_size
+                0x00000000        0x4 common/built-in.o
+ .data          0x00000000        0x0 common/built-in.o
+ .bss           0x00000000        0x0 common/built-in.o
+ .text          0x00000000        0x0 drivers/built-in.o
+ .text.miidev_print_status
+                0x00000000      0x10c drivers/built-in.o
+ .text.miidev_print_speed_duplex
+                0x00000000       0x50 drivers/built-in.o
+ .text.mii_unregister
+                0x00000000        0x4 drivers/built-in.o
+ .text.bmu_reset
+                0x00000000        0xc drivers/built-in.o
+ .text.bmu_disable
+                0x00000000        0xc drivers/built-in.o
+ .text.gemac_disable_mdio
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_reset
+                0x00000000        0x4 drivers/built-in.o
+ .text.gemac_set_address
+                0x00000000       0x44 drivers/built-in.o
+ .text.gemac_get_address
+                0x00000000       0x48 drivers/built-in.o
+ .text.gemac_set_laddr2
+                0x00000000       0x14 drivers/built-in.o
+ .text.gemac_set_laddr3
+                0x00000000       0x14 drivers/built-in.o
+ .text.gemac_set_laddr4
+                0x00000000       0x14 drivers/built-in.o
+ .text.gemac_set_laddrN
+                0x00000000       0x34 drivers/built-in.o
+ .text.gem_get_laddr2
+                0x00000000       0x14 drivers/built-in.o
+ .text.gem_get_laddr3
+                0x00000000       0x14 drivers/built-in.o
+ .text.gem_get_laddr4
+                0x00000000       0x14 drivers/built-in.o
+ .text.gem_get_laddrN
+                0x00000000       0x34 drivers/built-in.o
+ .text.gemac_enable_copy_all
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_disable_copy_all
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_no_broadcast
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_enable_unicast
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_enable_multicast
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_enable_fcs_rx
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_enable_1536_rx
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_disable_pause_rx
+                0x00000000       0x10 drivers/built-in.o
+ .text.gemac_disable_rx_checksum_offload
+                0x00000000       0x24 drivers/built-in.o
+ .text.gpi_reset
+                0x00000000        0xc drivers/built-in.o
+ .text.hif_nocpy_init
+                0x00000000       0x38 drivers/built-in.o
+ .text.pfe_gem_enable_all
+                0x00000000       0x38 drivers/built-in.o
+ .text.del_mtd_device
+                0x00000000       0x30 drivers/built-in.o
+ .text.nand_scan
+                0x00000000       0x20 drivers/built-in.o
+ .text.nand_release
+                0x00000000       0x48 drivers/built-in.o
+ .text.kill_volumes
+                0x00000000       0x40 drivers/built-in.o
+ .text.ubi_get_device
+                0x00000000       0x20 drivers/built-in.o
+ .text.ubi_put_device
+                0x00000000       0x10 drivers/built-in.o
+ .text.ubi_get_by_major
+                0x00000000       0x4c drivers/built-in.o
+ .text.ubi_major2num
+                0x00000000       0x44 drivers/built-in.o
+ .text.ubi_attach_mtd_dev
+                0x00000000      0x710 drivers/built-in.o
+ .text.ubi_detach_mtd_dev
+                0x00000000       0xe8 drivers/built-in.o
+ .text.ubi_mtd_param_parse
+                0x00000000      0x1c8 drivers/built-in.o
+ .text.vtbl_check
+                0x00000000      0x330 drivers/built-in.o
+ .text.create_vtbl
+                0x00000000      0x2e8 drivers/built-in.o
+ .text.ubi_change_vtbl_record
+                0x00000000       0xc4 drivers/built-in.o
+ .text.ubi_read_volume_table
+                0x00000000      0x814 drivers/built-in.o
+ .text.vol_release
+                0x00000000        0x4 drivers/built-in.o
+ .text.ubi_create_volume
+                0x00000000      0x4f4 drivers/built-in.o
+ .text.ubi_remove_volume
+                0x00000000      0x138 drivers/built-in.o
+ .text.ubi_resize_volume
+                0x00000000      0x270 drivers/built-in.o
+ .text.ubi_add_volume
+                0x00000000       0x84 drivers/built-in.o
+ .text.ubi_free_volume
+                0x00000000       0x1c drivers/built-in.o
+ .text.write_leb
+                0x00000000       0xc4 drivers/built-in.o
+ .text.clear_update_marker
+                0x00000000       0xf0 drivers/built-in.o
+ .text.ubi_start_update
+                0x00000000      0x184 drivers/built-in.o
+ .text.ubi_finish_update
+                0x00000000       0x4c drivers/built-in.o
+ .text.ubi_start_leb_change
+                0x00000000       0xe0 drivers/built-in.o
+ .text.ubi_more_update_data
+                0x00000000      0x1e8 drivers/built-in.o
+ .text.ubi_more_leb_change_data
+                0x00000000      0x120 drivers/built-in.o
+ .text.ubi_get_device_info
+                0x00000000       0x58 drivers/built-in.o
+ .text.ubi_get_volume_info
+                0x00000000       0x80 drivers/built-in.o
+ .text.ubi_close_volume
+                0x00000000       0x64 drivers/built-in.o
+ .text.ubi_open_volume
+                0x00000000      0x198 drivers/built-in.o
+ .text.ubi_open_volume_nm
+                0x00000000       0xcc drivers/built-in.o
+ .text.ubi_leb_read
+                0x00000000      0x12c drivers/built-in.o
+ .text.ubi_leb_write
+                0x00000000       0xf4 drivers/built-in.o
+ .text.ubi_leb_change
+                0x00000000       0xe0 drivers/built-in.o
+ .text.ubi_leb_erase
+                0x00000000       0x84 drivers/built-in.o
+ .text.ubi_leb_unmap
+                0x00000000       0x6c drivers/built-in.o
+ .text.ubi_leb_map
+                0x00000000       0xa0 drivers/built-in.o
+ .text.ubi_is_mapped
+                0x00000000       0x50 drivers/built-in.o
+ .text.ltree_lookup.clone.4
+                0x00000000       0x3c drivers/built-in.o
+ .text.leb_write_unlock
+                0x00000000       0x3c drivers/built-in.o
+ .text.leb_read_unlock
+                0x00000000       0x3c drivers/built-in.o
+ .text.ltree_add_entry
+                0x00000000       0xd4 drivers/built-in.o
+ .text.leb_write_lock
+                0x00000000       0x14 drivers/built-in.o
+ .text.ubi_eba_unmap_leb
+                0x00000000       0x74 drivers/built-in.o
+ .text.ubi_eba_read_leb
+                0x00000000      0x268 drivers/built-in.o
+ .text.ubi_eba_write_leb
+                0x00000000      0x680 drivers/built-in.o
+ .text.ubi_eba_write_leb_st
+                0x00000000      0x3bc drivers/built-in.o
+ .text.ubi_eba_atomic_leb_change
+                0x00000000      0x3cc drivers/built-in.o
+ .text.ubi_eba_copy_leb
+                0x00000000      0x388 drivers/built-in.o
+ .text.ubi_eba_init_scan
+                0x00000000      0x240 drivers/built-in.o
+ .text.ubi_eba_close
+                0x00000000       0x40 drivers/built-in.o
+ .text.erase_callback
+                0x00000000        0x4 drivers/built-in.o
+ .text.do_sync_erase
+                0x00000000       0xc8 drivers/built-in.o
+ .text.ubi_io_read
+                0x00000000      0x100 drivers/built-in.o
+ .text.ubi_io_write
+                0x00000000       0xb0 drivers/built-in.o
+ .text.ubi_io_sync_erase
+                0x00000000      0x1c0 drivers/built-in.o
+ .text.ubi_io_is_bad
+                0x00000000       0x58 drivers/built-in.o
+ .text.ubi_io_mark_bad
+                0x00000000       0x7c drivers/built-in.o
+ .text.ubi_io_read_ec_hdr
+                0x00000000      0x298 drivers/built-in.o
+ .text.ubi_io_write_ec_hdr
+                0x00000000       0xd0 drivers/built-in.o
+ .text.ubi_io_read_vid_hdr
+                0x00000000      0x358 drivers/built-in.o
+ .text.ubi_io_write_vid_hdr
+                0x00000000       0x8c drivers/built-in.o
+ .text.in_wl_tree
+                0x00000000       0x5c drivers/built-in.o
+ .text.cancel_pending
+                0x00000000       0x60 drivers/built-in.o
+ .text.tree_destroy
+                0x00000000       0x58 drivers/built-in.o
+ .text.find_wl_entry
+                0x00000000       0x44 drivers/built-in.o
+ .text.do_work  0x00000000       0x7c drivers/built-in.o
+ .text.schedule_erase
+                0x00000000       0x6c drivers/built-in.o
+ .text.ensure_wear_leveling
+                0x00000000       0xc8 drivers/built-in.o
+ .text.prot_tree_del
+                0x00000000       0x60 drivers/built-in.o
+ .text.wl_tree_add
+                0x00000000       0x60 drivers/built-in.o
+ .text.erase_worker
+                0x00000000      0x394 drivers/built-in.o
+ .text.prot_tree_add
+                0x00000000       0xcc drivers/built-in.o
+ .text.wear_leveling_worker
+                0x00000000      0x304 drivers/built-in.o
+ .text.ubi_wl_get_peb
+                0x00000000      0x17c drivers/built-in.o
+ .text.ubi_wl_put_peb
+                0x00000000      0x10c drivers/built-in.o
+ .text.ubi_wl_scrub_peb
+                0x00000000       0xf8 drivers/built-in.o
+ .text.ubi_wl_flush
+                0x00000000       0x4c drivers/built-in.o
+ .text.ubi_thread
+                0x00000000       0xc8 drivers/built-in.o
+ .text.ubi_wl_init_scan
+                0x00000000      0x2c4 drivers/built-in.o
+ .text.ubi_wl_close
+                0x00000000       0x90 drivers/built-in.o
+ .text.validate_vid_hdr
+                0x00000000       0xd4 drivers/built-in.o
+ .text.add_to_list
+                0x00000000       0xac drivers/built-in.o
+ .text.ubi_scan_add_used
+                0x00000000      0x7ec drivers/built-in.o
+ .text.ubi_scan_find_sv
+                0x00000000       0x30 drivers/built-in.o
+ .text.ubi_scan_find_seb
+                0x00000000       0x30 drivers/built-in.o
+ .text.ubi_scan_rm_volume
+                0x00000000       0x6c drivers/built-in.o
+ .text.ubi_scan_erase_peb
+                0x00000000       0xd0 drivers/built-in.o
+ .text.ubi_scan_get_free_peb
+                0x00000000       0xec drivers/built-in.o
+ .text.ubi_scan_destroy_si
+                0x00000000      0x204 drivers/built-in.o
+ .text.ubi_scan
+                0x00000000      0x614 drivers/built-in.o
+ .text.ubi_calc_data_len
+                0x00000000       0x30 drivers/built-in.o
+ .text.ubi_check_volume
+                0x00000000       0xac drivers/built-in.o
+ .text.ubi_calculate_reserved
+                0x00000000       0x28 drivers/built-in.o
+ .text.ubi_volume_cdev_open
+                0x00000000       0x10 drivers/built-in.o
+ .text.ubi_volume_cdev_lseek
+                0x00000000       0x18 drivers/built-in.o
+ .text.ubi_cdev_ioctl
+                0x00000000       0xf8 drivers/built-in.o
+ .text.ubi_volume_cdev_close
+                0x00000000      0x108 drivers/built-in.o
+ .text.ubi_volume_cdev_write
+                0x00000000       0x94 drivers/built-in.o
+ .text.ubi_volume_cdev_read
+                0x00000000       0xec drivers/built-in.o
+ .text.ubi_volume_cdev_add
+                0x00000000       0x90 drivers/built-in.o
+ .text.ubi_volume_cdev_remove
+                0x00000000       0x28 drivers/built-in.o
+ .text.ubi_cdev_add
+                0x00000000       0x64 drivers/built-in.o
+ .text.ubi_cdev_remove
+                0x00000000       0x2c drivers/built-in.o
+ .text.do_eeprom_read
+                0x00000000       0x8c drivers/built-in.o
+ .text.spi_read
+                0x00000000       0x70 drivers/built-in.o
+ .text.spi_eeprom_read
+                0x00000000       0x78 drivers/built-in.o
+ .text.i2c_master_send
+                0x00000000       0x3c drivers/built-in.o
+ .text.i2c_master_recv
+                0x00000000       0x44 drivers/built-in.o
+ .text.i2c_stop
+                0x00000000       0x10 drivers/built-in.o
+ .text.write_protect_unlock
+                0x00000000       0x2c drivers/built-in.o
+ .text.otp_write
+                0x00000000       0xbc drivers/built-in.o
+ .text.otp_read
+                0x00000000       0xb4 drivers/built-in.o
+ .text.dwc_ahsata_rw_ncq_cmd
+                0x00000000       0xe4 drivers/built-in.o
+ .text.ata_dev_classify
+                0x00000000       0x48 drivers/built-in.o
+ .text.ata_dump_id
+                0x00000000      0x128 drivers/built-in.o
+ .rodata.CSWTCH.13
+                0x00000000       0x10 drivers/built-in.o
+ .rodata.__func__.2889
+                0x00000000        0x8 drivers/built-in.o
+ .rodata.__func__.2899
+                0x00000000        0xb drivers/built-in.o
+ .rodata.__func__.2911
+                0x00000000       0x13 drivers/built-in.o
+ .rodata.__func__.2868
+                0x00000000        0x9 drivers/built-in.o
+ .rodata.__func__.2928
+                0x00000000       0x26 drivers/built-in.o
+ .rodata.__func__.2934
+                0x00000000        0x9 drivers/built-in.o
+ .rodata.__func__.2943
+                0x00000000       0x14 drivers/built-in.o
+ .rodata.__func__.2900
+                0x00000000       0x1b drivers/built-in.o
+ .rodata.__func__.2853
+                0x00000000        0xb drivers/built-in.o
+ .rodata.__func__.2955
+                0x00000000       0x16 drivers/built-in.o
+ .rodata.__func__.2924
+                0x00000000        0xd drivers/built-in.o
+ .rodata.__func__.2879
+                0x00000000       0x12 drivers/built-in.o
+ .rodata.__func__.2860
+                0x00000000       0x12 drivers/built-in.o
+ .rodata.__func__.2913
+                0x00000000        0xf drivers/built-in.o
+ .rodata.__func__.2888
+                0x00000000        0xd drivers/built-in.o
+ .rodata.__func__.2852
+                0x00000000       0x10 drivers/built-in.o
+ .rodata.__func__.2808
+                0x00000000       0x18 drivers/built-in.o
+ .rodata.__func__.2941
+                0x00000000        0xc drivers/built-in.o
+ .rodata.__func__.2956
+                0x00000000       0x12 drivers/built-in.o
+ .rodata.__func__.3012
+                0x00000000       0x11 drivers/built-in.o
+ .rodata.__func__.2995
+                0x00000000       0x1a drivers/built-in.o
+ .rodata.__func__.2976
+                0x00000000       0x15 drivers/built-in.o
+ .rodata.__func__.2919
+                0x00000000       0x11 drivers/built-in.o
+ .rodata.__func__.3042
+                0x00000000       0x12 drivers/built-in.o
+ .rodata.__func__.2893
+                0x00000000       0x12 drivers/built-in.o
+ .rodata.__func__.2951
+                0x00000000       0x11 drivers/built-in.o
+ .rodata.__func__.2837
+                0x00000000        0xc drivers/built-in.o
+ .rodata.__func__.2848
+                0x00000000        0xd drivers/built-in.o
+ .rodata.__func__.2861
+                0x00000000        0xe drivers/built-in.o
+ .rodata.__func__.2907
+                0x00000000       0x10 drivers/built-in.o
+ .rodata.patterns
+                0x00000000        0x3 drivers/built-in.o
+ .rodata.__func__.2915
+                0x00000000       0x10 drivers/built-in.o
+ .rodata.__func__.2964
+                0x00000000       0x14 drivers/built-in.o
+ .rodata.__func__.2882
+                0x00000000        0xc drivers/built-in.o
+ .rodata.__func__.2999
+                0x00000000       0x15 drivers/built-in.o
+ .rodata.__func__.3069
+                0x00000000        0xb drivers/built-in.o
+ .rodata.__func__.2957
+                0x00000000        0xb drivers/built-in.o
+ .rodata.__func__.3131
+                0x00000000       0x11 drivers/built-in.o
+ .rodata.__func__.3021
+                0x00000000        0xd drivers/built-in.o
+ .rodata.__FUNCTION__.2935
+                0x00000000        0xf drivers/built-in.o
+ .rodata.__func__.2857
+                0x00000000        0x8 drivers/built-in.o
+ .rodata.__func__.3032
+                0x00000000        0xf drivers/built-in.o
+ .rodata.__func__.2921
+                0x00000000        0xf drivers/built-in.o
+ .rodata.__func__.3040
+                0x00000000       0x11 drivers/built-in.o
+ .rodata.__func__.2949
+                0x00000000       0x13 drivers/built-in.o
+ .rodata.__func__.2846
+                0x00000000       0x11 drivers/built-in.o
+ .rodata.__func__.2905
+                0x00000000       0x12 drivers/built-in.o
+ .rodata.__func__.2975
+                0x00000000       0x16 drivers/built-in.o
+ .rodata.__FUNCTION__.2834
+                0x00000000        0xc drivers/built-in.o
+ .rodata.__func__.2986
+                0x00000000        0xb drivers/built-in.o
+ .rodata.__func__.2881
+                0x00000000        0xd drivers/built-in.o
+ .rodata.__func__.3060
+                0x00000000       0x15 drivers/built-in.o
+ .rodata.__func__.3090
+                0x00000000       0x16 drivers/built-in.o
+ .data          0x00000000        0x0 drivers/built-in.o
+ .data.ubi_fops
+                0x00000000       0x28 drivers/built-in.o
+ .data.ubi_volume_fops
+                0x00000000       0x28 drivers/built-in.o
+ .bss           0x00000000        0x0 drivers/built-in.o
+ .bss.boot_sector
+                0x00000000       0x2c drivers/built-in.o
+ .bss.bbt_desc  0x00000000       0x24 drivers/built-in.o
+ .bss.bbt_temp  0x00000000      0x400 drivers/built-in.o
+ .bss.mtd_devs  0x00000000        0x4 drivers/built-in.o
+ .bss.ubi_class
+                0x00000000        0x4 drivers/built-in.o
+ .bss.ubi_devices
+                0x00000000       0x80 drivers/built-in.o
+ .bss.mtd_dev_param
+                0x00000000      0x880 drivers/built-in.o
+ .bss.empty_vtbl_record
+                0x00000000       0xac drivers/built-in.o
+ .bss.vid_hdr.2875
+                0x00000000        0x4 drivers/built-in.o
+ .bss.ech       0x00000000        0x4 drivers/built-in.o
+ .bss.vidh      0x00000000        0x4 drivers/built-in.o
+ .text          0x00000000        0x0 commands/built-in.o
+ .data          0x00000000        0x0 commands/built-in.o
+ .bss           0x00000000        0x0 commands/built-in.o
+ .text          0x00000000        0x0 lib/built-in.o
+ .text.__rb_rotate_left
+                0x00000000       0x70 lib/built-in.o
+ .text.__rb_rotate_right
+                0x00000000       0x74 lib/built-in.o
+ .text.rb_insert_color
+                0x00000000      0x12c lib/built-in.o
+ .text.rb_erase
+                0x00000000      0x358 lib/built-in.o
+ .text.rb_first
+                0x00000000       0x24 lib/built-in.o
+ .text.rb_last  0x00000000       0x24 lib/built-in.o
+ .text.rb_next  0x00000000       0x60 lib/built-in.o
+ .text.rb_prev  0x00000000       0x60 lib/built-in.o
+ .text.rb_replace_node
+                0x00000000       0x60 lib/built-in.o
+ .text.strsep   0x00000000       0x34 lib/built-in.o
+ .text.strswab  0x00000000       0x4c lib/built-in.o
+ .text.bcopy    0x00000000       0x24 lib/built-in.o
+ .text.strlcpy  0x00000000       0x50 lib/built-in.o
+ .text.memcmp   0x00000000       0x38 lib/built-in.o
+ .text.memscan  0x00000000       0x28 lib/built-in.o
+ .text._strstr  0x00000000       0x60 lib/built-in.o
+ .text.memchr   0x00000000       0x34 lib/built-in.o
+ .text.vscnprintf
+                0x00000000       0x18 lib/built-in.o
+ .text.snprintf
+                0x00000000       0x24 lib/built-in.o
+ .text.dev_add_child
+                0x00000000       0x28 lib/built-in.o
+ .text.get_driver_by_name
+                0x00000000       0x4c lib/built-in.o
+ .text.dev_protect
+                0x00000000       0x20 lib/built-in.o
+ .text.dummy_probe
+                0x00000000        0x8 lib/built-in.o
+ .text.devices_shutdown
+                0x00000000       0x44 lib/built-in.o
+ .text.dev_set_param_ip
+                0x00000000       0x30 lib/built-in.o
+ .text.dev_remove_parameters
+                0x00000000       0x7c lib/built-in.o
+ .text.xstrdup  0x00000000       0x1c lib/built-in.o
+ .text.kfifo_put
+                0x00000000       0x70 lib/built-in.o
+ .text.kfifo_get
+                0x00000000       0x70 lib/built-in.o
+ .text.inflateIncomp
+                0x00000000      0x128 lib/built-in.o
+ .text.inflateSync
+                0x00000000       0xf8 lib/built-in.o
+ .text.zfree    0x00000000        0x8 lib/built-in.o
+ .text.zalloc   0x00000000       0x10 lib/built-in.o
+ .text.gunzip   0x00000000      0x158 lib/built-in.o
+ .text.crc32_no_comp
+                0x00000000      0x124 lib/built-in.o
+ .text.notifier_chain_register
+                0x00000000       0x1c lib/built-in.o
+ .text.notifier_chain_unregister
+                0x00000000       0x28 lib/built-in.o
+ .text.notifier_call_chain
+                0x00000000       0x48 lib/built-in.o
+ .text.clock_register_client
+                0x00000000       0x28 lib/built-in.o
+ .text.clock_unregister_client
+                0x00000000       0x28 lib/built-in.o
+ .text.clock_notifier_call_chain
+                0x00000000       0x14 lib/built-in.o
+ .rodata.__func__.2182
+                0x00000000        0xc lib/built-in.o
+ .data          0x00000000        0x0 lib/built-in.o
+ .data.zlib_version
+                0x00000000        0x4 lib/built-in.o
+ .data.z_errmsg
+                0x00000000       0x20 lib/built-in.o
+ .data.clock_notifier_list
+                0x00000000        0x8 lib/built-in.o
+ .bss           0x00000000        0x0 lib/built-in.o
+ .text          0x00000000        0x0 net/built-in.o
+ .text.eth_unregister
+                0x00000000       0x3c net/built-in.o
+ .text.getenv_ip
+                0x00000000       0x24 net/built-in.o
+ .text.setenv_ip
+                0x00000000       0x2c net/built-in.o
+ .text.print_IPaddr
+                0x00000000       0x1c net/built-in.o
+ .text.net_set_serverip
+                0x00000000       0x30 net/built-in.o
+ .text.net_set_ip
+                0x00000000       0x30 net/built-in.o
+ .text.net_get_ip
+                0x00000000       0x10 net/built-in.o
+ .text.net_set_netmask
+                0x00000000       0x30 net/built-in.o
+ .text.net_set_gateway
+                0x00000000       0x30 net/built-in.o
+ .data          0x00000000        0x0 net/built-in.o
+ .bss           0x00000000        0x0 net/built-in.o
+ .text          0x00000000        0x0 fs/built-in.o
+ .text.cdev_flush
+                0x00000000       0x24 fs/built-in.o
+ .text.fsdev_get_mountpoint
+                0x00000000        0x8 fs/built-in.o
+ .text.flush    0x00000000       0x64 fs/built-in.o
+ .text.creat    0x00000000        0x8 fs/built-in.o
+ .data          0x00000000        0x0 fs/built-in.o
+ .bss           0x00000000        0x0 fs/built-in.o
+ .text          0x00000000        0x0 arch/arm/boards/comcerto-evm/built-in.o
+ .data          0x00000000        0x0 arch/arm/boards/comcerto-evm/built-in.o
+ .bss           0x00000000        0x0 arch/arm/boards/comcerto-evm/built-in.o
+ .data          0x00000000        0x0 arch/arm/mach-comcerto/built-in.o
+ .bss           0x00000000        0x0 arch/arm/mach-comcerto/built-in.o
+ .text.armlinux_set_serial
+                0x00000000       0x10 arch/arm/lib/built-in.o
+ .text.basic_bit_functions
+                0x00000000       0xc4 arch/arm/lib/built-in.o
+ .text.readsb   0x00000000      0x180 arch/arm/lib/built-in.o
+ .text.readsw   0x00000000      0x114 arch/arm/lib/built-in.o
+ .text.readsl   0x00000000       0xec arch/arm/lib/built-in.o
+ .text.writesb  0x00000000      0x164 arch/arm/lib/built-in.o
+ .text.writesw  0x00000000       0xf8 arch/arm/lib/built-in.o
+ .text.writesl  0x00000000       0xc0 arch/arm/lib/built-in.o
+ .data          0x00000000        0x0 arch/arm/lib/built-in.o
+ .bss           0x00000000        0x0 arch/arm/lib/built-in.o
+ .text.icache_enable
+                0x00000000       0x14 arch/arm/cpu/built-in.o
+ .text.icache_disable
+                0x00000000       0x14 arch/arm/cpu/built-in.o
+ .text.icache_status
+                0x00000000        0xc arch/arm/cpu/built-in.o
+ .text.arch_shutdown
+                0x00000000       0x10 arch/arm/cpu/built-in.o
+ .text.text     0x00000000       0xa4 arch/arm/cpu/built-in.o
+ .data          0x00000000        0x0 arch/arm/cpu/built-in.o
+ .bss           0x00000000        0x0 arch/arm/cpu/built-in.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x04800000                . = 0x4800000
+                0x04800000                . = ALIGN (0x4)
+
+.text           0x04800000    0x2748c
+                0x04800000                _stext = .
+                0x04800000                _text = .
+ *(.text_entry*)
+ .text_entry    0x04800000       0x50 arch/arm/cpu/built-in.o
+                0x04800000                exception_vectors
+ *(.text_bare_init*)
+ .text_bare_init.text
+                0x04800050      0x158 arch/arm/cpu/built-in.o
+                0x04800050                board_init_lowlevel_return
+                0x048000ac                reset
+                0x048000e4                __mmu_cache_flush
+ *(.text*)
+ .text.static_get
+                0x048001a8       0x1c common/built-in.o
+ .text.static_peek
+                0x048001c4        0xc common/built-in.o
+ .text.file_peek
+                0x048001d0        0xc common/built-in.o
+ .text.is_assignment
+                0x048001dc       0x58 common/built-in.o
+ .text.mapset   0x04800234       0x20 common/built-in.o
+ .text.do_getopt
+                0x04800254        0x8 common/built-in.o
+ .text.release_context
+                0x0480025c       0x38 common/built-in.o
+ .text.syntax_err
+                0x04800294        0xc common/built-in.o
+ .text.done_command
+                0x048002a0       0x8c common/built-in.o
+ .text.done_pipe
+                0x0480032c       0x50 common/built-in.o
+ .text.b_addchr
+                0x0480037c       0x7c common/built-in.o
+ .text.b_addqchr
+                0x048003f8       0x4c common/built-in.o
+ .text.globhack
+                0x04800444      0x100 common/built-in.o
+ .text.done_word
+                0x04800544      0x318 common/built-in.o
+ .text.parse_stream
+                0x0480085c      0x4f4 common/built-in.o
+ .text.free_pipe_list
+                0x04800d50       0xb0 common/built-in.o
+ .text.insert_var_value
+                0x04800e00      0x174 common/built-in.o
+ .text.file_get
+                0x04800f74      0x180 common/built-in.o
+ .text.set_local_var.clone.0
+                0x048010f4       0x6c common/built-in.o
+ .text.run_list_real
+                0x04801160      0x8a4 common/built-in.o
+ .text.parse_stream_outer
+                0x04801a04      0x264 common/built-in.o
+ .text.parse_string_outer
+                0x04801c68      0x108 common/built-in.o
+ .text.source_script
+                0x04801d70       0x64 common/built-in.o
+ .text.execute_script
+                0x04801dd4       0x34 common/built-in.o
+ .text.do_sh    0x04801e08       0x20 common/built-in.o
+ .text.do_source
+                0x04801e28       0x20 common/built-in.o
+ .text.run_command
+                0x04801e48       0x30 common/built-in.o
+                0x04801e48                run_command
+ .text.run_shell
+                0x04801e78       0x5c common/built-in.o
+                0x04801e78                run_shell
+ .text.GregorianDay
+                0x04801ed4       0xec common/built-in.o
+                0x04801ed4                GregorianDay
+ .text.to_tm    0x04801fc0       0xfc common/built-in.o
+                0x04801fc0                to_tm
+ .text.file_size_action
+                0x048020bc       0x58 common/built-in.o
+                0x048020bc                file_size_action
+ .text.file_save_action
+                0x04802114       0xf8 common/built-in.o
+                0x04802114                file_save_action
+ .text.envfs_save
+                0x0480220c      0x12c common/built-in.o
+                0x0480220c                envfs_save
+ .text.envfs_load
+                0x04802338      0x270 common/built-in.o
+                0x04802338                envfs_load
+ .text.complete_reset
+                0x048025a8       0x14 common/built-in.o
+                0x048025a8                complete_reset
+ .text.complete
+                0x048025bc      0x334 common/built-in.o
+                0x048025bc                complete
+ .text.mem_malloc_start
+                0x048028f0       0x10 common/built-in.o
+                0x048028f0                mem_malloc_start
+ .text.mem_malloc_end
+                0x04802900       0x10 common/built-in.o
+                0x04802900                mem_malloc_end
+ .text.mem_malloc_init
+                0x04802910       0x28 common/built-in.o
+                0x04802910                mem_malloc_init
+ .text.sbrk     0x04802938       0x68 common/built-in.o
+                0x04802938                sbrk
+ .text.free     0x048029a0      0x208 common/built-in.o
+                0x048029a0                free
+ .text.malloc   0x04802ba8      0x578 common/built-in.o
+                0x04802ba8                malloc
+ .text.realloc  0x04803120      0x278 common/built-in.o
+                0x04803120                realloc
+ .text.memalign
+                0x04803398      0x110 common/built-in.o
+                0x04803398                memalign
+ .text.get_time_ns
+                0x048034a8       0x80 common/built-in.o
+                0x048034a8                get_time_ns
+ .text.clocksource_hz2mult
+                0x04803528       0x60 common/built-in.o
+                0x04803528                clocksource_hz2mult
+ .text.is_timeout
+                0x04803588       0x30 common/built-in.o
+                0x04803588                is_timeout
+ .text.ndelay   0x048035b8       0x34 common/built-in.o
+                0x048035b8                ndelay
+ .text.udelay   0x048035ec       0x3c common/built-in.o
+                0x048035ec                udelay
+ .text.mdelay   0x04803628       0x40 common/built-in.o
+                0x04803628                mdelay
+ .text.init_clock
+                0x04803668       0x14 common/built-in.o
+                0x04803668                init_clock
+ .text.barebox_banner
+                0x0480367c       0x28 common/built-in.o
+                0x0480367c                barebox_banner
+ .text.do_exit  0x048036a4       0x30 common/built-in.o
+ .text.compare  0x048036d4        0xc common/built-in.o
+ .text.barebox_cmd_usage
+                0x048036e0       0x50 common/built-in.o
+                0x048036e0                barebox_cmd_usage
+ .text.register_command
+                0x04803730       0xe0 common/built-in.o
+                0x04803730                register_command
+ .text.init_command_list
+                0x04803810       0x34 common/built-in.o
+ .text.find_cmd
+                0x04803844       0x88 common/built-in.o
+                0x04803844                find_cmd
+ .text.execute_command
+                0x048038cc       0x60 common/built-in.o
+                0x048038cc                execute_command
+ .text.tstc_raw
+                0x0480392c       0x58 common/built-in.o
+ .text.getc_buffer_flush
+                0x04803984       0x34 common/built-in.o
+ .text.console_std_set
+                0x048039b8       0xe8 common/built-in.o
+ .text.getc     0x04803aa0       0xf4 common/built-in.o
+                0x04803aa0                getc
+ .text.tstc     0x04803b94       0x38 common/built-in.o
+                0x04803b94                tstc
+ .text.console_putc
+                0x04803bcc       0xa4 common/built-in.o
+                0x04803bcc                console_putc
+ .text.console_register
+                0x04803c70      0x148 common/built-in.o
+                0x04803c70                console_register
+ .text.fputc    0x04803db8       0x74 common/built-in.o
+                0x04803db8                fputc
+ .text.console_puts
+                0x04803e2c       0x40 common/built-in.o
+                0x04803e2c                console_puts
+ .text.fputs    0x04803e6c       0x4c common/built-in.o
+                0x04803e6c                fputs
+ .text.fprintf  0x04803eb8       0x48 common/built-in.o
+                0x04803eb8                fprintf
+ .text.printf   0x04803f00       0x4c common/built-in.o
+                0x04803f00                printf
+ .text.console_baudrate_set
+                0x04803f4c       0xc4 common/built-in.o
+ .text.vprintf  0x04804010       0x38 common/built-in.o
+                0x04804010                vprintf
+ .text.ctrlc    0x04804048       0x24 common/built-in.o
+                0x04804048                ctrlc
+ .text.env_push_context
+                0x0480406c       0x7c common/built-in.o
+                0x0480406c                env_push_context
+ .text.setenv_raw
+                0x048040e8       0xc4 common/built-in.o
+ .text.free_variables
+                0x048041ac       0x20 common/built-in.o
+ .text.get_current_context
+                0x048041cc       0x10 common/built-in.o
+                0x048041cc                get_current_context
+ .text.env_pop_context
+                0x048041dc       0x4c common/built-in.o
+                0x048041dc                env_pop_context
+ .text.var_val  0x04804228       0x1c common/built-in.o
+                0x04804228                var_val
+ .text.getenv_raw
+                0x04804244       0x44 common/built-in.o
+ .text.var_name
+                0x04804288        0x8 common/built-in.o
+                0x04804288                var_name
+ .text.getenv   0x04804290       0xb4 common/built-in.o
+                0x04804290                getenv
+ .text.setenv   0x04804344       0xd0 common/built-in.o
+                0x04804344                setenv
+ .text.image_multi_count
+                0x04804414       0x24 common/built-in.o
+                0x04804414                image_multi_count
+ .text.image_multi_getimg
+                0x04804438       0x7c common/built-in.o
+                0x04804438                image_multi_getimg
+ .text.image_print_size
+                0x048044b4       0x24 common/built-in.o
+                0x048044b4                image_print_size
+ .text.image_print_contents
+                0x048044d8      0x190 common/built-in.o
+                0x048044d8                image_print_contents
+ .text.register_default_env
+                0x04804668       0x2c common/built-in.o
+ .text.mount_root
+                0x04804694       0x4c common/built-in.o
+ .text.hang     0x048046e0       0x18 common/built-in.o
+                0x048046e0                hang
+ .text.start_barebox
+                0x048046f8      0x118 common/built-in.o
+                0x048046f8                start_barebox
+ .text.strerror
+                0x04804810      0x224 common/built-in.o
+                0x04804810                strerror
+ .text.errno_str
+                0x04804a34       0x14 common/built-in.o
+                0x04804a34                errno_str
+ .text.perror   0x04804a48       0x24 common/built-in.o
+                0x04804a48                perror
+ .text.dev_lseek_default
+                0x04804a6c       0x18 drivers/built-in.o
+ .text.miidev_read
+                0x04804a84       0x4c drivers/built-in.o
+ .text.miidev_write
+                0x04804ad0       0x4c drivers/built-in.o
+ .text.miidev_init
+                0x04804b1c       0x18 drivers/built-in.o
+ .text.miidev_remove
+                0x04804b34       0x1c drivers/built-in.o
+ .text.miidev_probe
+                0x04804b50       0x4c drivers/built-in.o
+ .text.miidev_enable_rgmii_rx_delay
+                0x04804b9c       0x78 drivers/built-in.o
+                0x04804b9c                miidev_enable_rgmii_rx_delay
+ .text.miidev_enable_rgmii_tx_delay
+                0x04804c14       0x70 drivers/built-in.o
+                0x04804c14                miidev_enable_rgmii_tx_delay
+ .text.miidev_wait_aneg
+                0x04804c84       0xa0 drivers/built-in.o
+                0x04804c84                miidev_wait_aneg
+ .text.miidev_supports_1000base_t
+                0x04804d24       0x44 drivers/built-in.o
+                0x04804d24                miidev_supports_1000base_t
+ .text.miidev_restart_aneg
+                0x04804d68      0x154 drivers/built-in.o
+                0x04804d68                miidev_restart_aneg
+ .text.miidev_speed_duplex
+                0x04804ebc      0x18c drivers/built-in.o
+                0x04804ebc                miidev_speed_duplex
+ .text.mii_register
+                0x04805048       0x2c drivers/built-in.o
+                0x04805048                mii_register
+ .text.c2000_get_gemac_stats_len
+                0x04805074        0x8 drivers/built-in.o
+ .text.c2000_register
+                0x0480507c       0x18 drivers/built-in.o
+ .text.c2000_eth_remove
+                0x04805094       0x38 drivers/built-in.o
+ .text.c2000_eth_probe
+                0x048050cc      0x200 drivers/built-in.o
+ .text.c2000_get_gemac_stats
+                0x048052cc       0x34 drivers/built-in.o
+ .text.c2000_get_ethaddr
+                0x04805300       0x3c drivers/built-in.o
+ .text.c2000_eth_halt
+                0x0480533c       0x38 drivers/built-in.o
+ .text.c2000_eth_recv
+                0x04805374       0x4c drivers/built-in.o
+ .text.c2000_eth_send
+                0x048053c0       0x6c drivers/built-in.o
+ .text.c2000_eth_open
+                0x0480542c       0xc0 drivers/built-in.o
+ .text.gem_phy_timeout.clone.4.clone.5
+                0x048054ec       0x40 drivers/built-in.o
+ .text.c2000_phy_read
+                0x0480552c       0x5c drivers/built-in.o
+ .text.c2000_phy_write
+                0x04805588       0x5c drivers/built-in.o
+ .text.gemac_enet_addr_byte_mac
+                0x048055e4       0x58 drivers/built-in.o
+                0x048055e4                gemac_enet_addr_byte_mac
+ .text.c2000_set_ethaddr
+                0x0480563c       0x38 drivers/built-in.o
+ .text.c2000_eth_init
+                0x04805674       0x6c drivers/built-in.o
+ .text.pfe_load_elf
+                0x048056e0      0x134 drivers/built-in.o
+                0x048056e0                pfe_load_elf
+ .text.pfe_firmware_init
+                0x04805814       0xf0 drivers/built-in.o
+                0x04805814                pfe_firmware_init
+ .text.pfe_firmware_exit
+                0x04805904       0x34 drivers/built-in.o
+                0x04805904                pfe_firmware_exit
+ .text.util_pmem_write
+                0x04805938       0x30 drivers/built-in.o
+ .text.pfe_lib_init
+                0x04805968      0x194 drivers/built-in.o
+                0x04805968                pfe_lib_init
+ .text.pe_mem_memcpy_to32
+                0x04805afc       0xcc drivers/built-in.o
+                0x04805afc                pe_mem_memcpy_to32
+ .text.pe_dmem_memcpy_to32
+                0x04805bc8       0x28 drivers/built-in.o
+                0x04805bc8                pe_dmem_memcpy_to32
+ .text.pe_pmem_memcpy_to32
+                0x04805bf0       0x34 drivers/built-in.o
+                0x04805bf0                pe_pmem_memcpy_to32
+ .text.pe_pmem_read
+                0x04805c24       0x84 drivers/built-in.o
+                0x04805c24                pe_pmem_read
+ .text.pe_dmem_write
+                0x04805ca8       0x70 drivers/built-in.o
+                0x04805ca8                pe_dmem_write
+ .text.pe_dmem_read
+                0x04805d18       0x7c drivers/built-in.o
+                0x04805d18                pe_dmem_read
+ .text.pe_load_elf_section
+                0x04805d94      0x3b4 drivers/built-in.o
+                0x04805d94                pe_load_elf_section
+ .text.util_bus_write
+                0x04806148       0x58 drivers/built-in.o
+                0x04806148                util_bus_write
+ .text.util_bus_read
+                0x048061a0       0x60 drivers/built-in.o
+                0x048061a0                util_bus_read
+ .text.class_bus_write
+                0x04806200       0x60 drivers/built-in.o
+                0x04806200                class_bus_write
+ .text.class_bus_read
+                0x04806260       0x68 drivers/built-in.o
+                0x04806260                class_bus_read
+ .text.pe_lmem_read
+                0x048062c8       0x6c drivers/built-in.o
+                0x048062c8                pe_lmem_read
+ .text.pe_lmem_write
+                0x04806334       0x6c drivers/built-in.o
+                0x04806334                pe_lmem_write
+ .text.bmu_enable
+                0x048063a0        0xc drivers/built-in.o
+                0x048063a0                bmu_enable
+ .text.bmu_set_config
+                0x048063ac       0x24 drivers/built-in.o
+                0x048063ac                bmu_set_config
+ .text.bmu_init
+                0x048063d0       0x14 drivers/built-in.o
+                0x048063d0                bmu_init
+ .text.gemac_set_speed
+                0x048063e4       0x48 drivers/built-in.o
+                0x048063e4                gemac_set_speed
+ .text.gemac_set_duplex
+                0x0480642c       0x18 drivers/built-in.o
+                0x0480642c                gemac_set_duplex
+ .text.gemac_set_mode
+                0x04806444       0x78 drivers/built-in.o
+                0x04806444                gemac_set_mode
+ .text.gemac_enable_mdio
+                0x048064bc       0x10 drivers/built-in.o
+                0x048064bc                gemac_enable_mdio
+ .text.gemac_set_mdc_div
+                0x048064cc       0x18 drivers/built-in.o
+                0x048064cc                gemac_set_mdc_div
+ .text.gemac_enable
+                0x048064e4       0x10 drivers/built-in.o
+                0x048064e4                gemac_enable
+ .text.gemac_disable
+                0x048064f4       0x10 drivers/built-in.o
+                0x048064f4                gemac_disable
+ .text.gemac_set_laddr1
+                0x04806504       0x14 drivers/built-in.o
+                0x04806504                gemac_set_laddr1
+ .text.gem_get_laddr1
+                0x04806518       0x14 drivers/built-in.o
+                0x04806518                gem_get_laddr1
+ .text.gemac_allow_broadcast
+                0x0480652c       0x10 drivers/built-in.o
+                0x0480652c                gemac_allow_broadcast
+ .text.gemac_disable_unicast
+                0x0480653c       0x10 drivers/built-in.o
+                0x0480653c                gemac_disable_unicast
+ .text.gemac_disable_multicast
+                0x0480654c       0x10 drivers/built-in.o
+                0x0480654c                gemac_disable_multicast
+ .text.gemac_disable_fcs_rx
+                0x0480655c       0x10 drivers/built-in.o
+                0x0480655c                gemac_disable_fcs_rx
+ .text.gemac_disable_1536_rx
+                0x0480656c       0x10 drivers/built-in.o
+                0x0480656c                gemac_disable_1536_rx
+ .text.gemac_enable_pause_rx
+                0x0480657c       0x10 drivers/built-in.o
+                0x0480657c                gemac_enable_pause_rx
+ .text.gemac_enable_rx_checksum_offload
+                0x0480658c       0x24 drivers/built-in.o
+                0x0480658c                gemac_enable_rx_checksum_offload
+ .text.gemac_set_bus_width
+                0x048065b0       0x34 drivers/built-in.o
+                0x048065b0                gemac_set_bus_width
+ .text.gemac_set_config
+                0x048065e4       0x30 drivers/built-in.o
+                0x048065e4                gemac_set_config
+ .text.gemac_init
+                0x04806614       0x1c drivers/built-in.o
+                0x04806614                gemac_init
+ .text.gpi_enable
+                0x04806630        0xc drivers/built-in.o
+                0x04806630                gpi_enable
+ .text.gpi_disable
+                0x0480663c        0xc drivers/built-in.o
+                0x0480663c                gpi_disable
+ .text.gpi_set_config
+                0x04806648       0x8c drivers/built-in.o
+                0x04806648                gpi_set_config
+ .text.gpi_init
+                0x048066d4       0x14 drivers/built-in.o
+                0x048066d4                gpi_init
+ .text.class_reset
+                0x048066e8       0x14 drivers/built-in.o
+                0x048066e8                class_reset
+ .text.class_enable
+                0x048066fc       0x14 drivers/built-in.o
+                0x048066fc                class_enable
+ .text.class_disable
+                0x04806710       0x14 drivers/built-in.o
+                0x04806710                class_disable
+ .text.class_set_config
+                0x04806724       0xa0 drivers/built-in.o
+                0x04806724                class_set_config
+ .text.class_init
+                0x048067c4       0x1c drivers/built-in.o
+                0x048067c4                class_init
+ .text.tmu_init
+                0x048067e0      0x114 drivers/built-in.o
+                0x048067e0                tmu_init
+ .text.tmu_enable
+                0x048068f4       0x1c drivers/built-in.o
+                0x048068f4                tmu_enable
+ .text.tmu_disable
+                0x04806910       0x1c drivers/built-in.o
+                0x04806910                tmu_disable
+ .text.util_reset
+                0x0480692c       0x14 drivers/built-in.o
+                0x0480692c                util_reset
+ .text.util_init
+                0x04806940       0x14 drivers/built-in.o
+                0x04806940                util_init
+ .text.util_enable
+                0x04806954       0x14 drivers/built-in.o
+                0x04806954                util_enable
+ .text.util_disable
+                0x04806968       0x14 drivers/built-in.o
+                0x04806968                util_disable
+ .text.gemac_get_stats
+                0x0480697c        0x8 drivers/built-in.o
+                0x0480697c                gemac_get_stats
+ .text.hif_init
+                0x04806984       0x18 drivers/built-in.o
+                0x04806984                hif_init
+ .text.hif_tx_enable
+                0x0480699c       0x14 drivers/built-in.o
+                0x0480699c                hif_tx_enable
+ .text.hif_tx_disable
+                0x048069b0       0x20 drivers/built-in.o
+                0x048069b0                hif_tx_disable
+ .text.hif_rx_enable
+                0x048069d0       0x14 drivers/built-in.o
+                0x048069d0                hif_rx_enable
+ .text.hif_rx_disable
+                0x048069e4       0x20 drivers/built-in.o
+                0x048069e4                hif_rx_disable
+ .text.pfe_recv
+                0x04806a04       0xb4 drivers/built-in.o
+                0x04806a04                pfe_recv
+ .text.pfe_send
+                0x04806ab8       0xf0 drivers/built-in.o
+                0x04806ab8                pfe_send
+ .text.pfe_tx_done
+                0x04806ba8       0x5c drivers/built-in.o
+                0x04806ba8                pfe_tx_done
+ .text.pfe_gemac_init
+                0x04806c04       0x50 drivers/built-in.o
+                0x04806c04                pfe_gemac_init
+ .text.hif_rx_desc_dump
+                0x04806c54       0x38 drivers/built-in.o
+                0x04806c54                hif_rx_desc_dump
+ .text.hif_tx_desc_dump
+                0x04806c8c       0x38 drivers/built-in.o
+                0x04806c8c                hif_tx_desc_dump
+ .text.pfe_probe
+                0x04806cc4      0x3dc drivers/built-in.o
+                0x04806cc4                pfe_probe
+ .text.pfe_remove
+                0x048070a0       0x40 drivers/built-in.o
+                0x048070a0                pfe_remove
+ .text.athrs17_phy_is_link_alive
+                0x048070e0       0x50 drivers/built-in.o
+                0x048070e0                athrs17_phy_is_link_alive
+ .text.athrs17_phy_stat
+                0x04807130       0x8c drivers/built-in.o
+                0x04807130                athrs17_phy_stat
+ .text.athrs17_reg_read
+                0x048071bc       0x64 drivers/built-in.o
+                0x048071bc                athrs17_reg_read
+ .text.athrs17_reg_write
+                0x04807220       0x68 drivers/built-in.o
+                0x04807220                athrs17_reg_write
+ .text.athrs17_phy_debug_read
+                0x04807288       0x34 drivers/built-in.o
+                0x04807288                athrs17_phy_debug_read
+ .text.athrs17_phy_debug_write
+                0x048072bc       0x40 drivers/built-in.o
+                0x048072bc                athrs17_phy_debug_write
+ .text.athrs17_phy_init
+                0x048072fc      0x260 drivers/built-in.o
+                0x048072fc                athrs17_phy_init
+ .text.athrs17_phy_setup
+                0x0480755c       0x40 drivers/built-in.o
+                0x0480755c                athrs17_phy_setup
+ .text.athrs17_init
+                0x0480759c      0x1c8 drivers/built-in.o
+                0x0480759c                athrs17_init
+ .text.fast_uart_setbrg
+                0x04807764       0x80 drivers/built-in.o
+ .text.fast_uart_putc
+                0x048077e4       0x30 drivers/built-in.o
+                0x048077e4                fast_uart_putc
+ .text.fast_uart_getc
+                0x04807814       0x24 drivers/built-in.o
+                0x04807814                fast_uart_getc
+ .text.fast_uart_tstc
+                0x04807838       0x14 drivers/built-in.o
+                0x04807838                fast_uart_tstc
+ .text.fast_uart_init
+                0x0480784c        0xc drivers/built-in.o
+ .text.fast_uart_probe
+                0x04807858       0x5c drivers/built-in.o
+ .text.nand_ioctl
+                0x048078b4       0x9c drivers/built-in.o
+ .text.nand_read_oob
+                0x04807950      0x2e0 drivers/built-in.o
+ .text.nand_erase
+                0x04807c30       0xb8 drivers/built-in.o
+                0x04807ce0                nand_erase
+ .text.nand_read
+                0x04807ce8       0xb4 drivers/built-in.o
+ .text.nand_write
+                0x04807d9c      0x1c4 drivers/built-in.o
+                0x04807efc                nand_write
+ .text.add_mtd_device
+                0x04807f60       0xe0 drivers/built-in.o
+                0x04807f60                add_mtd_device
+ .text.nand_calculate_ecc
+                0x04808040       0xf4 drivers/built-in.o
+                0x04808040                nand_calculate_ecc
+ .text.nand_correct_data
+                0x04808134      0x11c drivers/built-in.o
+                0x04808134                nand_correct_data
+ .text.nand_check_wp
+                0x04808250       0x3c drivers/built-in.o
+ .text.nand_fill_oob
+                0x0480828c      0x104 drivers/built-in.o
+ .text.nand_do_write_oob
+                0x04808390      0x1a0 drivers/built-in.o
+ .text.nand_write_buf
+                0x04808530       0x2c drivers/built-in.o
+                0x04808530                nand_write_buf
+ .text.nand_write_buf16
+                0x0480855c       0x30 drivers/built-in.o
+                0x0480855c                nand_write_buf16
+ .text.nand_default_block_markbad
+                0x0480858c       0xcc drivers/built-in.o
+                0x0480858c                nand_default_block_markbad
+ .text.nand_write_oob_std
+                0x04808658       0x70 drivers/built-in.o
+                0x04808658                nand_write_oob_std
+ .text.nand_write_page_raw
+                0x048086c8       0x34 drivers/built-in.o
+                0x048086c8                nand_write_page_raw
+ .text.nand_write_page
+                0x048086fc       0xa8 drivers/built-in.o
+                0x048086fc                nand_write_page
+ .text.nand_do_write_ops
+                0x048087a4      0x2e0 drivers/built-in.o
+                0x048087a4                nand_do_write_ops
+ .text.nand_write_oob
+                0x04808a84       0x68 drivers/built-in.o
+                0x04808a84                nand_write_oob
+ .text.single_erase_cmd
+                0x04808aec       0x3c drivers/built-in.o
+                0x04808aec                single_erase_cmd
+ .text.multi_erase_cmd
+                0x04808b28       0x8c drivers/built-in.o
+                0x04808b28                multi_erase_cmd
+ .text.nand_erase_nand
+                0x04808bb4      0x2e4 drivers/built-in.o
+                0x04808bb4                nand_erase_nand
+ .text.nand_block_markbad
+                0x04808e98       0x3c drivers/built-in.o
+                0x04808e98                nand_block_markbad
+ .text.nand_read_page_swecc
+                0x04808ed4      0x104 drivers/built-in.o
+                0x04808ed4                nand_read_page_swecc
+ .text.nand_write_page_swecc
+                0x04808fd8       0x9c drivers/built-in.o
+                0x04808fd8                nand_write_page_swecc
+ .text.nand_init_ecc_soft
+                0x04809074       0x5c drivers/built-in.o
+                0x04809074                nand_init_ecc_soft
+ .text.nand_bch_calculate_ecc
+                0x048090d0       0x6c drivers/built-in.o
+                0x048090d0                nand_bch_calculate_ecc
+ .text.nand_bch_correct_data
+                0x0480913c       0x88 drivers/built-in.o
+                0x0480913c                nand_bch_correct_data
+ .text.nand_bch_free
+                0x048091c4       0x30 drivers/built-in.o
+                0x048091c4                nand_bch_free
+ .text.nand_bch_init
+                0x048091f4      0x230 drivers/built-in.o
+                0x048091f4                nand_bch_init
+ .text.nand_read_page_syndrome
+                0x04809424      0x128 drivers/built-in.o
+ .text.nand_write_page_syndrome
+                0x0480954c       0xf4 drivers/built-in.o
+ .text.nand_read_oob_syndrome
+                0x04809640       0xfc drivers/built-in.o
+ .text.nand_write_oob_syndrome
+                0x0480973c      0x1a8 drivers/built-in.o
+ .text.nand_init_ecc_hw_syndrome
+                0x048098e4       0x54 drivers/built-in.o
+                0x048098e4                nand_init_ecc_hw_syndrome
+ .text.nand_read_byte
+                0x04809938       0x10 drivers/built-in.o
+ .text.nand_read_byte16
+                0x04809948       0x14 drivers/built-in.o
+ .text.nand_read_word
+                0x0480995c       0x10 drivers/built-in.o
+ .text.nand_read_buf
+                0x0480996c       0x28 drivers/built-in.o
+ .text.nand_verify_buf
+                0x04809994       0x40 drivers/built-in.o
+ .text.nand_read_buf16
+                0x048099d4       0x2c drivers/built-in.o
+ .text.nand_verify_buf16
+                0x04809a00       0x44 drivers/built-in.o
+ .text.nand_block_bad
+                0x04809a44       0xd4 drivers/built-in.o
+ .text.nand_read_page_raw
+                0x04809b18       0x38 drivers/built-in.o
+ .text.nand_read_oob_std
+                0x04809b50       0x48 drivers/built-in.o
+                0x04809b50                nand_read_oob_std
+ .text.nand_read_subpage
+                0x04809b98      0x268 drivers/built-in.o
+ .text.nand_select_chip
+                0x04809e00       0x48 drivers/built-in.o
+ .text.nand_transfer_oob
+                0x04809e48      0x104 drivers/built-in.o
+ .text.nand_wait
+                0x04809f4c       0xd8 drivers/built-in.o
+ .text.sanitize_string
+                0x0480a024       0x38 drivers/built-in.o
+ .text.nand_block_checkbad
+                0x0480a05c       0x30 drivers/built-in.o
+                0x0480a05c                nand_block_checkbad
+ .text.nand_block_isbad
+                0x0480a08c       0x30 drivers/built-in.o
+                0x0480a08c                nand_block_isbad
+ .text.nand_wait_ready
+                0x0480a0bc       0x50 drivers/built-in.o
+                0x0480a0bc                nand_wait_ready
+ .text.nand_do_read_ops
+                0x0480a10c      0x35c drivers/built-in.o
+ .text.nand_command
+                0x0480a468      0x1c8 drivers/built-in.o
+ .text.nand_command_lp
+                0x0480a630      0x250 drivers/built-in.o
+ .text.nand_scan_ident
+                0x0480a880      0x850 drivers/built-in.o
+                0x0480a880                nand_scan_ident
+ .text.nand_scan_tail
+                0x0480b0d0      0x46c drivers/built-in.o
+                0x0480b0d0                nand_scan_tail
+ .text.nand_bb_erase
+                0x0480b53c       0x34 drivers/built-in.o
+ .text.nand_bb_write_buf
+                0x0480b570       0x98 drivers/built-in.o
+ .text.nand_bb_close
+                0x0480b608       0x58 drivers/built-in.o
+ .text.nand_bb_open
+                0x0480b660       0x40 drivers/built-in.o
+ .text.nand_bb_write
+                0x0480b6a0       0xb4 drivers/built-in.o
+ .text.nand_bb_read
+                0x0480b754       0xcc drivers/built-in.o
+ .text.dev_add_bb_dev
+                0x0480b820      0x134 drivers/built-in.o
+                0x0480b820                dev_add_bb_dev
+ .text.dev_remove_bb_dev
+                0x0480b954       0x68 drivers/built-in.o
+                0x0480b954                dev_remove_bb_dev
+ .text.check_pattern
+                0x0480b9bc       0xe4 drivers/built-in.o
+ .text.scan_read_raw
+                0x0480baa0       0x48 drivers/built-in.o
+ .text.create_bbt
+                0x0480bae8      0x2d8 drivers/built-in.o
+ .text.search_bbt
+                0x0480bdc0      0x1d8 drivers/built-in.o
+ .text.read_bbt
+                0x0480bf98      0x214 drivers/built-in.o
+ .text.read_abs_bbt
+                0x0480c1ac       0xe8 drivers/built-in.o
+ .text.write_bbt
+                0x0480c294      0x620 drivers/built-in.o
+ .text.nand_update_bbt
+                0x0480c8b4      0x13c drivers/built-in.o
+                0x0480c8b4                nand_update_bbt
+ .text.mark_bbt_region
+                0x0480c9f0      0x188 drivers/built-in.o
+ .text.nand_scan_bbt
+                0x0480cb78      0x48c drivers/built-in.o
+                0x0480cb78                nand_scan_bbt
+ .text.nand_default_bbt
+                0x0480d004       0xc4 drivers/built-in.o
+                0x0480d004                nand_default_bbt
+ .text.nand_isbad_bbt
+                0x0480d0c8       0x54 drivers/built-in.o
+                0x0480d0c8                nand_isbad_bbt
+ .text.comcerto_enable_hw_ecc
+                0x0480d11c       0x3c drivers/built-in.o
+ .text.comcerto_calculate_ecc
+                0x0480d158       0x50 drivers/built-in.o
+ .text.comcerto_nand_write_page_hwecc
+                0x0480d1a8       0xcc drivers/built-in.o
+ .text.comcerto_nand_read_page_hwecc
+                0x0480d274       0xfc drivers/built-in.o
+ .text.comcerto_nand_hwcontrol
+                0x0480d370       0x58 drivers/built-in.o
+ .text.comcerto_nand_ready
+                0x0480d3c8       0x14 drivers/built-in.o
+ .text.nand_read_page_raw_syndrome
+                0x0480d3dc       0xd4 drivers/built-in.o
+ .text.comcerto_nand_drv_init
+                0x0480d4b0        0xc drivers/built-in.o
+ .text.comcerto_nand_probe
+                0x0480d4bc      0x2bc drivers/built-in.o
+ .text.comcerto_correct_ecc
+                0x0480d778      0x120 drivers/built-in.o
+ .text.erase_old_nand_fmt
+                0x0480d898       0x94 drivers/built-in.o
+                0x0480d898                erase_old_nand_fmt
+ .text.mtd_part_read
+                0x0480d92c       0x68 drivers/built-in.o
+ .text.mtd_part_write
+                0x0480d994       0x78 drivers/built-in.o
+ .text.mtd_part_erase
+                0x0480da0c       0x7c drivers/built-in.o
+ .text.mtd_part_block_isbad
+                0x0480da88       0x40 drivers/built-in.o
+ .text.mtd_part_block_markbad
+                0x0480dac8       0x64 drivers/built-in.o
+ .text.mtd_add_partition
+                0x0480db2c      0x118 drivers/built-in.o
+                0x0480db2c                mtd_add_partition
+ .text.mtd_del_partition
+                0x0480dc44       0x1c drivers/built-in.o
+                0x0480dc44                mtd_del_partition
+ .text.cfi_init
+                0x0480dc60        0xc drivers/built-in.o
+ .text.cfi_info
+                0x0480dc6c      0x1b8 drivers/built-in.o
+ .text.cfi_mtd_read
+                0x0480de24       0x2c drivers/built-in.o
+ .text.flash_add_byte.clone.1
+                0x0480de50       0x74 drivers/built-in.o
+ .text.flash_read_uchar
+                0x0480dec4       0x18 drivers/built-in.o
+                0x0480dec4                flash_read_uchar
+ .text.jedec_read_mfr
+                0x0480dedc       0x2c drivers/built-in.o
+                0x0480dedc                jedec_read_mfr
+ .text.find_sector
+                0x0480df08       0x28 drivers/built-in.o
+                0x0480df08                find_sector
+ .text.__cfi_erase
+                0x0480df30       0xcc drivers/built-in.o
+ .text.cfi_mtd_erase
+                0x0480dffc       0x5c drivers/built-in.o
+ .text.cfi_erase
+                0x0480e058        0x8 drivers/built-in.o
+ .text.flash_status_check
+                0x0480e060       0x1c drivers/built-in.o
+                0x0480e060                flash_status_check
+ .text.flash_write_cfiword
+                0x0480e07c       0xe0 drivers/built-in.o
+ .text.write_buff
+                0x0480e15c      0x220 drivers/built-in.o
+ .text.cfi_mtd_write
+                0x0480e37c       0x28 drivers/built-in.o
+ .text.cfi_write
+                0x0480e3a4       0x30 drivers/built-in.o
+ .text.flash_real_protect
+                0x0480e3d4       0xb8 drivers/built-in.o
+ .text.cfi_protect
+                0x0480e48c       0xc4 drivers/built-in.o
+ .text.flash_make_cmd
+                0x0480e550       0x58 drivers/built-in.o
+                0x0480e550                flash_make_cmd
+ .text.flash_write_cmd
+                0x0480e5a8       0x58 drivers/built-in.o
+                0x0480e5a8                flash_write_cmd
+ .text.flash_generic_status_check
+                0x0480e600       0xc8 drivers/built-in.o
+                0x0480e600                flash_generic_status_check
+ .text.flash_isequal
+                0x0480e6c8       0x74 drivers/built-in.o
+                0x0480e6c8                flash_isequal
+ .text.flash_isset
+                0x0480e73c       0x88 drivers/built-in.o
+                0x0480e73c                flash_isset
+ .text.cfi_probe
+                0x0480e7c4      0x5dc drivers/built-in.o
+ .text.intel_flash_fixup
+                0x0480eda0        0x4 drivers/built-in.o
+ .text.intel_flash_real_protect
+                0x0480eda4       0x58 drivers/built-in.o
+ .text.intel_flash_prepare_write
+                0x0480edfc       0x30 drivers/built-in.o
+ .text.intel_flash_is_busy
+                0x0480ee2c       0x1c drivers/built-in.o
+ .text.puts     0x0480ee48        0xc drivers/built-in.o
+ .text.intel_flash_status_check
+                0x0480ee54      0x144 drivers/built-in.o
+ .text.intel_read_jedec_ids
+                0x0480ef98       0x7c drivers/built-in.o
+ .text.intel_flash_erase_one
+                0x0480f014       0x64 drivers/built-in.o
+ .text.intel_flash_write_cfibuffer
+                0x0480f078      0x10c drivers/built-in.o
+ .text.amd_flash_fixup
+                0x0480f184      0x27c drivers/built-in.o
+ .text.flash_unlock_seq
+                0x0480f400       0x30 drivers/built-in.o
+ .text.amd_flash_real_protect
+                0x0480f430       0x90 drivers/built-in.o
+ .text.amd_flash_prepare_write
+                0x0480f4c0       0x24 drivers/built-in.o
+ .text.amd_read_jedec_ids
+                0x0480f4e4      0x104 drivers/built-in.o
+ .text.amd_flash_is_busy
+                0x0480f5e8       0x60 drivers/built-in.o
+ .text.amd_flash_erase_one
+                0x0480f648       0x64 drivers/built-in.o
+ .text.amd_flash_write_cfibuffer
+                0x0480f6ac      0x158 drivers/built-in.o
+ .text.spi_new_device
+                0x0480f804       0x90 drivers/built-in.o
+                0x0480f804                spi_new_device
+ .text.spi_register_board_info
+                0x0480f894       0x58 drivers/built-in.o
+                0x0480f894                spi_register_board_info
+ .text.spi_register_master
+                0x0480f8ec       0x78 drivers/built-in.o
+                0x0480f8ec                spi_register_master
+ .text.spi_sync
+                0x0480f964       0x14 drivers/built-in.o
+                0x0480f964                spi_sync
+ .text.c2k_spi_init
+                0x0480f978       0x18 drivers/built-in.o
+                0x0480f978                c2k_spi_init
+ .text.c2k_spi_setup
+                0x0480f990       0xc0 drivers/built-in.o
+ .text.c2k_spi_probe
+                0x0480fa50       0x74 drivers/built-in.o
+ .text.c2k_spi_transfer
+                0x0480fac4      0x298 drivers/built-in.o
+ .text.do_write_read_transfer
+                0x0480fd5c       0xa4 drivers/built-in.o
+                0x0480fd5c                do_write_read_transfer
+ .text.do_write_only_transfer8
+                0x0480fe00       0x60 drivers/built-in.o
+                0x0480fe00                do_write_only_transfer8
+ .text.do_write_only_transfer16
+                0x0480fe60       0x60 drivers/built-in.o
+                0x0480fe60                do_write_only_transfer16
+ .text.do_read_only_transfer8
+                0x0480fec0       0x64 drivers/built-in.o
+                0x0480fec0                do_read_only_transfer8
+ .text.do_read_only_transfer16
+                0x0480ff24       0x64 drivers/built-in.o
+                0x0480ff24                do_read_only_transfer16
+ .text.spi_write
+                0x0480ff88       0x70 drivers/built-in.o
+                0x0480ff88                spi_write
+ .text.spi_write_then_read
+                0x0480fff8       0x78 drivers/built-in.o
+                0x0480fff8                spi_write_then_read
+ .text.dma_conf
+                0x04810070      0x120 drivers/built-in.o
+                0x04810070                dma_conf
+ .text.dma_ssi_xfer_cmplete_chk
+                0x04810190       0x20 drivers/built-in.o
+                0x04810190                dma_ssi_xfer_cmplete_chk
+ .text.dma_start
+                0x048101b0       0x24 drivers/built-in.o
+                0x048101b0                dma_start
+ .text.c2k_fast_spi_init
+                0x048101d4        0xc drivers/built-in.o
+                0x048101d4                c2k_fast_spi_init
+ .text.c2k_fast_spi_setup
+                0x048101e0       0xc0 drivers/built-in.o
+ .text.c2k_fast_spi_transfer
+                0x048102a0      0x610 drivers/built-in.o
+ .text.dma_out_of_reset
+                0x048108b0       0x1c drivers/built-in.o
+                0x048108b0                dma_out_of_reset
+ .text.c2k_fast_spi_probe
+                0x048108cc       0x70 drivers/built-in.o
+ .text.csi_init
+                0x0481093c        0xc drivers/built-in.o
+ .text.csi_probe
+                0x04810948       0x98 drivers/built-in.o
+ .text.csi_erase
+                0x048109e0       0x24 drivers/built-in.o
+ .text.csi_write
+                0x04810a04       0x50 drivers/built-in.o
+ .text.csi_read
+                0x04810a54       0x50 drivers/built-in.o
+ .text.read_rdsr
+                0x04810aa4       0x60 drivers/built-in.o
+                0x04810aa4                read_rdsr
+ .text.nor_s25fl128_sector_erase
+                0x04810b04       0xdc drivers/built-in.o
+                0x04810b04                nor_s25fl128_sector_erase
+ .text.spi_sector_erase
+                0x04810be0       0x88 drivers/built-in.o
+                0x04810be0                spi_sector_erase
+ .text.write_bytes_page_addr
+                0x04810c68       0xfc drivers/built-in.o
+                0x04810c68                write_bytes_page_addr
+ .text.read_bytes_page_addr
+                0x04810d64       0xac drivers/built-in.o
+                0x04810d64                read_bytes_page_addr
+ .text.spi_copy_read
+                0x04810e10       0xec drivers/built-in.o
+                0x04810e10                spi_copy_read
+ .text.update_spi_flash
+                0x04810efc      0x168 drivers/built-in.o
+                0x04810efc                update_spi_flash
+ .text.i2c_transfer
+                0x04811064       0x70 drivers/built-in.o
+                0x04811064                i2c_transfer
+ .text.i2c_read_reg
+                0x048110d4       0xa0 drivers/built-in.o
+                0x048110d4                i2c_read_reg
+ .text.i2c_write_reg
+                0x04811174       0xac drivers/built-in.o
+                0x04811174                i2c_write_reg
+ .text.i2c_new_device
+                0x04811220       0x40 drivers/built-in.o
+                0x04811220                i2c_new_device
+ .text.i2c_register_board_info
+                0x04811260       0x60 drivers/built-in.o
+                0x04811260                i2c_register_board_info
+ .text.i2c_get_adapter
+                0x048112c0       0x40 drivers/built-in.o
+                0x048112c0                i2c_get_adapter
+ .text.i2c_add_numbered_adapter
+                0x04811300       0x9c drivers/built-in.o
+                0x04811300                i2c_add_numbered_adapter
+ .text.c2k_i2c_driverinit
+                0x0481139c        0xc drivers/built-in.o
+ .text.i2c_probe
+                0x048113a8       0x34 drivers/built-in.o
+ .text.i2c_start.clone.0
+                0x048113dc       0x64 drivers/built-in.o
+ .text.i2c_write_data.clone.2
+                0x04811440       0xa4 drivers/built-in.o
+ .text.i2c_select_device.clone.1.clone.7
+                0x048114e4       0x84 drivers/built-in.o
+ .text.i2c_set_dev_offset.clone.3.clone.6
+                0x04811568       0x64 drivers/built-in.o
+ .text.i2c_init
+                0x048115cc       0xdc drivers/built-in.o
+                0x048115cc                i2c_init
+ .text.i2c_read
+                0x048116a8      0x194 drivers/built-in.o
+                0x048116a8                i2c_read
+ .text.i2c_write
+                0x0481183c      0x130 drivers/built-in.o
+                0x0481183c                i2c_write
+ .text.i2c_c2k_xfer
+                0x0481196c       0xa4 drivers/built-in.o
+ .text.c2k_otp_probe
+                0x04811a10        0xc drivers/built-in.o
+ .text.c2k_otp_init
+                0x04811a1c        0xc drivers/built-in.o
+                0x04811a1c                c2k_otp_init
+ .text.ahci_exec_ata_cmd
+                0x04811a28      0x1bc drivers/built-in.o
+ .text.dwc_ahsata_rw_cmd
+                0x04811be4       0xb4 drivers/built-in.o
+ .text.dwc_ahsata_rw_cmd_ext
+                0x04811c98       0xcc drivers/built-in.o
+ .text.ahci_host_init
+                0x04811d64      0x1e8 drivers/built-in.o
+ .text.comcerto_init_serdes
+                0x04811f4c      0x114 drivers/built-in.o
+                0x04811f4c                comcerto_init_serdes
+ .text.stop_sata
+                0x04812060       0x90 drivers/built-in.o
+                0x04812060                stop_sata
+ .text.init_sata
+                0x048120f0      0x3fc drivers/built-in.o
+                0x048120f0                init_sata
+ .text.dwc_ahsata_flush_cache
+                0x048124ec       0x6c drivers/built-in.o
+                0x048124ec                dwc_ahsata_flush_cache
+ .text.dwc_ahsata_flush_cache_ext
+                0x04812558       0x6c drivers/built-in.o
+                0x04812558                dwc_ahsata_flush_cache_ext
+ .text.ata_low_level_rw_lba48
+                0x048125c4       0x98 drivers/built-in.o
+                0x048125c4                ata_low_level_rw_lba48
+ .text.ata_low_level_rw_lba28
+                0x0481265c       0x84 drivers/built-in.o
+                0x0481265c                ata_low_level_rw_lba28
+ .text.sata_read
+                0x048126e0       0x3c drivers/built-in.o
+                0x048126e0                sata_read
+ .text.sata_write
+                0x0481271c       0x7c drivers/built-in.o
+                0x0481271c                sata_write
+ .text.scan_sata
+                0x04812798      0x398 drivers/built-in.o
+                0x04812798                scan_sata
+ .text.ata_id_n_sectors
+                0x04812b30       0x94 drivers/built-in.o
+                0x04812b30                ata_id_n_sectors
+ .text.ata_id_c_string
+                0x04812bc4       0x74 drivers/built-in.o
+                0x04812bc4                ata_id_c_string
+ .text.ata_swap_buf_le16
+                0x04812c38        0x4 drivers/built-in.o
+                0x04812c38                ata_swap_buf_le16
+ .text.initrd_register_image_handler
+                0x04812c3c       0x2c commands/built-in.o
+ .text.puts     0x04812c68        0xc commands/built-in.o
+ .text.relocate_image
+                0x04812c74       0x60 commands/built-in.o
+                0x04812c74                relocate_image
+ .text.map_image
+                0x04812cd4      0x1a8 commands/built-in.o
+                0x04812cd4                map_image
+ .text.initrd_handler_parse_options
+                0x04812e7c       0x4c commands/built-in.o
+ .text.unmap_image
+                0x04812ec8       0x28 commands/built-in.o
+                0x04812ec8                unmap_image
+ .text.do_bootm
+                0x04812ef0      0x1ec commands/built-in.o
+ .text.register_image_handler
+                0x048130dc       0x24 commands/built-in.o
+                0x048130dc                register_image_handler
+ .text.do_echo  0x04813100      0x158 commands/built-in.o
+ .text.dev_lseek_default
+                0x04813258        0x8 commands/built-in.o
+ .text.mem_init
+                0x04813260       0x5c commands/built-in.o
+ .text.mem_probe
+                0x048132bc       0x44 commands/built-in.o
+ .text.zero_init
+                0x04813300       0x38 commands/built-in.o
+ .text.zero_read
+                0x04813338       0x1c commands/built-in.o
+ .text.mem_parse_options
+                0x04813354       0xbc commands/built-in.o
+ .text.open_and_lseek
+                0x04813410       0x64 commands/built-in.o
+ .text.do_memset
+                0x04813474      0x158 commands/built-in.o
+ .text.do_mem_cp
+                0x048135cc      0x210 commands/built-in.o
+ .text.do_mem_cmp
+                0x048137dc      0x254 commands/built-in.o
+ .text.do_mem_mw
+                0x04813a30      0x18c commands/built-in.o
+ .text.memory_display
+                0x04813bbc      0x164 commands/built-in.o
+                0x04813bbc                memory_display
+ .text.do_mem_md
+                0x04813d20      0x16c commands/built-in.o
+ .text.setpos   0x04813e8c       0x4c commands/built-in.o
+ .text.pos      0x04813ed8       0x18 commands/built-in.o
+ .text.line_realloc
+                0x04813ef0       0x44 commands/built-in.o
+ .text.screenline
+                0x04813f34       0xc0 commands/built-in.o
+ .text.refresh_line.clone.0
+                0x04813ff4       0x68 commands/built-in.o
+ .text.refresh  0x0481405c      0x12c commands/built-in.o
+ .text.merge_line
+                0x04814188       0x6c commands/built-in.o
+ .text.delete_char
+                0x048141f4       0x58 commands/built-in.o
+ .text.do_edit  0x0481424c      0x6dc commands/built-in.o
+ .text.cmd_reset
+                0x04814928        0xc commands/built-in.o
+ .text.do_ethact
+                0x04814934       0x7c commands/built-in.o
+ .text.do_delpart
+                0x048149b0       0x64 commands/built-in.o
+ .text.mtd_part_do_parse_one
+                0x04814a14      0x1c0 commands/built-in.o
+ .text.do_addpart
+                0x04814bd4       0xe0 commands/built-in.o
+ .text.ls_one   0x04814cb4       0x48 commands/built-in.o
+ .text.ls       0x04814cfc      0x208 commands/built-in.o
+                0x04814cfc                ls
+ .text.do_ls    0x04814f04      0x1cc commands/built-in.o
+ .text.do_cd    0x048150d0       0x34 commands/built-in.o
+ .text.do_pwd   0x04815104       0x20 commands/built-in.o
+ .text.do_mkdir
+                0x04815124       0xd8 commands/built-in.o
+ .text.do_rmdir
+                0x048151fc       0x6c commands/built-in.o
+ .text.do_cp    0x04815268       0xfc commands/built-in.o
+ .text.do_rm    0x04815364       0x6c commands/built-in.o
+ .text.do_cat   0x048153d0      0x11c commands/built-in.o
+ .text.do_mount
+                0x048154ec       0x88 commands/built-in.o
+ .text.do_umount
+                0x04815574       0x38 commands/built-in.o
+ .text.file_crc
+                0x048155ac      0x138 commands/built-in.o
+ .text.do_crc   0x048156e4      0x1ac commands/built-in.o
+ .text.do_clear
+                0x04815890       0x18 commands/built-in.o
+ .text.parse_opt
+                0x048158a8       0x40 commands/built-in.o
+ .text.do_test  0x048158e8      0x304 commands/built-in.o
+ .text.do_protect
+                0x04815bec      0x140 commands/built-in.o
+ .text.do_flerase
+                0x04815d2c      0x128 commands/built-in.o
+ .text.do_timeout
+                0x04815e54      0x1e4 commands/built-in.o
+ .text.do_readline
+                0x04816038       0x6c commands/built-in.o
+ .text.do_printenv
+                0x048160a4      0x104 commands/built-in.o
+ .text.do_saveenv
+                0x048161a8      0x18c commands/built-in.o
+ .text.do_loadenv
+                0x04816334       0x50 commands/built-in.o
+ .text.do_nand  0x04816384      0x19c commands/built-in.o
+ .text.do_erase_old_nand_fmt
+                0x04816520      0x13c commands/built-in.o
+ .text.erase_nand
+                0x0481665c       0x90 commands/built-in.o
+                0x0481665c                erase_nand
+ .text.do_erase_nand
+                0x048166ec       0x98 commands/built-in.o
+ .text.update_nand
+                0x04816784       0xec commands/built-in.o
+                0x04816784                update_nand
+ .text.do_update_nand
+                0x04816870       0xb0 commands/built-in.o
+ .text.read_nand
+                0x04816920       0x80 commands/built-in.o
+                0x04816920                read_nand
+ .text.do_read_nand
+                0x048169a0       0xb0 commands/built-in.o
+ .text.do_true  0x04816a50        0x8 commands/built-in.o
+ .text.do_false
+                0x04816a58        0x8 commands/built-in.o
+ .text.do_version
+                0x04816a60       0x20 commands/built-in.o
+ .text.do_socinfo
+                0x04816a80      0x14c commands/built-in.o
+ .text.do_help  0x04816bcc       0x88 commands/built-in.o
+ .text.do_i2c_read
+                0x04816c54      0x1d0 commands/built-in.o
+ .text.do_i2c_write
+                0x04816e24      0x1f4 commands/built-in.o
+ .text.do_i2c_probe
+                0x04817018       0xf0 commands/built-in.o
+ .text.update_nor
+                0x04817108      0x164 commands/built-in.o
+                0x04817108                update_nor
+ .text.do_update_nor
+                0x0481726c       0xb0 commands/built-in.o
+ .text.do_update_spi
+                0x0481731c       0xd4 commands/built-in.o
+ .text.update_i2c_eeprom
+                0x048173f0       0x80 commands/built-in.o
+                0x048173f0                update_i2c_eeprom
+ .text.do_update_i2c
+                0x04817470       0xbc commands/built-in.o
+ .text.gemac_stats
+                0x0481752c       0xc4 commands/built-in.o
+ .text.pfe_command_help
+                0x048175f0        0xc commands/built-in.o
+ .text.pfe_command
+                0x048175fc     0x11d0 commands/built-in.o
+ .text.class_aggregate_stats
+                0x048187cc       0x64 commands/built-in.o
+ .text.tmu_aggregate_stats
+                0x04818830       0x60 commands/built-in.o
+ .text.stats_mask_to_string
+                0x04818890       0x20 commands/built-in.o
+                0x04818890                stats_mask_to_string
+ .text.pe_enable_stats
+                0x048188b0       0xa8 commands/built-in.o
+ .text.stats_string_to_mask
+                0x04818958       0x44 commands/built-in.o
+                0x04818958                stats_string_to_mask
+ .text.pfe_stats
+                0x0481899c      0x2ec commands/built-in.o
+ .text.do_switch
+                0x04818c88       0xfc commands/built-in.o
+ .text.do_phy   0x04818d84      0x17c commands/built-in.o
+ .text.do_copy  0x04818f00       0x6c commands/built-in.o
+ .text.sata_initialize
+                0x04818f6c       0x80 commands/built-in.o
+                0x04818f6c                sata_initialize
+ .text.do_sata  0x04818fec      0x388 commands/built-in.o
+ .text.size_human_readable
+                0x04819374       0xb4 lib/built-in.o
+                0x04819374                size_human_readable
+ .text.strcpy   0x04819428       0x18 lib/built-in.o
+                0x04819428                strcpy
+ .text.strncpy  0x04819440       0x24 lib/built-in.o
+                0x04819440                strncpy
+ .text.strcat   0x04819464       0x2c lib/built-in.o
+                0x04819464                strcat
+ .text.strncat  0x04819490       0x48 lib/built-in.o
+                0x04819490                strncat
+ .text.strcmp   0x048194d8       0x28 lib/built-in.o
+                0x048194d8                strcmp
+ .text.strncmp  0x04819500       0x3c lib/built-in.o
+                0x04819500                strncmp
+ .text._strchr  0x0481953c       0x34 lib/built-in.o
+                0x0481953c                _strchr
+ .text.strlen   0x04819570       0x1c lib/built-in.o
+                0x04819570                strlen
+ .text._strrchr
+                0x0481958c       0x3c lib/built-in.o
+                0x0481958c                _strrchr
+ .text.strnlen  0x048195c8       0x28 lib/built-in.o
+                0x048195c8                strnlen
+ .text.strdup   0x048195f0       0x34 lib/built-in.o
+                0x048195f0                strdup
+ .text.strspn   0x04819624       0x40 lib/built-in.o
+                0x04819624                strspn
+ .text.strpbrk  0x04819664       0x3c lib/built-in.o
+                0x04819664                strpbrk
+ .text.strtok   0x048196a0       0x78 lib/built-in.o
+                0x048196a0                strtok
+ .text.memset   0x04819718       0x1c lib/built-in.o
+                0x04819718                memset
+ .text.memcpy   0x04819734       0x20 lib/built-in.o
+                0x04819734                memcpy
+ .text.memmove  0x04819754       0x4c lib/built-in.o
+                0x04819754                memmove
+ .text.skip_spaces
+                0x048197a0       0x24 lib/built-in.o
+                0x048197a0                skip_spaces
+ .text.strim    0x048197c4       0x54 lib/built-in.o
+                0x048197c4                strim
+ .text.number   0x04819818      0x28c lib/built-in.o
+ .text.simple_strtoul
+                0x04819aa4       0xac lib/built-in.o
+                0x04819aa4                simple_strtoul
+ .text.simple_strtol
+                0x04819b50       0x28 lib/built-in.o
+                0x04819b50                simple_strtol
+ .text.vsnprintf
+                0x04819b78      0x540 lib/built-in.o
+                0x04819b78                vsnprintf
+ .text.vsprintf
+                0x0481a0b8       0x14 lib/built-in.o
+                0x0481a0b8                vsprintf
+ .text.sprintf  0x0481a0cc       0x24 lib/built-in.o
+                0x0481a0cc                sprintf
+ .text.vasprintf
+                0x0481a0f0       0x4c lib/built-in.o
+                0x0481a0f0                vasprintf
+ .text.asprintf
+                0x0481a13c       0x24 lib/built-in.o
+                0x0481a13c                asprintf
+ .text.panic    0x0481a160       0x38 lib/built-in.o
+                0x0481a160                panic
+ .text.__div64_32
+                0x0481a198       0xdc lib/built-in.o
+                0x0481a198                __div64_32
+ .text.strtoul_suffix
+                0x0481a274       0x68 lib/built-in.o
+                0x0481a274                strtoul_suffix
+ .text.parse_area_spec
+                0x0481a2dc       0xb4 lib/built-in.o
+                0x0481a2dc                parse_area_spec
+ .text.match    0x0481a390       0x98 lib/built-in.o
+ .text.noshortinfo
+                0x0481a428        0x4 lib/built-in.o
+ .text.get_device_by_name_id
+                0x0481a42c       0x5c lib/built-in.o
+ .text.get_free_deviceid
+                0x0481a488       0x30 lib/built-in.o
+                0x0481a488                get_free_deviceid
+ .text.unregister_device
+                0x0481a4b8       0xb0 lib/built-in.o
+                0x0481a4b8                unregister_device
+ .text.register_driver
+                0x0481a568       0x9c lib/built-in.o
+                0x0481a568                register_driver
+ .text.generic_memmap_ro
+                0x0481a604       0x24 lib/built-in.o
+                0x0481a604                generic_memmap_ro
+ .text.generic_memmap_rw
+                0x0481a628       0x1c lib/built-in.o
+                0x0481a628                generic_memmap_rw
+ .text.dev_id   0x0481a644       0x2c lib/built-in.o
+                0x0481a644                dev_id
+ .text.do_devinfo_subtree
+                0x0481a670      0x11c lib/built-in.o
+ .text.noinfo   0x0481a78c       0x1c lib/built-in.o
+ .text.register_device
+                0x0481a7a8       0xe8 lib/built-in.o
+                0x0481a7a8                register_device
+ .text.get_device_by_name
+                0x0481a890       0x50 lib/built-in.o
+                0x0481a890                get_device_by_name
+ .text.do_devinfo
+                0x0481a8e0      0x170 lib/built-in.o
+ .text.platform_probe
+                0x0481aa50       0x14 lib/built-in.o
+ .text.platform_remove
+                0x0481aa64       0x14 lib/built-in.o
+ .text.platform_match
+                0x0481aa78       0x14 lib/built-in.o
+ .text.param_get_generic
+                0x0481aa8c        0x8 lib/built-in.o
+ .text.dev_param_set_generic
+                0x0481aa94       0x3c lib/built-in.o
+                0x0481aa94                dev_param_set_generic
+ .text.__dev_add_param
+                0x0481aad0       0x80 lib/built-in.o
+ .text.get_param_by_name
+                0x0481ab50       0x48 lib/built-in.o
+                0x0481ab50                get_param_by_name
+ .text.dev_get_param
+                0x0481ab98       0x3c lib/built-in.o
+                0x0481ab98                dev_get_param
+ .text.dev_get_param_ip
+                0x0481abd4       0x20 lib/built-in.o
+                0x0481abd4                dev_get_param_ip
+ .text.dev_set_param
+                0x0481abf4       0x5c lib/built-in.o
+                0x0481abf4                dev_set_param
+ .text.dev_add_param
+                0x0481ac50       0x20 lib/built-in.o
+                0x0481ac50                dev_add_param
+ .text.dev_add_param_fixed
+                0x0481ac70       0x3c lib/built-in.o
+                0x0481ac70                dev_add_param_fixed
+ .text.xmalloc  0x0481acac       0x1c lib/built-in.o
+                0x0481acac                xmalloc
+ .text.xrealloc
+                0x0481acc8       0x1c lib/built-in.o
+                0x0481acc8                xrealloc
+ .text.xzalloc  0x0481ace4       0x24 lib/built-in.o
+                0x0481ace4                xzalloc
+ .text.xmemalign
+                0x0481ad08       0x1c lib/built-in.o
+                0x0481ad08                xmemalign
+ .text.getopt_reset
+                0x0481ad24       0x3c lib/built-in.o
+                0x0481ad24                getopt_reset
+ .text.getopt   0x0481ad60      0x288 lib/built-in.o
+                0x0481ad60                getopt
+ .text.read_key
+                0x0481afe8       0xac lib/built-in.o
+                0x0481afe8                read_key
+ .text.kfifo_init
+                0x0481b094       0x2c lib/built-in.o
+                0x0481b094                kfifo_init
+ .text.kfifo_alloc
+                0x0481b0c0       0x38 lib/built-in.o
+                0x0481b0c0                kfifo_alloc
+ .text.kfifo_free
+                0x0481b0f8       0x1c lib/built-in.o
+                0x0481b0f8                kfifo_free
+ .text.kfifo_putc
+                0x0481b114       0x40 lib/built-in.o
+                0x0481b114                kfifo_putc
+ .text.kfifo_getc
+                0x0481b154       0x44 lib/built-in.o
+                0x0481b154                kfifo_getc
+ .text.execable_file
+                0x0481b198       0x38 lib/built-in.o
+                0x0481b198                execable_file
+ .text.last_char_is
+                0x0481b1d0       0x3c lib/built-in.o
+                0x0481b1d0                last_char_is
+ .text.concat_path_file
+                0x0481b20c       0x98 lib/built-in.o
+                0x0481b20c                concat_path_file
+ .text.find_execable
+                0x0481b2a4       0x88 lib/built-in.o
+                0x0481b2a4                find_execable
+ .text.concat_subpath_file
+                0x0481b32c       0x44 lib/built-in.o
+                0x0481b32c                concat_subpath_file
+ .text.safe_strncpy
+                0x0481b370       0x18 lib/built-in.o
+                0x0481b370                safe_strncpy
+ .text.simple_itoa
+                0x0481b388       0x58 lib/built-in.o
+                0x0481b388                simple_itoa
+ .text.basename
+                0x0481b3e0       0x54 lib/built-in.o
+                0x0481b3e0                basename
+ .text.dirname  0x0481b434       0x58 lib/built-in.o
+                0x0481b434                dirname
+ .text.string_list_add
+                0x0481b48c       0x48 lib/built-in.o
+                0x0481b48c                string_list_add
+ .text.string_list_print_by_column
+                0x0481b4d4       0xc8 lib/built-in.o
+                0x0481b4d4                string_list_print_by_column
+ .text.true_action
+                0x0481b59c        0x8 lib/built-in.o
+ .text.recursive_action
+                0x0481b5a4      0x19c lib/built-in.o
+                0x0481b5a4                recursive_action
+ .text.make_directory
+                0x0481b740       0x9c lib/built-in.o
+                0x0481b740                make_directory
+ .text.falloc   0x0481b7dc       0x24 lib/built-in.o
+ .text.ffree    0x0481b800        0x4 lib/built-in.o
+ .text.inflate_trees_free
+                0x0481b804       0x3c lib/built-in.o
+ .text.huft_build
+                0x0481b840      0x588 lib/built-in.o
+ .text.inflate_trees_fixed
+                0x0481bdc8      0x1ec lib/built-in.o
+ .text.inflate_blocks_reset
+                0x0481bfb4       0xd0 lib/built-in.o
+ .text.adler32  0x0481c084      0x16c lib/built-in.o
+                0x0481c084                adler32
+ .text.inflate_flush
+                0x0481c1f0      0x16c lib/built-in.o
+ .text.inflateReset
+                0x0481c35c       0x5c lib/built-in.o
+                0x0481c35c                inflateReset
+ .text.inflateEnd
+                0x0481c3b8       0x94 lib/built-in.o
+                0x0481c3b8                inflateEnd
+ .text.inflateInit2
+                0x0481c44c      0x150 lib/built-in.o
+                0x0481c44c                inflateInit2
+ .text.inflateInit
+                0x0481c59c        0x8 lib/built-in.o
+                0x0481c59c                inflateInit
+ .text.inflate  0x0481c5a4     0x1adc lib/built-in.o
+                0x0481c5a4                inflate
+ .text.make_crc_table
+                0x0481e080       0x74 lib/built-in.o
+ .text.crc32    0x0481e0f4      0x128 lib/built-in.o
+                0x0481e0f4                crc32
+ .text.hist_init
+                0x0481e21c       0x68 lib/built-in.o
+ .text.putchar  0x0481e284        0xc lib/built-in.o
+ .text.cread_add_char
+                0x0481e290       0xec lib/built-in.o
+ .text.readline
+                0x0481e37c      0x664 lib/built-in.o
+                0x0481e37c                readline
+ .text.fnmatch  0x0481e9e0      0x540 lib/built-in.o
+                0x0481e9e0                fnmatch
+ .text.prefix_array
+                0x0481ef20       0xb4 lib/built-in.o
+ .text.glob_pattern_p
+                0x0481efd4       0x8c lib/built-in.o
+                0x0481efd4                glob_pattern_p
+ .text.glob_in_dir
+                0x0481f060      0x238 lib/built-in.o
+ .text.globfree
+                0x0481f298       0x5c lib/built-in.o
+                0x0481f298                globfree
+ .text.glob     0x0481f2f4      0x2d8 lib/built-in.o
+                0x0481f2f4                glob
+ .text.copy_file
+                0x0481f5cc      0x110 lib/built-in.o
+                0x0481f5cc                copy_file
+ .text.rand     0x0481f6dc       0x2c lib/built-in.o
+                0x0481f6dc                rand
+ .text.srand    0x0481f708       0x10 lib/built-in.o
+                0x0481f708                srand
+ .text.get_random_bytes
+                0x0481f718       0x28 lib/built-in.o
+                0x0481f718                get_random_bytes
+ .text.encode_bch_unaligned
+                0x0481f740       0xa0 lib/built-in.o
+ .text.gf_poly_logrep
+                0x0481f7e0       0x6c lib/built-in.o
+ .text.gf_poly_mod
+                0x0481f84c      0x104 lib/built-in.o
+ .text.bch_alloc
+                0x0481f950       0x1c lib/built-in.o
+ .text.build_deg2_base
+                0x0481f96c      0x170 lib/built-in.o
+ .text.load_ecc8
+                0x0481fadc       0xb8 lib/built-in.o
+ .text.gf_poly_copy
+                0x0481fb94       0x10 lib/built-in.o
+ .text.solve_linear_system.clone.2.clone.3
+                0x0481fba4      0x200 lib/built-in.o
+ .text.find_affine4_roots
+                0x0481fda4      0x14c lib/built-in.o
+ .text.find_poly_roots
+                0x0481fef0      0x910 lib/built-in.o
+ .text.encode_bch
+                0x04820800      0x2f0 lib/built-in.o
+                0x04820800                encode_bch
+ .text.decode_bch
+                0x04820af0      0x514 lib/built-in.o
+                0x04820af0                decode_bch
+ .text.free_bch
+                0x04821004       0x80 lib/built-in.o
+                0x04821004                free_bch
+ .text.init_bch
+                0x04821084      0x5d8 lib/built-in.o
+                0x04821084                init_bch
+ .text.show_progress
+                0x0482165c       0xe0 lib/built-in.o
+                0x0482165c                show_progress
+ .text.init_progression_bar
+                0x0482173c       0x50 lib/built-in.o
+                0x0482173c                init_progression_bar
+ .text.eth_set_ethaddr
+                0x0482178c       0x80 net/built-in.o
+ .text.eth_set_ipaddr
+                0x0482180c       0x68 net/built-in.o
+ .text.eth_set_current
+                0x04821874       0x48 net/built-in.o
+                0x04821874                eth_set_current
+ .text.eth_get_current
+                0x048218bc       0x10 net/built-in.o
+                0x048218bc                eth_get_current
+ .text.eth_get_byname
+                0x048218cc       0x6c net/built-in.o
+                0x048218cc                eth_get_byname
+ .text.eth_send
+                0x04821938       0x6c net/built-in.o
+                0x04821938                eth_send
+ .text.eth_rx   0x048219a4       0x5c net/built-in.o
+                0x048219a4                eth_rx
+ .text.eth_register
+                0x04821a00      0x1e0 net/built-in.o
+                0x04821a00                eth_register
+ .text.led_trigger_network
+                0x04821be0        0x4 net/built-in.o
+                0x04821be0                led_trigger_network
+ .text.net_init
+                0x04821be4       0x38 net/built-in.o
+ .text.net_checksum
+                0x04821c1c       0x44 net/built-in.o
+                0x04821c1c                net_checksum
+ .text.net_ip_send
+                0x04821c60       0x9c net/built-in.o
+ .text.net_checksum_ok
+                0x04821cfc       0x10 net/built-in.o
+                0x04821cfc                net_checksum_ok
+ .text.ip_to_string
+                0x04821d0c       0x3c net/built-in.o
+                0x04821d0c                ip_to_string
+ .text.string_to_ip
+                0x04821d48       0x88 net/built-in.o
+                0x04821d48                string_to_ip
+ .text.string_to_ethaddr
+                0x04821dd0       0x94 net/built-in.o
+                0x04821dd0                string_to_ethaddr
+ .text.net_update_env
+                0x04821e64       0x9c net/built-in.o
+                0x04821e64                net_update_env
+ .text.ethaddr_to_string
+                0x04821f00       0x40 net/built-in.o
+                0x04821f00                ethaddr_to_string
+ .text.net_poll
+                0x04821f40        0x4 net/built-in.o
+                0x04821f40                net_poll
+ .text.net_new  0x04821f44      0x404 net/built-in.o
+ .text.net_get_serverip
+                0x04822348       0x10 net/built-in.o
+                0x04822348                net_get_serverip
+ .text.net_udp_new
+                0x04822358       0x8c net/built-in.o
+                0x04822358                net_udp_new
+ .text.net_icmp_new
+                0x048223e4       0x20 net/built-in.o
+                0x048223e4                net_icmp_new
+ .text.net_unregister
+                0x04822404       0x48 net/built-in.o
+                0x04822404                net_unregister
+ .text.net_udp_send
+                0x0482244c       0x38 net/built-in.o
+                0x0482244c                net_udp_send
+ .text.net_icmp_send
+                0x04822484       0x40 net/built-in.o
+                0x04822484                net_icmp_send
+ .text.net_receive
+                0x048224c4      0x3a8 net/built-in.o
+                0x048224c4                net_receive
+ .text.tftp_send
+                0x0482286c       0xfc net/built-in.o
+ .text.do_tftpb
+                0x04822968      0x230 net/built-in.o
+ .text.tftp_handler
+                0x04822b98      0x240 net/built-in.o
+ .text.ping_handler
+                0x04822dd8       0x3c net/built-in.o
+ .text.ping_send
+                0x04822e14       0x9c net/built-in.o
+ .text.do_ping  0x04822eb0      0x16c net/built-in.o
+ .text.cramfs_lseek
+                0x0482301c        0xc fs/built-in.o
+ .text.cramfs_init
+                0x04823028        0xc fs/built-in.o
+ .text.cramfs_remove
+                0x04823034       0x18 fs/built-in.o
+ .text.cramfs_closedir
+                0x0482304c       0x14 fs/built-in.o
+ .text.cramfs_close
+                0x04823060       0x20 fs/built-in.o
+ .text.cramfs_probe
+                0x04823080      0x18c fs/built-in.o
+ .text.cramfs_read
+                0x0482320c      0x134 fs/built-in.o
+ .text.cramfs_get_inode.clone.0
+                0x04823340       0x50 fs/built-in.o
+ .text.cramfs_resolve
+                0x04823390      0x168 fs/built-in.o
+ .text.cramfs_stat
+                0x048234f8       0x8c fs/built-in.o
+ .text.cramfs_open
+                0x04823584       0xb4 fs/built-in.o
+ .text.cramfs_opendir
+                0x04823638      0x110 fs/built-in.o
+ .text.cramfs_readdir
+                0x04823748       0xa4 fs/built-in.o
+ .text.zfree    0x048237ec        0x8 fs/built-in.o
+ .text.zalloc   0x048237f4       0x10 fs/built-in.o
+ .text.cramfs_uncompress_block
+                0x04823804       0x4c fs/built-in.o
+                0x04823804                cramfs_uncompress_block
+ .text.cramfs_uncompress_init
+                0x04823850       0x5c fs/built-in.o
+                0x04823850                cramfs_uncompress_init
+ .text.cramfs_uncompress_exit
+                0x048238ac       0x18 fs/built-in.o
+                0x048238ac                cramfs_uncompress_exit
+ .text.ramfs_close
+                0x048238c4        0x8 fs/built-in.o
+ .text.ramfs_lseek
+                0x048238cc        0xc fs/built-in.o
+ .text.ramfs_init
+                0x048238d8        0xc fs/built-in.o
+ .text.ramfs_remove
+                0x048238e4        0x8 fs/built-in.o
+ .text.ramfs_closedir
+                0x048238ec       0x14 fs/built-in.o
+ .text.ramfs_put_chunk
+                0x04823900       0x30 fs/built-in.o
+ .text.ramfs_put_inode
+                0x04823930       0x38 fs/built-in.o
+ .text.ramfs_get_inode
+                0x04823968        0x8 fs/built-in.o
+ .text.ramfs_probe
+                0x04823970       0x94 fs/built-in.o
+ .text.rlookup  0x04823a04       0x80 fs/built-in.o
+ .text.ramfs_stat
+                0x04823a84       0x30 fs/built-in.o
+ .text.ramfs_open
+                0x04823ab4       0x30 fs/built-in.o
+ .text.ramfs_readdir
+                0x04823ae4       0x3c fs/built-in.o
+ .text.ramfs_opendir
+                0x04823b20       0x44 fs/built-in.o
+ .text.ramfs_write
+                0x04823b64       0xd0 fs/built-in.o
+ .text.ramfs_read
+                0x04823c34       0xd0 fs/built-in.o
+ .text.ramfs_get_chunk
+                0x04823d04       0x60 fs/built-in.o
+ .text.ramfs_truncate
+                0x04823d64       0xe4 fs/built-in.o
+ .text.rlookup_parent
+                0x04823e48       0x84 fs/built-in.o
+ .text.ramfs_unlink
+                0x04823ecc       0x64 fs/built-in.o
+ .text.ramfs_create
+                0x04823f30       0xc4 fs/built-in.o
+ .text.ramfs_mkdir
+                0x04823ff4        0x8 fs/built-in.o
+ .text.ramfs_rmdir
+                0x04823ffc       0x78 fs/built-in.o
+ .text.cdev_by_name
+                0x04824074       0x4c fs/built-in.o
+                0x04824074                cdev_by_name
+ .text.cdev_open
+                0x048240c0       0x34 fs/built-in.o
+                0x048240c0                cdev_open
+ .text.cdev_close
+                0x048240f4       0x1c fs/built-in.o
+                0x048240f4                cdev_close
+ .text.cdev_read
+                0x04824110       0x34 fs/built-in.o
+                0x04824110                cdev_read
+ .text.cdev_write
+                0x04824144       0x34 fs/built-in.o
+                0x04824144                cdev_write
+ .text.cdev_ioctl
+                0x04824178       0xf0 fs/built-in.o
+                0x04824178                cdev_ioctl
+ .text.cdev_erase
+                0x04824268       0x2c fs/built-in.o
+                0x04824268                cdev_erase
+ .text.devfs_create
+                0x04824294       0x68 fs/built-in.o
+                0x04824294                devfs_create
+ .text.devfs_remove
+                0x048242fc       0x68 fs/built-in.o
+                0x048242fc                devfs_remove
+ .text.devfs_add_partition
+                0x04824364       0xec fs/built-in.o
+                0x04824364                devfs_add_partition
+ .text.devfs_del_partition
+                0x04824450       0x68 fs/built-in.o
+                0x04824450                devfs_del_partition
+ .text.devfs_lseek
+                0x048244b8       0x48 fs/built-in.o
+ .text.devfs_erase
+                0x04824500       0x34 fs/built-in.o
+ .text.devfs_protect
+                0x04824534       0x38 fs/built-in.o
+ .text.devfs_memmap
+                0x0482456c       0x4c fs/built-in.o
+ .text.devfs_close
+                0x048245b8       0x3c fs/built-in.o
+ .text.devfs_flush
+                0x048245f4       0x28 fs/built-in.o
+ .text.devfs_truncate
+                0x0482461c       0x18 fs/built-in.o
+ .text.devfs_probe
+                0x04824634        0x8 fs/built-in.o
+ .text.devfs_delete
+                0x0482463c        0x4 fs/built-in.o
+ .text.devfs_init
+                0x04824640        0xc fs/built-in.o
+ .text.devfs_ioctl
+                0x0482464c       0x10 fs/built-in.o
+ .text.devfs_stat
+                0x0482465c       0x64 fs/built-in.o
+ .text.devfs_open
+                0x048246c0       0x5c fs/built-in.o
+ .text.devfs_closedir
+                0x0482471c       0x14 fs/built-in.o
+ .text.devfs_readdir
+                0x04824730       0x5c fs/built-in.o
+ .text.devfs_opendir
+                0x0482478c       0x28 fs/built-in.o
+ .text.devfs_write
+                0x048247b4       0x28 fs/built-in.o
+ .text.devfs_read
+                0x048247dc       0x28 fs/built-in.o
+ .text.check_fd
+                0x04824804       0x40 fs/built-in.o
+ .text.init_cwd
+                0x04824844       0x28 fs/built-in.o
+ .text.memcpy_sz
+                0x0482486c       0x74 fs/built-in.o
+ .text.mkmodestr
+                0x048248e0      0x11c fs/built-in.o
+                0x048248e0                mkmodestr
+ .text.normalise_path
+                0x048249fc      0x15c fs/built-in.o
+                0x048249fc                normalise_path
+ .text.get_mtab_entry_by_path
+                0x04824b58       0x84 fs/built-in.o
+                0x04824b58                get_mtab_entry_by_path
+ .text.get_fs_device_by_path
+                0x04824bdc       0x4c fs/built-in.o
+ .text.mtab_next_entry
+                0x04824c28       0x18 fs/built-in.o
+                0x04824c28                mtab_next_entry
+ .text.getcwd   0x04824c40       0x10 fs/built-in.o
+                0x04824c40                getcwd
+ .text.ioctl    0x04824c50       0x7c fs/built-in.o
+                0x04824c50                ioctl
+ .text.read     0x04824ccc       0x90 fs/built-in.o
+                0x04824ccc                read
+ .text.write    0x04824d5c       0xe4 fs/built-in.o
+                0x04824d5c                write
+ .text.lseek    0x04824e40       0xd8 fs/built-in.o
+                0x04824e40                lseek
+ .text.erase    0x04824f18       0xa0 fs/built-in.o
+                0x04824f18                erase
+ .text.protect  0x04824fb8       0xa0 fs/built-in.o
+                0x04824fb8                protect
+ .text.memmap   0x04825058       0x74 fs/built-in.o
+                0x04825058                memmap
+ .text.close    0x048250cc       0x64 fs/built-in.o
+                0x048250cc                close
+ .text.register_fs_driver
+                0x04825130       0x34 fs/built-in.o
+                0x04825130                register_fs_driver
+ .text.umount   0x04825164       0xa8 fs/built-in.o
+                0x04825164                umount
+ .text.readdir  0x0482520c       0x28 fs/built-in.o
+                0x0482520c                readdir
+ .text.closedir
+                0x04825234       0x38 fs/built-in.o
+                0x04825234                closedir
+ .text.stat     0x0482526c       0xcc fs/built-in.o
+                0x0482526c                stat
+ .text.path_check_prereq
+                0x04825338      0x120 fs/built-in.o
+ .text.opendir  0x04825458       0x6c fs/built-in.o
+                0x04825458                opendir
+ .text.mount    0x048254c4      0x248 fs/built-in.o
+                0x048254c4                mount
+ .text.unlink   0x0482570c       0x7c fs/built-in.o
+                0x0482570c                unlink
+ .text.chdir    0x04825788       0x50 fs/built-in.o
+                0x04825788                chdir
+ .text.open     0x048257d8      0x210 fs/built-in.o
+                0x048257d8                open
+ .text.protect_file
+                0x048259e8       0x40 fs/built-in.o
+                0x048259e8                protect_file
+ .text.read_file
+                0x04825a28       0x94 fs/built-in.o
+                0x04825a28                read_file
+ .text.mkdir    0x04825abc       0x7c fs/built-in.o
+                0x04825abc                mkdir
+ .text.rmdir    0x04825b38       0x80 fs/built-in.o
+                0x04825b38                rmdir
+ .text.mem_read
+                0x04825bb8       0x4c fs/built-in.o
+                0x04825bb8                mem_read
+ .text.mem_write
+                0x04825c04       0x48 fs/built-in.o
+                0x04825c04                mem_write
+ .text.c2000_device_init
+                0x04825c4c      0x234 arch/arm/boards/comcerto-evm/built-in.o
+ .text.c2000_eth_board_init
+                0x04825e80       0x5c arch/arm/boards/comcerto-evm/built-in.o
+                0x04825e80                c2000_eth_board_init
+ .text          0x04825edc       0xb4 arch/arm/mach-comcerto/built-in.o
+                0x04825edc                arch_init_lowlevel
+ .text.comcerto_clocksource_read
+                0x04825f90       0x14 arch/arm/mach-comcerto/built-in.o
+ .text.clocksource_init
+                0x04825fa4       0x50 arch/arm/mach-comcerto/built-in.o
+ .text.bsp_init
+                0x04825ff4       0x20 arch/arm/mach-comcerto/built-in.o
+                0x04825ff4                bsp_init
+ .text.HAL_get_c2k_revision
+                0x04826014       0x14 arch/arm/mach-comcerto/built-in.o
+                0x04826014                HAL_get_c2k_revision
+ .text.reset_cpu
+                0x04826028       0x14 arch/arm/mach-comcerto/built-in.o
+                0x04826028                reset_cpu
+ .text.HAL_get_pll_freq
+                0x0482603c      0x144 arch/arm/mach-comcerto/built-in.o
+                0x0482603c                HAL_get_pll_freq
+ .text.HAL_get_arm_clk
+                0x04826180       0x54 arch/arm/mach-comcerto/built-in.o
+                0x04826180                HAL_get_arm_clk
+ .text.HAL_get_axi_clk
+                0x048261d4       0x54 arch/arm/mach-comcerto/built-in.o
+                0x048261d4                HAL_get_axi_clk
+ .text.HAL_get_ddr_clk
+                0x04826228       0x54 arch/arm/mach-comcerto/built-in.o
+                0x04826228                HAL_get_ddr_clk
+ .text.HAL_get_ipsec_clk
+                0x0482627c       0x54 arch/arm/mach-comcerto/built-in.o
+                0x0482627c                HAL_get_ipsec_clk
+ .text.HAL_get_arm_peri_clk
+                0x048262d0       0x10 arch/arm/mach-comcerto/built-in.o
+                0x048262d0                HAL_get_arm_peri_clk
+ .text.HAL_get_ref_clk
+                0x048262e0       0x58 arch/arm/mach-comcerto/built-in.o
+                0x048262e0                HAL_get_ref_clk
+ .text.comcerto_pad_config
+                0x04826338       0x78 arch/arm/mach-comcerto/built-in.o
+                0x04826338                comcerto_pad_config
+ .text.comcerto_nand_init
+                0x048263b0       0x60 arch/arm/mach-comcerto/built-in.o
+ .text.serdes_phy_reset
+                0x04826410       0x2c arch/arm/mach-comcerto/built-in.o
+                0x04826410                serdes_phy_reset
+ .text.serdes_phy_init
+                0x0482643c      0x124 arch/arm/mach-comcerto/built-in.o
+                0x0482643c                serdes_phy_init
+ .text          0x04826560      0x324 arch/arm/lib/built-in.o
+                0x04826560                __udivsi3
+                0x04826560                __aeabi_uidiv
+                0x048265fc                __umodsi3
+                0x0482669c                __aeabi_idiv
+                0x0482669c                __divsi3
+                0x04826768                __modsi3
+                0x04826830                __ashrdi3
+                0x04826830                __aeabi_lasr
+                0x0482684c                __ashldi3
+                0x0482684c                __aeabi_llsl
+                0x04826868                __aeabi_llsr
+                0x04826868                __lshrdi3
+ .text.armlinux_set_bootparams
+                0x04826884       0x10 arch/arm/lib/built-in.o
+                0x04826884                armlinux_set_bootparams
+ .text.armlinux_set_architecture
+                0x04826894       0x10 arch/arm/lib/built-in.o
+                0x04826894                armlinux_set_architecture
+ .text.armlinux_add_dram
+                0x048268a4       0x34 arch/arm/lib/built-in.o
+                0x048268a4                armlinux_add_dram
+ .text.armlinux_set_revision
+                0x048268d8       0x10 arch/arm/lib/built-in.o
+                0x048268d8                armlinux_set_revision
+ .text.start_linux
+                0x048268e8      0x23c arch/arm/lib/built-in.o
+                0x048268e8                start_linux
+ .text.armlinux_register_image_handler
+                0x04826b24        0xc arch/arm/lib/built-in.o
+ .text.do_bootm_linux
+                0x04826b30       0xa8 arch/arm/lib/built-in.o
+ .text.image_handle_cmdline_parse
+                0x04826bd8       0x4c arch/arm/lib/built-in.o
+ .text.do_bootz
+                0x04826c24      0x114 arch/arm/lib/built-in.o
+ .text.do_bootu
+                0x04826d38       0x60 arch/arm/lib/built-in.o
+ .text.__div0   0x04826d98        0x8 arch/arm/lib/built-in.o
+                0x04826d98                __div0
+ .text.arm_mem_malloc_init
+                0x04826da0       0x18 arch/arm/lib/built-in.o
+ *fill*         0x04826db8        0x8 00
+ .text          0x04826dc0      0x30c arch/arm/cpu/built-in.o
+                0x04826de0                undefined_instruction
+                0x04826e40                software_interrupt
+                0x04826ea0                prefetch_abort
+                0x04826f00                data_abort
+                0x04826f60                not_used
+                0x04826fc0                irq
+                0x04827020                fiq
+                0x04827080                __mmu_cache_on
+                0x048270a4                __mmu_cache_off
+ .text.bad_mode
+                0x048270cc       0x10 arch/arm/cpu/built-in.o
+ .text.show_regs
+                0x048270dc      0x140 arch/arm/cpu/built-in.o
+                0x048270dc                show_regs
+ .text.do_undefined_instruction
+                0x0482721c       0x24 arch/arm/cpu/built-in.o
+                0x0482721c                do_undefined_instruction
+ .text.do_software_interrupt
+                0x04827240       0x24 arch/arm/cpu/built-in.o
+                0x04827240                do_software_interrupt
+ .text.do_prefetch_abort
+                0x04827264       0x24 arch/arm/cpu/built-in.o
+                0x04827264                do_prefetch_abort
+ .text.do_data_abort
+                0x04827288       0x24 arch/arm/cpu/built-in.o
+                0x04827288                do_data_abort
+ .text.do_not_used
+                0x048272ac       0x24 arch/arm/cpu/built-in.o
+                0x048272ac                do_not_used
+ .text.do_fiq   0x048272d0       0x24 arch/arm/cpu/built-in.o
+                0x048272d0                do_fiq
+ .text.do_irq   0x048272f4       0x24 arch/arm/cpu/built-in.o
+                0x048272f4                do_irq
+ .text.decode_cache
+                0x04827318       0x4c arch/arm/cpu/built-in.o
+ .text.do_cpuinfo
+                0x04827364      0x128 arch/arm/cpu/built-in.o
+
+.glue_7         0x0482748c        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x0482748c        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x0482748c        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0482748c        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+                0x0482748c                . = ALIGN (0x4)
+
+.rodata         0x0482748c     0xb288
+ *(.rodata*)
+ .rodata.cmd_getopt_help
+                0x0482748c      0x110 common/built-in.o
+ .rodata.cmd_source_usage
+                0x0482759c       0x32 common/built-in.o
+ .rodata.cmd_sh_help
+                0x048275ce       0x38 common/built-in.o
+ .rodata.cmd_source_help
+                0x04827606       0xda common/built-in.o
+ .rodata.str1.1
+                0x048276e0      0x5fc common/built-in.o
+                                0x662 (size before relaxing)
+ .rodata.C.4.2809
+                0x04827cdc       0x30 common/built-in.o
+ .rodata.version_string
+                0x04827d0c       0x2b common/built-in.o
+                0x04827d0c                version_string
+ .rodata.default_environment
+                0x04827d37     0x2545 common/built-in.o
+                0x04827d37                default_environment
+ .rodata.str1.1
+                0x0482a27c     0x38a5 drivers/built-in.o
+                               0x3b36 (size before relaxing)
+ .rodata.__func__.2369
+                0x0482db21       0x14 drivers/built-in.o
+ .rodata.__func__.2998
+                0x0482db35        0xf drivers/built-in.o
+ .rodata.__func__.3018
+                0x0482db44       0x11 drivers/built-in.o
+ .rodata.__func__.2459
+                0x0482db55       0x12 drivers/built-in.o
+ .rodata.__func__.2443
+                0x0482db67        0xd drivers/built-in.o
+ .rodata.__func__.2464
+                0x0482db74       0x12 drivers/built-in.o
+ .rodata.__func__.2549
+                0x0482db86       0x14 drivers/built-in.o
+ .rodata.__func__.2560
+                0x0482db9a       0x14 drivers/built-in.o
+ .rodata.__func__.2513
+                0x0482dbae       0x15 drivers/built-in.o
+ .rodata.__func__.2528
+                0x0482dbc3       0x15 drivers/built-in.o
+ .rodata.C.3.3561
+                0x0482dbd8        0xc drivers/built-in.o
+ .rodata.__func__.2484
+                0x0482dbe4       0x11 drivers/built-in.o
+ .rodata.__func__.2470
+                0x0482dbf5       0x11 drivers/built-in.o
+ *fill*         0x0482dc06        0x2 00
+ .rodata.C.6.3565
+                0x0482dc08        0xc drivers/built-in.o
+ .rodata.C.5.3564
+                0x0482dc14        0xc drivers/built-in.o
+ .rodata.__func__.2506
+                0x0482dc20       0x11 drivers/built-in.o
+ *fill*         0x0482dc31        0x3 00
+ .rodata.C.4.3563
+                0x0482dc34        0xc drivers/built-in.o
+ .rodata.__func__.2542
+                0x0482dc40        0xc drivers/built-in.o
+ .rodata.__func__.2494
+                0x0482dc4c       0x11 drivers/built-in.o
+ .rodata.__func__.1937
+                0x0482dc5d        0xd drivers/built-in.o
+ .rodata.nand_ecc_precalc_table
+                0x0482dc6a      0x100 drivers/built-in.o
+ .rodata.__FUNCTION__.2683
+                0x0482dd6a        0xe drivers/built-in.o
+ .rodata.__FUNCTION__.3026
+                0x0482dd78        0xf drivers/built-in.o
+ .rodata.__FUNCTION__.2806
+                0x0482dd87       0x12 drivers/built-in.o
+ .rodata.__func__.2969
+                0x0482dd99       0x14 drivers/built-in.o
+ .rodata.__func__.2650
+                0x0482ddad       0x11 drivers/built-in.o
+ .rodata.__FUNCTION__.3013
+                0x0482ddbe       0x11 drivers/built-in.o
+ .rodata.__FUNCTION__.2692
+                0x0482ddcf       0x14 drivers/built-in.o
+ *fill*         0x0482dde3        0x1 00
+ .rodata.flash_offset_cfi
+                0x0482dde4        0x8 drivers/built-in.o
+ .rodata.__FUNCTION__.2612
+                0x0482ddec        0xc drivers/built-in.o
+ .rodata.__func__.2104
+                0x0482ddf8       0x11 drivers/built-in.o
+ .rodata.__func__.2131
+                0x0482de09        0xe drivers/built-in.o
+ .rodata.__func__.2082
+                0x0482de17       0x17 drivers/built-in.o
+ .rodata.__func__.2240
+                0x0482de2e       0x16 drivers/built-in.o
+ .rodata.__func__.2159
+                0x0482de44       0x11 drivers/built-in.o
+ .rodata.__func__.2221
+                0x0482de55        0xe drivers/built-in.o
+ .rodata.__func__.2195
+                0x0482de63       0x15 drivers/built-in.o
+ .rodata.__func__.2177
+                0x0482de78       0x16 drivers/built-in.o
+ .rodata.__func__.2136
+                0x0482de8e        0xa drivers/built-in.o
+ .rodata.C.17.3284
+                0x0482de98        0x4 drivers/built-in.o
+ .rodata.__func__.2148
+                0x0482de9c       0x1a drivers/built-in.o
+ .rodata.__func__.2207
+                0x0482deb6        0xf drivers/built-in.o
+ .rodata.cmd_bootm_help
+                0x0482dec5       0x68 commands/built-in.o
+ .rodata.str1.1
+                0x0482df2d     0x1bdd commands/built-in.o
+                               0x1ecf (size before relaxing)
+ .rodata.cmd_echo_help
+                0x0482fb0a       0x79 commands/built-in.o
+ .rodata.cmd_mw_help
+                0x0482fb83       0xb6 commands/built-in.o
+ .rodata.__FUNCTION__.2324
+                0x0482fc39        0x9 commands/built-in.o
+ .rodata.cmd_md_help
+                0x0482fc42      0x298 commands/built-in.o
+ .rodata.cmd_memcmp_help
+                0x0482feda      0x177 commands/built-in.o
+ .rodata.cmd_memset_help
+                0x04830051       0xf2 commands/built-in.o
+ .rodata.cmd_memcpy_help
+                0x04830143       0xfc commands/built-in.o
+ .rodata.cmd_edit_help
+                0x0483023f       0x52 commands/built-in.o
+ .rodata.cmd_ethact_help
+                0x04830291       0x16 commands/built-in.o
+ .rodata.cmd_addpart_help
+                0x048302a7       0xb4 commands/built-in.o
+ .rodata.cmd_delpart_help
+                0x0483035b       0x62 commands/built-in.o
+ .rodata.cmd_ls_help
+                0x048303bd       0x85 commands/built-in.o
+ .rodata.cmd_cd_help
+                0x04830442       0x2c commands/built-in.o
+ .rodata.cmd_mkdir_help
+                0x0483046e       0x33 commands/built-in.o
+ .rodata.cmd_rmdir_help
+                0x048304a1       0x52 commands/built-in.o
+ .rodata.cmd_cp_help
+                0x048304f3       0x4c commands/built-in.o
+ .rodata.cmd_rm_help
+                0x0483053f       0x20 commands/built-in.o
+ .rodata.cmd_cat_help
+                0x0483055f       0x31 commands/built-in.o
+ .rodata.cmd_mount_help
+                0x04830590       0x96 commands/built-in.o
+ .rodata.cmd_umount_help
+                0x04830626       0x51 commands/built-in.o
+ .rodata.cmd_crc_help
+                0x04830677       0xa0 commands/built-in.o
+ .rodata.cmd_test_usage
+                0x04830717       0x1a commands/built-in.o
+ .rodata.cmd_test_help
+                0x04830731       0x93 commands/built-in.o
+ .rodata.test_options
+                0x048307c4       0x3c commands/built-in.o
+ .rodata.cmd_unprotect_help
+                0x04830800       0x6b commands/built-in.o
+ .rodata.cmd_protect_help
+                0x0483086b       0x67 commands/built-in.o
+ .rodata.cmd_erase_help
+                0x048308d2       0x6b commands/built-in.o
+ .rodata.cmd_timeout_help
+                0x0483093d       0xe8 commands/built-in.o
+ .rodata.cmd_readline_help
+                0x04830a25       0x55 commands/built-in.o
+ .rodata.cmd_printenv_help
+                0x04830a7a       0x4d commands/built-in.o
+ .rodata.cmd_saveenv_help
+                0x04830ac7       0x6c commands/built-in.o
+ .rodata.cmd_loadenv_help
+                0x04830b33       0x6d commands/built-in.o
+ .rodata.cmd_nand_help
+                0x04830ba0      0x143 commands/built-in.o
+ .rodata.cmd_nand_read_help
+                0x04830ce3       0x65 commands/built-in.o
+ .rodata.cmd_nand_erase_help
+                0x04830d48       0x46 commands/built-in.o
+ .rodata.cmd_erase_old_nand_fmt_help
+                0x04830d8e       0x6e commands/built-in.o
+ .rodata.cmd_help_help
+                0x04830dfc      0x11a commands/built-in.o
+ .rodata.cmd_i2c_read_help
+                0x04830f16       0xb5 commands/built-in.o
+ .rodata.cmd_i2c_probe_help
+                0x04830fcb       0x4d commands/built-in.o
+ .rodata.cmd_i2c_write_help
+                0x04831018       0xac commands/built-in.o
+ .rodata.cmd_nor_help
+                0x048310c4       0x62 commands/built-in.o
+ .rodata.cmd_update_spi_help
+                0x04831126       0x25 commands/built-in.o
+ .rodata.cmd_update_i2c_help
+                0x0483114b       0x27 commands/built-in.o
+ .rodata.cmd_gemac_stats_help
+                0x04831172       0x1a commands/built-in.o
+ .rodata.register_names
+                0x0483118c       0x50 commands/built-in.o
+ .rodata.cmd_pfe_help
+                0x048311dc       0x3b commands/built-in.o
+ .rodata.__FUNCTION__.2984
+                0x04831217       0x10 commands/built-in.o
+ *fill*         0x04831227        0x1 00
+ .rodata.CSWTCH.10
+                0x04831228        0x8 commands/built-in.o
+ .rodata.cmd_pfe_stats_help
+                0x04831230      0x186 commands/built-in.o
+ .rodata.cmd_switch_help
+                0x048313b6       0xaf commands/built-in.o
+ .rodata.cmd_phy_help
+                0x04831465       0xf3 commands/built-in.o
+ .rodata.cmd_copy_help
+                0x04831558       0x2c commands/built-in.o
+ .rodata        0x04831584       0x11 lib/built-in.o
+ .rodata.str1.1
+                0x04831595      0x464 lib/built-in.o
+                                0x4d5 (size before relaxing)
+ .rodata.cmd_devinfo_help
+                0x048319f9       0x34 lib/built-in.o
+ *fill*         0x04831a2d        0x3 00
+ .rodata.esccmds
+                0x04831a30       0x90 lib/built-in.o
+ .rodata.inflate_mask
+                0x04831ac0       0x44 lib/built-in.o
+ .rodata.border
+                0x04831b04       0x4c lib/built-in.o
+ .rodata.p.1826
+                0x04831b50        0xe lib/built-in.o
+ *fill*         0x04831b5e        0x2 00
+ .rodata.prim_poly_tab.2446
+                0x04831b60       0x2c lib/built-in.o
+ .rodata.str1.1
+                0x04831b8c      0x1d6 net/built-in.o
+                                0x212 (size before relaxing)
+ .rodata.cmd_tftp_help
+                0x04831d62       0x46 net/built-in.o
+ .rodata.str1.1
+                0x04831da8      0x145 fs/built-in.o
+                                0x178 (size before relaxing)
+ .rodata.str1.1
+                0x04831eed       0x8c arch/arm/boards/comcerto-evm/built-in.o
+                                 0xa5 (size before relaxing)
+ .rodata.str1.1
+                0x04831f79       0x9d arch/arm/mach-comcerto/built-in.o
+                                 0xa3 (size before relaxing)
+ .rodata.str1.1
+                0x04832016      0x175 arch/arm/lib/built-in.o
+                                0x17b (size before relaxing)
+ .rodata.cmd_bootz_help
+                0x0483218b       0x29 arch/arm/lib/built-in.o
+ .rodata.cmd_bootu_help
+                0x048321b4       0x18 arch/arm/lib/built-in.o
+ .rodata.C.0.2748
+                0x048321cc       0x80 arch/arm/cpu/built-in.o
+ .rodata.str1.1
+                0x0483224c      0x397 arch/arm/cpu/built-in.o
+                                0x3e2 (size before relaxing)
+ *fill*         0x048325e3        0x1 00
+ .rodata.post_arm7_archs
+                0x048325e4       0x1c arch/arm/cpu/built-in.o
+ .rodata.CSWTCH.2
+                0x04832600       0xa8 arch/arm/cpu/built-in.o
+ .rodata.crbits
+                0x048326a8       0x6c arch/arm/cpu/built-in.o
+                0x04832714                _etext = .
+                0x04832714                . = ALIGN (0x4)
+
+.data           0x04832714     0xcad4
+ *(.data*)
+ .data.source_aliases
+                0x04832714        0x8 common/built-in.o
+ .data.reserved_list
+                0x0483271c       0x84 common/built-in.o
+ .data.month_days
+                0x048327a0       0x30 common/built-in.o
+ .data.default_environment_path
+                0x048327d0        0x4 common/built-in.o
+                0x048327d0                default_environment_path
+ .data.av_      0x048327d4      0x408 common/built-in.o
+ .data.sbrk_base
+                0x04832bdc        0x4 common/built-in.o
+ .data.command_list
+                0x04832be0        0x8 common/built-in.o
+                0x04832be0                command_list
+ .data.console_list
+                0x04832be8        0x8 common/built-in.o
+                0x04832be8                console_list
+ .data.default_env_dev
+                0x04832bf0       0x74 common/built-in.o
+ .data.default_env_platform_data
+                0x04832c64        0x8 common/built-in.o
+ .data.miidev_ops
+                0x04832c6c       0x28 drivers/built-in.o
+ .data.miidev_drv
+                0x04832c94       0x44 drivers/built-in.o
+ .data.gem_info
+                0x04832cd8       0x60 drivers/built-in.o
+                0x04832cd8                gem_info
+ .data.c2000_eth_driver
+                0x04832d38       0x44 drivers/built-in.o
+ .data.util_fw_data
+                0x04832d7c     0x4f94 drivers/built-in.o
+                0x04832d7c                util_fw_data
+ .data.class_fw_data
+                0x04837d10     0x1454 drivers/built-in.o
+                0x04837d10                class_fw_data
+ .data.tmu_fw_data
+                0x04839164     0x26e4 drivers/built-in.o
+                0x04839164                tmu_fw_data
+ .data.athrPhyInfo
+                0x0483b848       0x90 drivers/built-in.o
+ .data.fast_uart_driver
+                0x0483b8d8       0x44 drivers/built-in.o
+ .data.nand_ops
+                0x0483b91c       0x28 drivers/built-in.o
+ .data.nand_ops_oob
+                0x0483b944       0x28 drivers/built-in.o
+ .data.nand_flash_ids
+                0x0483b96c      0x450 drivers/built-in.o
+                0x0483b96c                nand_flash_ids
+ .data.nand_manuf_ids
+                0x0483bdbc       0x50 drivers/built-in.o
+                0x0483bdbc                nand_manuf_ids
+ .data.nand_oob_8
+                0x0483be0c      0x308 drivers/built-in.o
+ .data.nand_oob_16
+                0x0483c114      0x308 drivers/built-in.o
+ .data.nand_oob_128
+                0x0483c41c      0x308 drivers/built-in.o
+ .data.nand_oob_64
+                0x0483c724      0x308 drivers/built-in.o
+ .data.nand_bb_ops
+                0x0483ca2c       0x28 drivers/built-in.o
+ .data.bb_list  0x0483ca54        0x8 drivers/built-in.o
+ .data.largepage_memorybased
+                0x0483ca5c       0x44 drivers/built-in.o
+ .data.bbt_mirror_descr
+                0x0483caa0       0x88 drivers/built-in.o
+ .data.smallpage_flashbased
+                0x0483cb28       0x44 drivers/built-in.o
+ .data.scan_ff_pattern
+                0x0483cb6c        0x3 drivers/built-in.o
+ .data.scan_agand_pattern
+                0x0483cb6f        0x6 drivers/built-in.o
+ *fill*         0x0483cb75        0x3 00
+ .data.smallpage_memorybased
+                0x0483cb78       0x44 drivers/built-in.o
+ .data.bbt_pattern
+                0x0483cbbc        0x8 drivers/built-in.o
+ .data.mirror_pattern
+                0x0483cbc4        0x8 drivers/built-in.o
+ .data.largepage_flashbased
+                0x0483cbcc       0x44 drivers/built-in.o
+ .data.bbt_main_descr
+                0x0483cc10       0x88 drivers/built-in.o
+ .data.agand_flashbased
+                0x0483cc98       0x44 drivers/built-in.o
+ .data.comcerto_nand_driver
+                0x0483ccdc       0x44 drivers/built-in.o
+ .data.c2000_badblock_pattern
+                0x0483cd20       0x44 drivers/built-in.o
+ .data.comcerto_ecc_info_512_bch
+                0x0483cd64      0x308 drivers/built-in.o
+ .data.comcerto_ecc_info_1024_bch
+                0x0483d06c      0x308 drivers/built-in.o
+ .data.c2000_badblock_pattern_old.2653
+                0x0483d374       0x44 drivers/built-in.o
+ .data.cfi_driver
+                0x0483d3b8       0x44 drivers/built-in.o
+ .data.cfi_ops  0x0483d3fc       0x28 drivers/built-in.o
+                0x0483d3fc                cfi_ops
+ .data.cfi_cmd_set_intel
+                0x0483d424       0x20 drivers/built-in.o
+                0x0483d424                cfi_cmd_set_intel
+ .data.cfi_cmd_set_amd
+                0x0483d444       0x20 drivers/built-in.o
+                0x0483d444                cfi_cmd_set_amd
+ .data.board_list
+                0x0483d464       0x10 drivers/built-in.o
+ .data.c2k_spi_driver
+                0x0483d474       0x44 drivers/built-in.o
+ .data.c2k_fast_spi_driver
+                0x0483d4b8       0x44 drivers/built-in.o
+ .data.csi_driver
+                0x0483d4fc       0x44 drivers/built-in.o
+ .data.csi_ops  0x0483d540       0x28 drivers/built-in.o
+                0x0483d540                csi_ops
+ .data.adapter_list
+                0x0483d568        0x8 drivers/built-in.o
+ .data.c2k_i2c_driver
+                0x0483d570       0x44 drivers/built-in.o
+ .data.c2k_otp_driver
+                0x0483d5b4       0x44 drivers/built-in.o
+                0x0483d5b4                c2k_otp_driver
+ .data.sata_phy_reg_file_48
+                0x0483d5f8      0x4f8 drivers/built-in.o
+ .data.sata_phy_reg_file_24
+                0x0483daf0      0x4f8 drivers/built-in.o
+ .data.initrd_handler
+                0x0483dfe8       0x1c commands/built-in.o
+ .data.handler_list
+                0x0483e004        0x8 commands/built-in.o
+ .data.mem_dev_pdata
+                0x0483e00c        0x8 commands/built-in.o
+ .data.zeroops  0x0483e014       0x28 commands/built-in.o
+ .data.mem_dev  0x0483e03c       0x74 commands/built-in.o
+ .data.mem_drv  0x0483e0b0       0x44 commands/built-in.o
+ .data.memops   0x0483e0f4       0x28 commands/built-in.o
+ .data.edit_aliases
+                0x0483e11c        0x8 commands/built-in.o
+ .data.test_aliases
+                0x0483e124        0x8 commands/built-in.o
+ .data.help_aliases
+                0x0483e12c        0x8 commands/built-in.o
+ .data.stat_gstrings
+                0x0483e134      0x5a0 commands/built-in.o
+ .data.sata_curr_device
+                0x0483e6d4        0x4 commands/built-in.o
+ .data._ctype   0x0483e6d8      0x100 lib/built-in.o
+                0x0483e6d8                _ctype
+ .data.device_list
+                0x0483e7d8        0x8 lib/built-in.o
+                0x0483e7d8                device_list
+ .data.active   0x0483e7e0        0x8 lib/built-in.o
+ .data.driver_list
+                0x0483e7e8        0x8 lib/built-in.o
+                0x0483e7e8                driver_list
+ .data.platform_bus
+                0x0483e7f0       0x18 lib/built-in.o
+                0x0483e7f0                platform_bus
+ .data.opterr   0x0483e808        0x4 lib/built-in.o
+                0x0483e808                opterr
+ .data.optind   0x0483e80c        0x4 lib/built-in.o
+                0x0483e80c                optind
+ .data.optindex
+                0x0483e810        0x4 lib/built-in.o
+ .data.cplext   0x0483e814       0x7c lib/built-in.o
+ .data.cpdist   0x0483e890       0x78 lib/built-in.o
+ .data.fixed_left
+                0x0483e908        0x4 lib/built-in.o
+ .data.cplens   0x0483e90c       0x7c lib/built-in.o
+ .data.cpdext   0x0483e988       0x78 lib/built-in.o
+ .data.crc_table_empty
+                0x0483ea00        0x4 lib/built-in.o
+ .data.hist_cur
+                0x0483ea04        0x4 lib/built-in.o
+ .data.netdev_list
+                0x0483ea08        0x8 net/built-in.o
+ .data.connection_list
+                0x0483ea10        0x8 net/built-in.o
+ .data.cramfs_driver
+                0x0483ea18       0xa4 fs/built-in.o
+ .data.ramfs_driver
+                0x0483eabc       0xa4 fs/built-in.o
+ .data.cdev_list
+                0x0483eb60        0x8 fs/built-in.o
+                0x0483eb60                cdev_list
+ .data.devfs_driver
+                0x0483eb68       0xa4 fs/built-in.o
+ .data.fs_driver_list
+                0x0483ec0c        0x8 fs/built-in.o
+ .data.pdata    0x0483ec14        0x4 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483ec14                pdata
+ .data.c2k_spi_dev_1
+                0x0483ec18       0x50 arch/arm/boards/comcerto-evm/built-in.o
+ .data.sdram_dev
+                0x0483ec68       0x74 arch/arm/boards/comcerto-evm/built-in.o
+ .data.c2k_nor_dev
+                0x0483ecdc       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483ecdc                c2k_nor_dev
+ .data.csi_flash_dev
+                0x0483ed50       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483ed50                csi_flash_dev
+ .data.fast_uart_device
+                0x0483edc4       0x74 arch/arm/boards/comcerto-evm/built-in.o
+ .data.eth1_pdata
+                0x0483ee38        0xc arch/arm/boards/comcerto-evm/built-in.o
+                0x0483ee38                eth1_pdata
+ .data.c2k_i2c_dev
+                0x0483ee44       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483ee44                c2k_i2c_dev
+ .data.c2000_eth1
+                0x0483eeb8       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483eeb8                c2000_eth1
+ .data.device_spi
+                0x0483ef2c       0x74 arch/arm/boards/comcerto-evm/built-in.o
+ .data.c2k_spi_1_data
+                0x0483efa0        0x8 arch/arm/boards/comcerto-evm/built-in.o
+ .data.c2000_eth0
+                0x0483efa8       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483efa8                c2000_eth0
+ .data.c2000_eth2
+                0x0483f01c       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483f01c                c2000_eth2
+ .data.eth2_pdata
+                0x0483f090        0xc arch/arm/boards/comcerto-evm/built-in.o
+                0x0483f090                eth2_pdata
+ .data.c2k_otp_dev
+                0x0483f09c       0x74 arch/arm/boards/comcerto-evm/built-in.o
+                0x0483f09c                c2k_otp_dev
+ .data.i2c_devices
+                0x0483f110       0x18 arch/arm/boards/comcerto-evm/built-in.o
+ .data.sdram_pdata
+                0x0483f128        0x8 arch/arm/boards/comcerto-evm/built-in.o
+ .data.serial_plat
+                0x0483f130        0x4 arch/arm/boards/comcerto-evm/built-in.o
+ .data.cs       0x0483f134       0x1c arch/arm/mach-comcerto/built-in.o
+ .data.comcerto_nand_dev
+                0x0483f150       0x74 arch/arm/mach-comcerto/built-in.o
+ .data.memory_list
+                0x0483f1c4        0x8 arch/arm/lib/built-in.o
+ .data.handler  0x0483f1cc       0x1c arch/arm/lib/built-in.o
+                0x0483f1e8                . = ALIGN (0x4)
+
+.got
+ *(.got*)
+                0x0483f1e8                . = .
+                0x0483f1e8                __barebox_cmd_start = .
+
+.barebox_cmd    0x0483f1e8      0x738
+ *(SORT(.barebox_cmd*))
+ .barebox_cmd_addpart
+                0x0483f1e8       0x1c commands/built-in.o
+                0x0483f1e8                __barebox_cmd_addpart
+ .barebox_cmd_bootm
+                0x0483f204       0x1c commands/built-in.o
+                0x0483f204                __barebox_cmd_bootm
+ .barebox_cmd_bootu
+                0x0483f220       0x1c arch/arm/lib/built-in.o
+                0x0483f220                __barebox_cmd_bootu
+ .barebox_cmd_bootz
+                0x0483f23c       0x1c arch/arm/lib/built-in.o
+                0x0483f23c                __barebox_cmd_bootz
+ .barebox_cmd_cat
+                0x0483f258       0x1c commands/built-in.o
+                0x0483f258                __barebox_cmd_cat
+ .barebox_cmd_cd
+                0x0483f274       0x1c commands/built-in.o
+                0x0483f274                __barebox_cmd_cd
+ .barebox_cmd_clear
+                0x0483f290       0x1c commands/built-in.o
+                0x0483f290                __barebox_cmd_clear
+ .barebox_cmd_copy
+                0x0483f2ac       0x1c commands/built-in.o
+                0x0483f2ac                __barebox_cmd_copy
+ .barebox_cmd_cp
+                0x0483f2c8       0x1c commands/built-in.o
+                0x0483f2c8                __barebox_cmd_cp
+ .barebox_cmd_cpuinfo
+                0x0483f2e4       0x1c arch/arm/cpu/built-in.o
+                0x0483f2e4                __barebox_cmd_cpuinfo
+ .barebox_cmd_crc32
+                0x0483f300       0x1c commands/built-in.o
+                0x0483f300                __barebox_cmd_crc32
+ .barebox_cmd_delpart
+                0x0483f31c       0x1c commands/built-in.o
+                0x0483f31c                __barebox_cmd_delpart
+ .barebox_cmd_devinfo
+                0x0483f338       0x1c lib/built-in.o
+                0x0483f338                __barebox_cmd_devinfo
+ .barebox_cmd_echo
+                0x0483f354       0x1c commands/built-in.o
+                0x0483f354                __barebox_cmd_echo
+ .barebox_cmd_edit
+                0x0483f370       0x1c commands/built-in.o
+                0x0483f370                __barebox_cmd_edit
+ .barebox_cmd_erase
+                0x0483f38c       0x1c commands/built-in.o
+                0x0483f38c                __barebox_cmd_erase
+ .barebox_cmd_erase_nand
+                0x0483f3a8       0x1c commands/built-in.o
+                0x0483f3a8                __barebox_cmd_erase_nand
+ .barebox_cmd_erase_old_nand_fmt
+                0x0483f3c4       0x1c commands/built-in.o
+                0x0483f3c4                __barebox_cmd_erase_old_nand_fmt
+ .barebox_cmd_ethact
+                0x0483f3e0       0x1c commands/built-in.o
+                0x0483f3e0                __barebox_cmd_ethact
+ .barebox_cmd_exit
+                0x0483f3fc       0x1c common/built-in.o
+                0x0483f3fc                __barebox_cmd_exit
+ .barebox_cmd_false
+                0x0483f418       0x1c commands/built-in.o
+                0x0483f418                __barebox_cmd_false
+ .barebox_cmd_gemac_stats
+                0x0483f434       0x1c commands/built-in.o
+                0x0483f434                __barebox_cmd_gemac_stats
+ .barebox_cmd_getopt
+                0x0483f450       0x1c common/built-in.o
+                0x0483f450                __barebox_cmd_getopt
+ .barebox_cmd_help
+                0x0483f46c       0x1c commands/built-in.o
+                0x0483f46c                __barebox_cmd_help
+ .barebox_cmd_i2c_probe
+                0x0483f488       0x1c commands/built-in.o
+                0x0483f488                __barebox_cmd_i2c_probe
+ .barebox_cmd_i2c_read
+                0x0483f4a4       0x1c commands/built-in.o
+                0x0483f4a4                __barebox_cmd_i2c_read
+ .barebox_cmd_i2c_write
+                0x0483f4c0       0x1c commands/built-in.o
+                0x0483f4c0                __barebox_cmd_i2c_write
+ .barebox_cmd_loadenv
+                0x0483f4dc       0x1c commands/built-in.o
+                0x0483f4dc                __barebox_cmd_loadenv
+ .barebox_cmd_ls
+                0x0483f4f8       0x1c commands/built-in.o
+                0x0483f4f8                __barebox_cmd_ls
+ .barebox_cmd_md
+                0x0483f514       0x1c commands/built-in.o
+                0x0483f514                __barebox_cmd_md
+ .barebox_cmd_memcmp
+                0x0483f530       0x1c commands/built-in.o
+                0x0483f530                __barebox_cmd_memcmp
+ .barebox_cmd_memcpy
+                0x0483f54c       0x1c commands/built-in.o
+                0x0483f54c                __barebox_cmd_memcpy
+ .barebox_cmd_memset
+                0x0483f568       0x1c commands/built-in.o
+                0x0483f568                __barebox_cmd_memset
+ .barebox_cmd_mkdir
+                0x0483f584       0x1c commands/built-in.o
+                0x0483f584                __barebox_cmd_mkdir
+ .barebox_cmd_mount
+                0x0483f5a0       0x1c commands/built-in.o
+                0x0483f5a0                __barebox_cmd_mount
+ .barebox_cmd_mw
+                0x0483f5bc       0x1c commands/built-in.o
+                0x0483f5bc                __barebox_cmd_mw
+ .barebox_cmd_nand
+                0x0483f5d8       0x1c commands/built-in.o
+                0x0483f5d8                __barebox_cmd_nand
+ .barebox_cmd_pfe
+                0x0483f5f4       0x1c commands/built-in.o
+                0x0483f5f4                __barebox_cmd_pfe
+ .barebox_cmd_pfe_stats
+                0x0483f610       0x1c commands/built-in.o
+                0x0483f610                __barebox_cmd_pfe_stats
+ .barebox_cmd_phy
+                0x0483f62c       0x1c commands/built-in.o
+                0x0483f62c                __barebox_cmd_phy
+ .barebox_cmd_ping
+                0x0483f648       0x1c net/built-in.o
+                0x0483f648                __barebox_cmd_ping
+ .barebox_cmd_printenv
+                0x0483f664       0x1c commands/built-in.o
+                0x0483f664                __barebox_cmd_printenv
+ .barebox_cmd_protect
+                0x0483f680       0x1c commands/built-in.o
+                0x0483f680                __barebox_cmd_protect
+ .barebox_cmd_pwd
+                0x0483f69c       0x1c commands/built-in.o
+                0x0483f69c                __barebox_cmd_pwd
+ .barebox_cmd_read_nand
+                0x0483f6b8       0x1c commands/built-in.o
+                0x0483f6b8                __barebox_cmd_read_nand
+ .barebox_cmd_readline
+                0x0483f6d4       0x1c commands/built-in.o
+                0x0483f6d4                __barebox_cmd_readline
+ .barebox_cmd_reset
+                0x0483f6f0       0x1c commands/built-in.o
+                0x0483f6f0                __barebox_cmd_reset
+ .barebox_cmd_rm
+                0x0483f70c       0x1c commands/built-in.o
+                0x0483f70c                __barebox_cmd_rm
+ .barebox_cmd_rmdir
+                0x0483f728       0x1c commands/built-in.o
+                0x0483f728                __barebox_cmd_rmdir
+ .barebox_cmd_sata
+                0x0483f744       0x1c commands/built-in.o
+                0x0483f744                __barebox_cmd_sata
+ .barebox_cmd_saveenv
+                0x0483f760       0x1c commands/built-in.o
+                0x0483f760                __barebox_cmd_saveenv
+ .barebox_cmd_sh
+                0x0483f77c       0x1c common/built-in.o
+                0x0483f77c                __barebox_cmd_sh
+ .barebox_cmd_socinfo
+                0x0483f798       0x1c commands/built-in.o
+                0x0483f798                __barebox_cmd_socinfo
+ .barebox_cmd_source
+                0x0483f7b4       0x1c common/built-in.o
+                0x0483f7b4                __barebox_cmd_source
+ .barebox_cmd_switch
+                0x0483f7d0       0x1c commands/built-in.o
+                0x0483f7d0                __barebox_cmd_switch
+ .barebox_cmd_test
+                0x0483f7ec       0x1c commands/built-in.o
+                0x0483f7ec                __barebox_cmd_test
+ .barebox_cmd_tftp
+                0x0483f808       0x1c net/built-in.o
+                0x0483f808                __barebox_cmd_tftp
+ .barebox_cmd_timeout
+                0x0483f824       0x1c commands/built-in.o
+                0x0483f824                __barebox_cmd_timeout
+ .barebox_cmd_true
+                0x0483f840       0x1c commands/built-in.o
+                0x0483f840                __barebox_cmd_true
+ .barebox_cmd_umount
+                0x0483f85c       0x1c commands/built-in.o
+                0x0483f85c                __barebox_cmd_umount
+ .barebox_cmd_unprotect
+                0x0483f878       0x1c commands/built-in.o
+                0x0483f878                __barebox_cmd_unprotect
+ .barebox_cmd_update_i2c
+                0x0483f894       0x1c commands/built-in.o
+                0x0483f894                __barebox_cmd_update_i2c
+ .barebox_cmd_update_nand
+                0x0483f8b0       0x1c commands/built-in.o
+                0x0483f8b0                __barebox_cmd_update_nand
+ .barebox_cmd_update_nor
+                0x0483f8cc       0x1c commands/built-in.o
+                0x0483f8cc                __barebox_cmd_update_nor
+ .barebox_cmd_update_spi
+                0x0483f8e8       0x1c commands/built-in.o
+                0x0483f8e8                __barebox_cmd_update_spi
+ .barebox_cmd_version
+                0x0483f904       0x1c commands/built-in.o
+                0x0483f904                __barebox_cmd_version
+                0x0483f920                __barebox_cmd_end = .
+                0x0483f920                __barebox_initcalls_start = .
+
+.barebox_initcalls
+                0x0483f920       0x74
+ *(.initcall.0)
+ *(.initcall.1)
+ .initcall.1    0x0483f920        0x4 arch/arm/mach-comcerto/built-in.o
+ .initcall.1    0x0483f924        0x4 arch/arm/lib/built-in.o
+ *(.initcall.2)
+ .initcall.2    0x0483f928        0x4 common/built-in.o
+ .initcall.2    0x0483f92c        0x4 lib/built-in.o
+ .initcall.2    0x0483f930        0x4 net/built-in.o
+ .initcall.2    0x0483f934        0x4 fs/built-in.o
+ *(.initcall.3)
+ .initcall.3    0x0483f938        0x4 drivers/built-in.o
+ *(.initcall.4)
+ *(.initcall.5)
+ .initcall.5    0x0483f93c        0x8 fs/built-in.o
+ *(.initcall.6)
+ .initcall.6    0x0483f944        0x4 common/built-in.o
+ *(.initcall.7)
+ .initcall.7    0x0483f948        0x8 common/built-in.o
+ .initcall.7    0x0483f950       0x24 drivers/built-in.o
+ .initcall.7    0x0483f974        0x8 commands/built-in.o
+ .initcall.7    0x0483f97c        0x4 fs/built-in.o
+ .initcall.7    0x0483f980        0x4 arch/arm/boards/comcerto-evm/built-in.o
+ .initcall.7    0x0483f984        0x4 arch/arm/mach-comcerto/built-in.o
+ *(.initcall.8)
+ .initcall.8    0x0483f988        0x4 common/built-in.o
+ .initcall.8    0x0483f98c        0x4 commands/built-in.o
+ .initcall.8    0x0483f990        0x4 arch/arm/lib/built-in.o
+                0x0483f994                __barebox_initcalls_end = .
+                0x0483f994                __usymtab_start = .
+
+__usymtab
+ *(__usymtab)
+                0x0483f994                __usymtab_end = .
+                0x0483f994                . = ALIGN (0x4)
+                0x0483f994                __bss_start = .
+
+.bss            0x0483f994     0x5e48
+ *(.bss*)
+ .bss.prompt.2449
+                0x0483f994      0x420 common/built-in.o
+ .bss.buf.2671  0x0483fdb4       0x28 common/built-in.o
+ .bss.ifs       0x0483fddc        0x4 common/built-in.o
+ .bss.the_command.2454
+                0x0483fde0      0x400 common/built-in.o
+ .bss.last_return_code
+                0x048401e0        0x4 common/built-in.o
+ .bss.map       0x048401e4      0x100 common/built-in.o
+ .bss.console_buffer
+                0x048402e4      0x400 common/built-in.o
+ .bss.tab_pressed
+                0x048406e4        0x4 common/built-in.o
+ .bss.out.2169  0x048406e8      0x100 common/built-in.o
+ .bss.malloc_brk
+                0x048407e8        0x4 common/built-in.o
+ .bss.malloc_start
+                0x048407ec        0x4 common/built-in.o
+ .bss.malloc_end
+                0x048407f0        0x4 common/built-in.o
+ .bss.max_total_mem
+                0x048407f4        0x4 common/built-in.o
+ .bss.max_sbrked_mem
+                0x048407f8        0x4 common/built-in.o
+ .bss.current_mallinfo
+                0x048407fc       0x28 common/built-in.o
+ .bss.current_clock
+                0x04840824        0x4 common/built-in.o
+ .bss.time_ns   0x04840828        0x8 common/built-in.o
+ .bss.console_output_buffer
+                0x04840830        0x4 common/built-in.o
+ .bss.console_input_buffer
+                0x04840834        0x4 common/built-in.o
+ .bss.initialized
+                0x04840838        0x4 common/built-in.o
+ .bss.context   0x0484083c        0x4 common/built-in.o
+ .bss.errno     0x04840840        0x4 common/built-in.o
+                0x04840840                errno
+ .bss.errno_string.1826
+                0x04840844        0xa common/built-in.o
+ *fill*         0x0484084e        0x2 00
+ .bss.pe        0x04840850      0x108 drivers/built-in.o
+ .bss.ddr_base_addr
+                0x04840958        0x4 drivers/built-in.o
+                0x04840958                ddr_base_addr
+ .bss.cbus_base_addr
+                0x0484095c        0x4 drivers/built-in.o
+                0x0484095c                cbus_base_addr
+ .bss.ddr_phys_base_addr
+                0x04840960        0x4 drivers/built-in.o
+                0x04840960                ddr_phys_base_addr
+ .bss.g_tx_desc
+                0x04840964        0x4 drivers/built-in.o
+ .bss.init_done.2546
+                0x04840968        0x4 drivers/built-in.o
+ .bss.g_rx_desc
+                0x0484096c        0x4 drivers/built-in.o
+ .bss.spi_udelay
+                0x04840970        0x8 drivers/built-in.o
+ .bss.ls_spi    0x04840978        0x4 drivers/built-in.o
+ .bss.erase_glob
+                0x0484097c        0x4 drivers/built-in.o
+                0x0484097c                erase_glob
+ .bss.is_ready  0x04840980        0x4 drivers/built-in.o
+ .bss.rw_buf    0x04840984        0x4 commands/built-in.o
+ .bss.lastscrline
+                0x04840988        0x4 commands/built-in.o
+ .bss.cursx     0x0484098c        0x4 commands/built-in.o
+ .bss.cursy     0x04840990        0x4 commands/built-in.o
+ .bss.curline   0x04840994        0x4 commands/built-in.o
+ .bss.textx     0x04840998        0x4 commands/built-in.o
+ .bss.lbuf.2153
+                0x0484099c      0x400 commands/built-in.o
+ .bss.smartscroll
+                0x04840d9c        0x4 commands/built-in.o
+ .bss.scrline   0x04840da0        0x4 commands/built-in.o
+ .bss.buffer    0x04840da4        0x4 commands/built-in.o
+ .bss.scrcol    0x04840da8        0x4 commands/built-in.o
+ .bss.tmu_dmem_addr
+                0x04840dac        0x4 commands/built-in.o
+                0x04840dac                tmu_dmem_addr
+ .bss.host_stats
+                0x04840db0      0x170 commands/built-in.o
+                0x04840db0                host_stats
+ .bss.class_dmem_addr
+                0x04840f20        0x4 commands/built-in.o
+                0x04840f20                class_dmem_addr
+ .bss.sata_dev_desc
+                0x04840f24       0x70 commands/built-in.o
+                0x04840f24                sata_dev_desc
+ .bss.buf.1818  0x04840f94       0x14 lib/built-in.o
+ .bss.___strtok
+                0x04840fa8        0x4 lib/built-in.o
+                0x04840fa8                ___strtok
+ .bss.buf.2199  0x04840fac        0x8 lib/built-in.o
+ .bss.optopt    0x04840fb4        0x4 lib/built-in.o
+                0x04840fb4                optopt
+ .bss.optarg    0x04840fb8        0x4 lib/built-in.o
+                0x04840fb8                optarg
+ .bss.nonopts   0x04840fbc        0x4 lib/built-in.o
+ .bss.local.2199
+                0x04840fc0       0x16 lib/built-in.o
+ .bss.str.1830  0x04840fd6        0x2 lib/built-in.o
+ .bss.fixed_built
+                0x04840fd8        0x4 lib/built-in.o
+ .bss.fixed_lock
+                0x04840fdc        0x4 lib/built-in.o
+ .bss.fixed_mem
+                0x04840fe0     0x1090 lib/built-in.o
+ .bss.fixed_td  0x04842070        0x4 lib/built-in.o
+ .bss.fixed_bd  0x04842074        0x4 lib/built-in.o
+ .bss.fixed_tl  0x04842078        0x4 lib/built-in.o
+ .bss.fixed_bl  0x0484207c        0x4 lib/built-in.o
+ .bss.crc_table
+                0x04842080      0x400 lib/built-in.o
+ .bss.hist_list
+                0x04842480       0x50 lib/built-in.o
+ .bss.hist_lines
+                0x048424d0     0x1400 lib/built-in.o
+ .bss.hist_max  0x048438d0        0x4 lib/built-in.o
+ .bss.hist_add_idx
+                0x048438d4        0x4 lib/built-in.o
+ .bss.hist_num  0x048438d8        0x4 lib/built-in.o
+ .bss.random_seed
+                0x048438dc        0x4 lib/built-in.o
+ .bss.progress_max
+                0x048438e0        0x4 lib/built-in.o
+ .bss.spin      0x048438e4        0x4 lib/built-in.o
+ .bss.printed   0x048438e8        0x4 lib/built-in.o
+ .bss.eth_current
+                0x048438ec        0x4 net/built-in.o
+ .bss.net_ip_id
+                0x048438f0        0x4 net/built-in.o
+ .bss.arp_packet.2444
+                0x048438f4        0x4 net/built-in.o
+ .bss.arp_wait_ip
+                0x048438f8        0x4 net/built-in.o
+ .bss.net_ip    0x048438fc        0x4 net/built-in.o
+ .bss.NetRxPackets
+                0x04843900       0x10 net/built-in.o
+                0x04843900                NetRxPackets
+ .bss.net_gateway
+                0x04843910        0x4 net/built-in.o
+ .bss.net_serverip
+                0x04843914        0x4 net/built-in.o
+ .bss.arp_ether
+                0x04843918        0x4 net/built-in.o
+ .bss.net_netmask
+                0x0484391c        0x4 net/built-in.o
+ .bss.localport.2455
+                0x04843920        0x2 net/built-in.o
+ .bss.net_ether
+                0x04843922        0x6 net/built-in.o
+ .bss.tftp_con  0x04843928        0x4 net/built-in.o
+ .bss.tftp_fd   0x0484392c        0x4 net/built-in.o
+ .bss.tftp_err  0x04843930        0x4 net/built-in.o
+ .bss.tftp_size
+                0x04843934        0x4 net/built-in.o
+ .bss.tftp_last_block
+                0x04843938        0x4 net/built-in.o
+ .bss.tftp_block
+                0x0484393c        0x4 net/built-in.o
+ .bss.tftp_server_port
+                0x04843940        0x4 net/built-in.o
+ .bss.tftp_timer_start
+                0x04843944        0x8 net/built-in.o
+ .bss.tftp_state
+                0x0484394c        0x4 net/built-in.o
+ .bss.tftp_filename
+                0x04843950        0x4 net/built-in.o
+ .bss.ping_sequence_number
+                0x04843954        0x2 net/built-in.o
+ *fill*         0x04843956        0x2 00
+ .bss.net_ping_ip
+                0x04843958        0x4 net/built-in.o
+ .bss.ping_con  0x0484395c        0x4 net/built-in.o
+ .bss.ping_state
+                0x04843960        0x4 net/built-in.o
+ .bss.cramfs_read_buf.2268
+                0x04843964     0x1000 fs/built-in.o
+ .bss.stream    0x04844964       0x34 fs/built-in.o
+ .bss.buf.2129  0x04844998        0x4 fs/built-in.o
+ .bss.chunks    0x0484499c        0x4 fs/built-in.o
+ .bss.mtab      0x048449a0        0x4 fs/built-in.o
+ .bss.files     0x048449a4      0xe00 fs/built-in.o
+ .bss.cwd       0x048457a4        0x4 fs/built-in.o
+ .bss.c2k_spi_cs
+                0x048457a8       0x10 arch/arm/boards/comcerto-evm/built-in.o
+ .bss.eth0_pdata
+                0x048457b8        0xc arch/arm/boards/comcerto-evm/built-in.o
+                0x048457b8                eth0_pdata
+ .bss.system_rev
+                0x048457c4        0x4 arch/arm/lib/built-in.o
+ .bss.armlinux_architecture
+                0x048457c8        0x4 arch/arm/lib/built-in.o
+ .bss.params    0x048457cc        0x4 arch/arm/lib/built-in.o
+ .bss.system_serial
+                0x048457d0        0x8 arch/arm/lib/built-in.o
+ .bss.armlinux_bootparams
+                0x048457d8        0x4 arch/arm/lib/built-in.o
+                0x048457dc                __bss_stop = .
+                0x048457dc                _end = .
+                0x0003f994                _barebox_image_size = (__bss_start - _text)
+START GROUP
+LOAD common/built-in.o
+LOAD drivers/built-in.o
+LOAD commands/built-in.o
+LOAD lib/built-in.o
+LOAD net/built-in.o
+LOAD fs/built-in.o
+LOAD arch/arm/boards/comcerto-evm/built-in.o
+LOAD arch/arm/mach-comcerto/built-in.o
+LOAD arch/arm/lib/built-in.o
+LOAD arch/arm/cpu/built-in.o
+END GROUP
+OUTPUT(barebox elf32-littlearm)
+
+.comment        0x00000000       0x3a
+ .comment       0x00000000       0x3a common/built-in.o
+                                0x375 (size before relaxing)
+ .comment       0x00000000      0xad5 drivers/built-in.o
+ .comment       0x00000000      0x9e9 commands/built-in.o
+ .comment       0x00000000      0x6ea lib/built-in.o
+ .comment       0x00000000       0xec net/built-in.o
+ .comment       0x00000000      0x162 fs/built-in.o
+ .comment       0x00000000       0x3b arch/arm/boards/comcerto-evm/built-in.o
+ .comment       0x00000000      0x19d arch/arm/mach-comcerto/built-in.o
+ .comment       0x00000000      0x162 arch/arm/lib/built-in.o
+ .comment       0x00000000       0xec arch/arm/cpu/built-in.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 common/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 commands/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 lib/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 net/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 fs/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/boards/comcerto-evm/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/mach-comcerto/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/lib/built-in.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/cpu/built-in.o
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 common/built-in.o
+ .ARM.attributes
+                0x00000010       0x10 drivers/built-in.o
+ .ARM.attributes
+                0x00000020       0x10 commands/built-in.o
+ .ARM.attributes
+                0x00000030       0x10 lib/built-in.o
+ .ARM.attributes
+                0x00000040       0x10 net/built-in.o
+ .ARM.attributes
+                0x00000050       0x10 fs/built-in.o
+ .ARM.attributes
+                0x00000060       0x10 arch/arm/boards/comcerto-evm/built-in.o
+ .ARM.attributes
+                0x00000070       0x10 arch/arm/mach-comcerto/built-in.o
+ .ARM.attributes
+                0x00000080       0x10 arch/arm/lib/built-in.o
+ .ARM.attributes
+                0x00000090       0x10 arch/arm/cpu/built-in.o

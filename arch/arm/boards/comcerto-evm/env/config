@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# use 'dhcp' to do dhcp in barebox and in kernel
+# use 'none' if you want to skip kernel ip autoconfiguration
+ip=none
+
+# or set your networking parameters here
+#eth0.ipaddr=192.168.2.22
+#eth0.serverip=192.168.2.10
+eth0.ethaddr=00:08:9B:00:00:00
+eth1.ethaddr=00:08:9B:00:00:01
+
+# can be either 'nfs', 'tftp' , 'nor' , 'nand' and 'sata'
+kernel_loc=nand
+
+# The image type of the kernel. Can be uimage, zimage, raw, or raw_lzo
+kernelimage_type=uimage
+kernelimage=uImage
+
+nand_device="comcertonand"
+nand_parts="32M(boot1_kernel),216M(boot1_rootfs2),32M(boot2_kernel),216M(boot2_rootfs2),15M(config)"
+
+spi_device="spi0.0"
+spi_parts="640K(loader)ro,-(env)"
+autoboot_timeout=3
+
+pcie_gen1_only=no
+
+#bootargs="console=ttyS0,115200n8, init=/etc/preinit"
+bootargs="console=ttyS0,115200n8 root=/dev/ram usb3_internal_clk=yes pcie_external_clk=yes mtdparts=${nand_device}:${nand_parts};${spi_device}:${spi_parts}"
+bootargs="$bootargs mac_addr=$eth0.ethaddr,$eth1.ethaddr pcie_gen1_only=${pcie_gen1_only}"
+

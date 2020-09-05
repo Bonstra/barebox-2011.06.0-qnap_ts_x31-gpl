@@ -1,0 +1,233 @@
+if (COMCERTO_VERIFICATION || COMCERTO_DIAG)
+
+config COMCERTO_TEST
+	bool
+	default y
+
+menu "Comcerto Diagnostic Configuration"
+
+config COMCERTO_VERIFICATION_DDR
+        bool "DDR Verification Testing"
+        depends on COMCERTO_VERIFICATION
+	select COMCERTO_TEST_DDR
+        default y
+        help
+
+config COMCERTO_VERIFICATION_PFE
+        bool "PFE Verification Testing"
+        depends on COMCERTO_VERIFICATION
+	select COMCERTO_TEST_PFE
+        default y
+        help
+
+config COMCERTO_VERIFICATION_TZ
+        bool "TrustZone Verification Testing"
+        depends on COMCERTO_VERIFICATION
+	select COMCERTO_TEST_TZ
+        default y
+        help
+
+config COMCERTO_VERIFICATION_L2CC
+	bool "L2CC Verification Testing"
+	depends on COMCERTO_VERIFICATION
+	select COMCERTO_TEST_L2CC
+	default y
+	help
+
+config COMCERTO_VERIFICATION_DUALCORE
+        bool "DualCore Verification Testing"
+        depends on COMCERTO_VERIFICATION
+        select COMCERTO_TEST_DUALCORE
+        default y
+        help
+
+config COMCERTO_DIAG_DDR
+        bool "DDR Diag Testing"
+        depends on COMCERTO_DIAG
+	select COMCERTO_TEST_DDR
+        default y
+        help
+
+config COMCERTO_DIAG_PFE
+        bool "PFE Diag Testing"
+        depends on COMCERTO_DIAG
+	select COMCERTO_TEST_PFE
+        default n
+
+config COMCERTO_DIAG_TZ
+        bool "TrustZone Diag Testing"
+        depends on COMCERTO_DIAG
+	select COMCERTO_TEST_TZ
+        default n
+
+config COMCERTO_DIAG_L2CC
+        bool "L2CC Diag Testing"
+        depends on COMCERTO_DIAG
+        select COMCERTO_TEST_L2CC
+        default n
+        help
+
+config COMCERTO_DIAG_DECT
+	bool "DECT Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_DECT
+	default n
+
+config COMCERTO_DIAG_PCIE
+	bool "PCIE Verification API"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_PCIE
+	default n
+	help
+
+config COMCERTO_DIAG_FUART
+	bool "Fast UART Testing"
+	depends on COMCERTO_DIAG
+	depends on MACH_COMCERTO_C2K_ASIC
+	select COMCERTO_TEST_FUART
+	default y
+	help
+
+config COMCERTO_DIAG_NOR
+	bool "NOR Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_NOR
+	default n
+	help
+
+config COMCERTO_DIAG_UTILPE_IPSEC
+        bool "Utilpe ipsec testing"
+        depends on COMCERTO_DIAG
+        select COMCERTO_TEST_UTILPE_IPSEC
+        default n
+        help
+
+config COMCERTO_DIAG_ZDSTDM
+	bool "ZDS/TDM Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_ZDSTDM
+	default n
+	help
+
+config COMCERTO_DIAG_ZDS_SLIC
+	bool "ZDS/SLIC Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_ZDS_SLIC
+	default n
+	help
+
+config COMCERTO_DIAG_SPI
+	bool "SPI Diag Testing"
+	depends on COMCERTO_DIAG
+	select SPI
+	select DRIVER_SPI_C2K
+	select DRIVER_FAST_SPI_C2K
+	select COMCERTO_TEST_SPI
+	default y
+	help
+
+config COMCERTO_DIAG_MSIF_TDM
+	bool "MSIF/TDM Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_MSIF_TDM
+	default n
+	help
+
+config COMCERTO_DIAG_MSIF_SLIC
+	bool "MSIF/SLIC Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_MSIF_SLIC
+	default n
+	help
+
+config COMCERTO_DIAG_I2C
+	bool "I2C Diag Testing"
+	depends on COMCERTO_DIAG
+	select COMCERTO_TEST_I2C
+	default n
+	help
+
+config COMCERTO_DIAG_OTP
+	bool "OTP Diag Testing"
+	select COMCERTO_TEST_OTP
+	default n
+	help
+
+config COMCERTO_DIAG_USB3
+        bool "USB3.0 Diag Testing"
+        select COMCERTO_TEST_USB3
+        default n
+        help
+
+config COMCERTO_DIAG_NAND_ECC
+       bool "NAND ECC Diag Testing"
+       select COMCERTO_TEST_NAND_ECC
+       default n
+       help
+
+config COMCERTO_DIAG_SATA
+	bool "SATA Diag Testing"
+	select COMCERTO_TEST_SATA
+	default n
+	help
+
+endmenu
+
+config COMCERTO_TEST_DDR
+	bool
+
+config COMCERTO_TEST_PFE
+	bool
+
+config COMCERTO_TEST_TZ
+	bool
+
+config COMCERTO_TEST_DECT
+	bool
+
+config COMCERTO_TEST_DUALCORE
+        bool
+
+config COMCERTO_TEST_PCIE
+	bool
+
+config COMCERTO_TEST_FUART
+        bool
+
+config COMCERTO_TEST_NOR
+	bool
+
+config COMCERTO_TEST_ZDSTDM
+	bool
+
+config COMCERTO_TEST_ZDS_SLIC
+	bool
+
+config COMCERTO_TEST_SPI
+	bool
+
+config COMCERTO_TEST_MSIF_TDM
+	bool
+
+config COMCERTO_TEST_MSIF_SLIC
+	bool
+
+config COMCERTO_TEST_I2C
+	bool
+
+config COMCERTO_TEST_OTP
+	bool
+
+config COMCERTO_TEST_USB3
+        bool
+
+config COMCERTO_TEST_UTILPE_IPSEC
+       bool
+
+config COMCERTO_TEST_NAND_ECC
+       bool
+
+config COMCERTO_TEST_SATA
+	bool
+
+endif

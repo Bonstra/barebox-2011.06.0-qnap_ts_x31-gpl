@@ -1,0 +1,108 @@
+config HAS_CS8900
+	bool
+
+config HAS_DM9000
+	bool
+
+config HAS_MACB
+	bool
+
+config HAS_AT91_ETHER
+	bool
+
+config HAS_NETX_ETHER
+	bool
+
+config ARCH_HAS_FEC_IMX
+	bool
+
+config MIIDEV
+	bool
+
+menu "Network drivers               "
+	depends on NET
+
+config DRIVER_NET_CS8900
+	bool "cs8900 ethernet driver"
+	depends on HAS_CS8900
+
+config DRIVER_NET_SMC911X
+	bool "smc911x ethernet driver"
+	select MIIDEV
+	help
+	  This option enables support for the SMSC LAN9[12]1[567]
+	  ethernet chip.
+
+config DRIVER_NET_SMC911X_ADDRESS_SHIFT
+	int
+	depends on DRIVER_NET_SMC911X
+	default 1 if MACH_IPE337
+	default 0
+
+config DRIVER_NET_SMC91111
+	bool "smc91111 ethernet driver"
+	select MIIDEV
+	help
+	  This option enables support for the SMSC LAN91C111
+	  ethernet chip.
+
+config DRIVER_NET_DM9000
+	bool "Davicom dm9000 ethernet driver"
+	depends on HAS_DM9000
+	select MIIDEV
+
+config DRIVER_NET_NETX
+	bool "Hilscher Netx ethernet driver"
+	depends on HAS_NETX_ETHER
+	select MIIDEV
+
+config DRIVER_NET_AT91_ETHER
+	bool "at91 ethernet driver"
+	depends on HAS_AT91_ETHER
+
+config DRIVER_NET_MPC5200
+	bool "MPC5200 Ethernet driver"
+	depends on ARCH_MPC5200
+	select MIIDEV
+
+config DRIVER_NET_FEC_IMX
+	bool "i.MX FEC Ethernet driver"
+	depends on ARCH_HAS_FEC_IMX
+	select MIIDEV
+
+config DRIVER_NET_EP93XX
+	bool "EP93xx Ethernet driver"
+	depends on ARCH_EP93XX
+	select MIIDEV
+
+config DRIVER_NET_MACB
+	bool "macb Ethernet driver"
+	depends on HAS_MACB
+	select MIIDEV
+
+config DRIVER_NET_TAP
+	bool "tap Ethernet driver"
+	depends on LINUX
+
+config DRIVER_NET_TSE
+	depends on NIOS2
+	bool "Altera TSE ethernet driver"
+	select MIIDEV
+	help
+	  This option enables support for the Altera TSE MAC.
+
+config TSE_USE_DEDICATED_DESC_MEM
+	depends on DRIVER_NET_TSE
+	bool "Altera TSE uses dedicated descriptor memory"
+	help
+	  This option tells the TSE driver to use an onchip memory
+	  to store SGDMA descriptors. Descriptor memory is not
+	  reserved with a malloc but directly mapped to the memory
+	  address (defined in config.h)
+
+source "drivers/net/usb/Kconfig"
+
+source "drivers/net/comcerto/Kconfig"
+
+endmenu
+

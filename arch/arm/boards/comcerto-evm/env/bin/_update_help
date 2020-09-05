@@ -1,0 +1,14 @@
+#!/bin/sh
+#QNAP
+echo "usage: update -t <kernel|rootfs2|barebox|bareboxenv> -d <nor|nand> [-m tftp|xmodem|ddr] [-f imagename|-a address] -c"
+echo "update tools."
+echo ""
+echo "options"
+echo " -c     to check the crc32 for the image and flashed one"
+echo ""
+echo "default mode is tftp"
+echo "type update -t boot1_kernel -d <nor|nand> [-m tftp|xmodem|ddr] [-f imagename|-a address] to update kernel into flash"
+echo "type update -t boot1_rootfs2 -d <nor|nand> [-m tftp|xmodem|ddr] [-f imagename|-a address] to update rootfs2 into flash"
+echo "type update -t boot2_kernel -d <nor|nand> [-m tftp|xmodem|ddr] [-f imagename|-a address] to update kernel into flash"
+echo "type update -t boot2_rootfs2 -d <nor|nand> [-m tftp|xmodem|ddr] [-f imagename|-a address] to update rootfs2 into flash"
+echo "type update -t config -d <nor|nand> [-m tftp|xmodem|ddr] [-f imagename|-a address] to update config into flash"

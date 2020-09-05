@@ -1,0 +1,3 @@
+#!/bin/sh
+
+. /env/bin/update -t uloader -d $1

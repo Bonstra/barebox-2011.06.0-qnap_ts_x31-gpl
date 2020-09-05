@@ -1,0 +1,23 @@
+#!/bin/sh
+mem_src=0x1000000
+
+#boot1_kernel(28MB)
+sata read $mem_src 0x0 0xe000
+. /env/bin/update -t boot1_kernel -d nand -m ddr -a $mem_src -s 0x1c00000
+
+#boot1_rootfs2(200MB)
+sata read $mem_src 0x10000 0x64000
+. /env/bin/update -t boot1_rootfs2 -d nand -m ddr -a $mem_src -s 0xc800000
+
+#boot2_kernel(28MB)
+#sata read $mem_src 0x7c000 0xe000
+#. /env/bin/update -t boot2_kernel -d nand -m ddr -a $mem_src -s 0x1c00000
+
+#boot2_rootfs2(200MB)
+#sata read $mem_src 0x8c000 0x64000
+#. /env/bin/update -t boot2_rootfs2 -d nand -m ddr -a $mem_src -s 0xc800000
+
+#Config
+sata read $mem_src 0xf8000 0x6800
+. /env/bin/update -t config -d nand -m ddr -a $mem_src -s 0xd00000
+

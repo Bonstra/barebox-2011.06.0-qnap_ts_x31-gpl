@@ -1,0 +1,215 @@
+menu "Comcerto Configuration"
+
+config ARCH_HAS_LOWLEVEL_INIT
+	bool
+	default y
+
+
+config BOARDINFO
+        default "Mindspeed C2000"
+
+menu "SoC Selection"
+
+choice
+	prompt "Select the SoC"
+
+config	COMCERTO_C2000
+	bool "C2000"
+	select CPU_32v7
+	help
+
+endchoice
+
+
+endmenu
+
+menu "Board Selection"
+
+choice
+        prompt "Select the Board"
+
+config  MACH_COMCERTO_C2K_EVM
+        bool "EVM"
+        help
+
+config  MACH_COMCERTO_C2K_MFCNEVM 
+        bool "MFCN_EVM"
+        help
+
+config  MACH_COMCERTO_C2K_ASIC
+	bool "ASIC"
+	help
+
+config  MACH_COMCERTO_C2K_RTSM
+	bool "RTSM"
+	help
+
+endchoice
+
+endmenu
+
+menu "Build Selection"
+
+choice
+	prompt "Build type:"
+	default COMCERTO_VERIFICATION
+
+config COMCERTO_VERIFICATION
+	bool "Pre-Silicon Verification Code"
+	select HAVE_NOSHELL
+	select COMCERTO_NOT_BOOLOADER
+	select HAVE_MMU
+	select MMU
+	select ARCH_HAS_L2X0
+	select CACHE_L2X0
+	help
+
+config COMCERTO_DIAG
+	bool "Diagnostic Code"
+	select COMCERTO_NOT_BOOLOADER
+	select COMCERTO_SERDES
+	select COMCERTO_I2C
+	select COMCERTO_NAND
+	help
+
+config COMCERTO_BOOTLOADER
+	bool "Bootloader Code"
+	select COMCERTO_SERDES if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_I2C
+	select COMCERTO_NAND if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_SATA
+	help
+
+config COMCERTO_ULOADER
+	bool "ULoader Code"
+	select HAVE_NOSHELL
+	select COMCERTO_PLL if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_DDR if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_NAND if !MACH_COMCERTO_C2K_RTSM
+#       select COMCERTO_DDR_ECC if !MACH_COMCERTO_C2K_RTSM
+#	select COMCERTO_DDR_TRAINING if !MACH_COMCERTO_C2K_RTSM
+	help
+
+config COMCERTO_NAND_ULOADER
+	bool "NAND ULoader Code"
+	select COMCERTO_PLL if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_DDR if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_NAND if !MACH_COMCERTO_C2K_RTSM
+#       select COMCERTO_DDR_ECC if !MACH_COMCERTO_C2K_RTSM
+	help
+
+endchoice
+
+endmenu
+
+config COMCERTO_PLL
+	bool
+
+config COMCERTO_DDR
+	bool
+
+config COMCERTO_NAND
+	bool
+
+config COMCERTO_SERDES
+	bool
+
+config COMCERTO_I2C
+	bool
+
+config COMCERTO_DDR_TRAINING
+        bool
+
+config COMCERTO_DDR_ECC
+	bool
+
+config COMCERTO_SATA
+	bool
+
+config M86201
+	bool "M86201 SKU"
+	select M8620X
+
+config M86202
+	bool "M86202 SKU"
+	select M8620X
+
+config M86203
+	bool "M86203 SKU"
+	select M8620X
+
+config M86204
+	bool "M86204 SKU"
+	select M8620X
+
+config M86206
+	bool "M86206 SKU"
+	select M8620X
+
+config M86207
+	bool "M86207 SKU"
+	select M8620X
+
+config M86208
+	bool "M86208 SKU"
+	select M8620X
+
+config M8620X
+	bool "M8620X series SKUs"
+
+config M86260
+	bool "M86260 SKU"
+	select M8626X
+
+config M86261
+	bool "M86261 SKU"
+	select M8626X
+
+config M86261_NAS
+	bool "M86261_NAS SKU"
+	select M8626X
+
+config M86262
+	bool "M86262 SKU"
+	select M8626X
+
+config M8626X
+	bool "M8626X series SKUs"
+
+config M86291
+	bool "M86291 SKU"
+	select M8629X
+
+config M86292
+	bool "M86292 SKU"
+	select M8629X
+
+config M86293
+	bool "M86293 SKU"
+	select M8629X
+
+config M86294
+	bool "M86294 SKU"
+	select M8629X
+
+config M86295
+	bool "M86295 SKU"
+	select M8629X
+
+config M86296
+	bool "M86296 SKU"
+	select M8629X
+
+config M86297
+	bool "M86297 SKU"
+	select M8629X
+
+config M86298
+	bool "M86298 SKU"
+	select M8629X
+
+config M8629X
+	bool "M8629X series SKUs"
+
+endmenu
+

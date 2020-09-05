@@ -1,0 +1,36 @@
+config ZLIB
+	bool
+
+config BZLIB
+	bool
+
+config CRC32
+	bool
+
+config CRC16
+	bool
+
+menuconfig DIGEST
+	bool "Digest                        "
+
+if DIGEST
+
+config MD5
+	bool "MD5"
+
+config SHA1
+	bool "SHA1"
+
+config SHA256
+	bool "SHA256"
+
+endif
+
+config GENERIC_FIND_NEXT_BIT
+	def_bool n
+
+config PROCESS_ESCAPE_SEQUENCE
+	def_bool n
+
+source lib/lzo/Kconfig
+

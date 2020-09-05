@@ -1,0 +1,505 @@
+config REGINFO
+	bool
+
+config COMMAND_SUPPORT
+	bool
+	depends on !SHELL_NONE
+	default y
+
+if COMMAND_SUPPORT
+
+menu "commands                      "
+
+menu "scripting                     "
+
+config CMD_EDIT
+	tristate
+	prompt "edit"
+
+config CMD_EXEC
+	depends on !SHELL_HUSH
+	tristate
+	prompt "exec"
+
+config CMD_SLEEP
+	tristate
+	prompt "sleep"
+
+config CMD_SAVEENV
+	tristate
+	select ENV_HANDLING
+	prompt "saveenv"
+
+config CMD_LOADENV
+	tristate
+	select ENV_HANDLING
+	prompt "loadenv"
+
+config CMD_EXPORT
+	depends on ENVIRONMENT_VARIABLES
+	tristate
+	prompt "export"
+
+config CMD_PRINTENV
+	tristate
+	depends on ENVIRONMENT_VARIABLES
+	prompt "printenv"
+
+config CMD_READLINE
+	tristate
+	prompt "readline"
+
+config CMD_TRUE
+	tristate
+	default y
+	prompt "true"
+
+config CMD_FALSE
+	tristate
+	default y
+	prompt "false"
+
+config CMD_MENU
+	tristate
+	depends on MENU
+	prompt "menu"
+
+config CMD_MENU_MANAGEMENT
+	tristate
+	depends on CMD_MENU
+	prompt "menu scripts management"
+
+config CMD_LOGIN
+	tristate
+	select PASSWORD
+	prompt "login"
+
+config CMD_PASSWD
+	tristate
+	select CMD_LOGIN
+	prompt "passwd"
+
+if CMD_LOGIN || CMD_PASSWD
+
+choice
+	prompt "passwd mode"
+
+config PASSWD_MODE_HIDE
+	bool "Hide"
+
+config PASSWD_MODE_STAR
+	bool "Star"
+
+config PASSWD_MODE_CLEAR
+	bool "Clear"
+
+endchoice
+
+endif
+
+endmenu
+
+menu "file commands                 "
+
+config CMD_LS
+	tristate
+	default y
+	prompt "ls"
+
+config CMD_RM
+	tristate
+	default y
+	prompt "rm"
+
+config CMD_CAT
+	tristate
+	default y
+	prompt "cat"
+
+config CMD_MKDIR
+	tristate
+	default y
+	prompt "mkdir"
+
+config CMD_RMDIR
+	tristate
+	default y
+	prompt "rmdir"
+
+config CMD_CP
+	tristate
+	default y
+	prompt "cp"
+
+config CMD_PWD
+	tristate
+	default y
+	prompt "pwd"
+
+config CMD_CD
+	tristate
+	default y
+	prompt "cd"
+
+config CMD_MOUNT
+	tristate
+	default y
+	prompt "mount"
+
+config CMD_UMOUNT
+	tristate
+	default y
+	prompt "umount"
+
+config CMD_NAND
+	tristate
+	default y
+	depends on NAND
+	prompt "nand"
+
+config CMD_NOR
+	tristate
+	default y
+	prompt "nor"
+
+config CMD_UPDATE_SPI
+	tristate
+	default y
+	prompt "update_spi"
+
+config CMD_UPDATE_FAST_SPI
+	tristate
+	default y
+	prompt "update_fspi"
+
+config CMD_UPDATE_I2C
+	tristate
+	default y
+	prompt "update_i2c"
+
+config CMD_COPY
+	tristate
+	default y
+	prompt "copy"
+
+endmenu
+
+menu "console                       "
+
+config CMD_CLEAR
+	tristate
+	default y
+	prompt "clear"
+
+config CMD_ECHO
+	tristate
+	default y
+	prompt "echo"
+
+config CMD_ECHO_E
+	bool
+	depends on CMD_ECHO
+	select PROCESS_ESCAPE_SEQUENCE
+	prompt "support -e option to echo"
+
+endmenu
+
+menu "memory                        "
+
+config CMD_LOADB
+	select CRC16
+	tristate
+	prompt "loadb"
+
+config CMD_LOADY
+	select CRC16
+	depends on EXPERIMENTAL
+	bool
+	prompt "loady"
+
+config CMD_LOADS
+	depends on BROKEN
+	tristate
+	prompt "loads"
+
+config CMD_SAVES
+	depends on BROKEN
+	tristate
+	depends on CMD_LOADS
+	prompt "saves"
+
+config CMD_MEMINFO
+	tristate
+	prompt "meminfo"
+
+config CMD_MEMORY
+	bool
+	default y
+	prompt "md and mw"
+
+config CMD_CRC
+	tristate
+	select CRC32
+	prompt "crc"
+
+config CMD_CRC_CMP
+	tristate
+	depends on CMD_CRC
+	prompt "compare 2 files crc"
+
+config CMD_MTEST
+	tristate
+	prompt "mtest"
+
+config CMD_MTEST_ALTERNATIVE
+	bool
+	depends on CMD_MTEST
+	prompt "alternative mtest implementation"
+
+endmenu
+
+menu "flash                         "
+
+config CMD_FLASH
+	tristate
+	prompt "protect/erase"
+
+config CMD_UBI
+	tristate
+	default y if UBI
+	prompt "ubimkvol, ubirmvol, ubiattach"
+
+endmenu
+
+
+menu "booting                       "
+
+config CMD_BOOTM
+	tristate
+	default y
+	select CRC32
+	prompt "bootm"
+
+config CMD_BOOTM_ZLIB
+	bool
+	depends on CMD_BOOTM
+	select ZLIB
+	prompt "bootm with zlib support"
+
+config CMD_BOOTM_BZLIB
+	bool
+	depends on CMD_BOOTM
+	select BZLIB
+	prompt "bootm with bzlib support"
+
+config CMD_BOOTM_SHOW_TYPE
+	bool
+	depends on CMD_BOOTM
+	prompt "show image information"
+
+config CMD_BOOTZ
+	tristate
+	default y
+	depends on ARM
+	prompt "bootz"
+	help
+	  compile in the 'bootz' command to start zImages
+
+config CMD_BOOTU
+	tristate
+	default y
+	depends on ARM
+	prompt "bootu"
+	help
+	   compile in the 'bootu' command to start raw (uncompressed)
+	   Linux images
+
+config CMD_LINUX16
+	tristate
+	depends on X86
+	default y if X86
+	prompt "linux16"
+	help
+	  Compile the linux16 command to be able to boot bzImages
+	  via real mode.
+
+config CMD_RESET
+	tristate
+	prompt "reset"
+
+config CMD_GO
+	tristate
+	prompt "go"
+
+config CMD_BOOTB
+	default y
+	tristate
+	depends on (COMCERTO_ULOADER || COMCERTO_NAND_ULOADER)
+	prompt "Boot Barebox"
+	help
+	  compile in the 'bootb' command to start Barebox
+
+endmenu
+
+config CMD_TIMEOUT
+	tristate
+	prompt "timeout"
+
+config CMD_PARTITION
+	tristate
+	prompt "addpart/delpart"
+
+config CMD_TEST
+	tristate
+	depends on SHELL_HUSH
+	default y
+	prompt "test"
+	help
+	  shell like test function
+
+config CMD_REGINFO
+	depends on HAS_REGINFO
+	select REGINFO
+	tristate
+	prompt "reginfo"
+
+config CMD_VERSION
+	tristate
+	default y
+	prompt "version"
+
+config CMD_HELP
+	tristate
+	default y
+	prompt "help"
+
+config CMD_DEVINFO
+	tristate
+	default y
+	prompt "devinfo"
+
+config CMD_INSMOD
+	bool
+	depends on MODULES
+	default y
+	prompt "insmod"
+
+config CMD_LSMOD
+	bool
+	depends on MODULES
+	prompt "lsmod"
+
+config CMD_BMP
+	bool
+	depends on VIDEO
+	prompt "bmp"
+	help
+	  show bmp files on framebuffer devices
+
+config CMD_GPIO
+	bool
+	depends on GENERIC_GPIO
+	prompt "gpio commands"
+	help
+	  include gpio_set_value, gpio_get_value, gpio_direction_input and
+	  gpio_direction_output commands to control gpios.
+
+config CMD_UNLZO
+	bool
+	select LZO_DECOMPRESS
+	prompt "unlzo"
+	help
+	  Say yes here to get the unlzo command. lzo is a fast compression
+	  algorithm by Markus Franz Xaver Johannes Oberhumer.
+
+config CMD_I2C
+	bool
+	depends on I2C
+	prompt "i2c commands"
+	help
+	  include i2c_probe, i2c_read and i2c_write commands to communicate
+	  on i2c bus.
+
+config CMD_LED
+	bool
+	depends on LED
+	prompt "led command"
+	help
+	  include led command to control LEDs
+
+config CMD_LED_TRIGGER
+	bool
+	depends on LED_TRIGGERS
+	prompt "trigger command"
+	help
+	  The trigger command allows to control LED triggers from the command
+	  line.
+
+config CMD_USB
+	bool
+	depends on USB
+	prompt "usb command"
+	default y
+	help
+	  The usb command allows to rescan for USB devices.
+
+menu "c2000			"
+config CMD_SOCINFO
+	tristate
+	depends on ARCH_COMCERTO
+	default y
+	prompt "socinfo"
+
+config CMD_GEMAC_STATS
+	bool
+	prompt "gemac statistics"
+	default y
+	help
+	  This command allows to dump c2000 gemac statistics counters.
+
+config CMD_PFE_STATS
+	bool
+	prompt "pfe statistics"
+	default y
+	help
+	  This command allows to dump c2000 pfe statistics counters.
+
+config CMD_PFE_DIAGS
+	bool
+	depends on COMCERTO_DIAG
+	prompt "PFE diagnostics"
+	default y if ARCH_COMCERTO
+	help
+	  Display PFE diagnostics messages.
+
+config CMD_AR8328
+	bool
+	depends on AR8328_SWITCH
+	default y
+
+config CMD_DIAGS
+	bool
+	depends on COMCERTO_DIAG
+	prompt "C2000 Diagnostics"
+	default y
+	help
+	  Start C2000 diagnostics.
+
+config CMD_PFE_COMMANDS
+	bool
+	prompt "PFE lib commands"
+	default y if ARCH_COMCERTO
+	help
+	  This command allows PFE lib functions to be called.
+
+config CMD_SATA
+	bool
+	depends on COMCERTO_SATA
+	prompt "C2K SATA Support"
+	default y
+
+endmenu
+
+endmenu
+
+endif

@@ -1,0 +1,56 @@
+#!/bin/sh
+
+# use 'dhcp' to do dhcp in barebox and in kernel
+# use 'none' if you want to skip kernel ip autoconfiguration
+ip=none
+
+# or set your networking parameters here
+#eth0.ipaddr=192.168.2.22
+#eth0.netmask=255.255.255.0
+#eth0.serverip=192.168.2.10
+#eth0.gateway=192.168.2.1
+eth0.ethaddr=00:0A:0B:0C:0D:0E
+eth1.ethaddr=00:1A:1B:1C:1D:1E
+eth2.ethaddr=00:2A:2B:2C:2D:2E
+
+# can be either 'nfs', 'tftp' , 'nor' , 'nand' and 'sata'
+#kernel_loc=nand
+kernel_loc=nor
+#kernel_loc=sata
+# can be either 'net', 'nor' ,'initrd' , 'nand' and 'sata'
+rootfs_loc=nor
+#rootfs_loc=nand
+#rootfs_loc=sata
+
+
+# barebox images
+uloaderimage=microloader-c2kasic.bin
+bareboximage=barebox-c2kasic.bin
+
+# can be either 'jffs2' , 'ubifs' or 'ext4
+#rootfs_type=jffs2
+rootfs_type=ubifs
+#rootfs_type=ext4
+rootfsimage=root.$rootfs_type-128k
+
+# The image type of the kernel. Can be uimage, zimage, raw, or raw_lzo
+kernelimage_type=uimage
+kernelimage=uImage
+
+#nfsroot="$eth0.serverip:/opt/work/busybox/rootfs_arm"
+
+nand_device="comcertonand"
+nand_parts="1024k(barebox)ro,1024k(bareboxenv),4M(kernel),-(rootfs)"
+rootfs_mtdblock_nand=8
+
+nor_parts="128k(uloader)ro,512k(barebox)ro,128k(env),4M(kernel),48M(rootfs)"
+nor_device="comcertoflash.0"
+rootfs_mtdblock_nor=4
+
+autoboot_timeout=3
+
+usb3_internal_clk="yes"
+
+bootargs="console=ttyS0,115200n8, init=/etc/preinit"
+bootargs="$bootargs mac_addr=$eth0.ethaddr,$eth1.ethaddr,$eth2.ethaddr"
+

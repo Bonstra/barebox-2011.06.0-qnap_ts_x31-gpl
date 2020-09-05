@@ -1,0 +1,24 @@
+
+menu "Filesystem support            "
+
+config FS_CRAMFS
+	bool
+	select ZLIB
+	prompt "cramfs support"
+
+config FS_RAMFS
+	bool
+	default y
+	prompt "ramfs support"
+
+config FS_DEVFS
+	bool
+	default y
+	prompt "devfs support"
+
+source fs/fat/Kconfig
+
+config PARTITION_NEED_MTD
+	bool
+
+endmenu

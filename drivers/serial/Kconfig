@@ -1,0 +1,96 @@
+menu "serial drivers                "
+
+config DRIVER_SERIAL_ARM_DCC
+	depends on ARM
+	bool "ARM Debug Communications Channel (DCC) serial driver"
+
+config SERIAL_AMBA_PL011
+	bool "ARM AMBA PL011 serial port support"
+	depends on ARM_AMBA
+	help
+	  This selects the ARM(R) AMBA(R) PrimeCell PL011 UART.  If you have
+	  an Integrator/PP2, Integrator/CP or Versatile platform, say Y here.
+
+	  If unsure, say N.
+
+config DRIVER_SERIAL_IMX
+	depends on ARCH_IMX
+	default y
+	bool "i.MX serial driver"
+
+config DRIVER_FAST_UART
+	depends on ARCH_COMCERTO
+	default y
+	bool "Comcerto Fast UART driver"
+
+
+config DRIVER_SERIAL_STM378X
+	depends on ARCH_MXS
+	default y
+	bool "i.MX23/i.MX28 serial driver"
+
+config DRIVER_SERIAL_NETX
+	depends on ARCH_NETX
+	default y
+	bool "Netx serial driver"
+
+config DRIVER_SERIAL_LINUX_COMSOLE
+	depends on LINUX
+	default y
+	bool "linux console driver"
+
+config DRIVER_SERIAL_MPC5XXX
+	depends on MPC5200
+	default y
+	bool "MPC5200 serial driver"
+
+config DRIVER_SERIAL_BLACKFIN
+	depends on BLACKFIN
+	default y
+	bool "Blackfin serial driver"
+
+config DRIVER_SERIAL_ALTERA
+	depends on NIOS2
+	default y
+	bool "Altera serial driver"
+
+config DRIVER_SERIAL_NS16550
+	default n
+	bool "NS16550 serial driver"
+	help
+	  Enable this to get support for NS16550 based serial devices
+
+config DRIVER_SERIAL_ATMEL
+	depends on ARCH_AT91
+	default y
+	bool "Atmel serial driver"
+
+config DRIVER_SERIAL_NS16550_OMAP_EXTENSIONS
+	bool "OMAP Extensions for NS16550"
+	depends on DRIVER_SERIAL_NS16550
+	depends on ARCH_OMAP
+	help
+	  Say Y here if you are using OMAP extensions to NS16550
+
+config DRIVER_SERIAL_PL010
+	depends on ARCH_EP93XX
+	default y
+	bool "ARM AMBA PL010 support"
+	help
+	  Enable this to get support for AMBA PL010 based serial devices
+
+config DRIVER_SERIAL_S3C24X0
+	bool "Samsung S3C24X0 serial driver"
+	depends on ARCH_S3C24xx
+	default y
+	help
+	  Say Y here if you want to use the CONS on a S3C24X0 CPU
+
+config DRIVER_SERIAL_S3C24X0_AUTOSYNC
+	bool "Enable auto flow"
+	depends on DRIVER_SERIAL_S3C24X0
+	help
+	  Say Y here if you want to use the auto flow feature of this
+	  UART. RTS and CTS will be handled by the hardware when enabled.
+
+endmenu

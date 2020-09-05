@@ -1,0 +1,17 @@
+menuconfig NET_COMCERTO
+	depends on ARCH_COMCERTO
+	bool "Comcerto network support"
+
+if NET_COMCERTO
+
+config NET_COMCERTO_2000
+	select MIIDEV
+	bool "Comcerto-2000 Ethernet driver"
+
+config AR8328_SWITCH
+	depends on NET_COMCERTO_2000
+	depends on MACH_COMCERTO_C2K_EVM || MACH_COMCERTO_C2K_MFCNEVM
+	bool "AR8328 Switch Driver"
+	default y
+
+endif

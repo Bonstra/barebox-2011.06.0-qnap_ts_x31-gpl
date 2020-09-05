@@ -1,0 +1,13 @@
+menuconfig USB
+	bool "USB support                   "
+
+if USB
+
+source drivers/usb/host/Kconfig
+
+source drivers/usb/otg/Kconfig
+
+endif
+
+source drivers/usb/gadget/Kconfig
+

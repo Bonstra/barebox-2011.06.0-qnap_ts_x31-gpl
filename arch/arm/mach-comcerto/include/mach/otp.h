@@ -1,0 +1,39 @@
+#ifndef _OTP_H_
+#define _OTP_H_
+
+#define	OTP_DELAY	1000
+
+// 8K bits
+#define	OTP_SIZE	8 * 1024
+
+#define DOUT_COUNTER_VALUE		0x1F
+
+#define OTP_CONFIG_LOCK_0       (COMCERTO_OTP_BASE + 0x00)
+#define OTP_CONFIG_LOCK_1       (COMCERTO_OTP_BASE + 0x04)
+#define OTP_CEB_SEQUENCE_LOCKS  (COMCERTO_OTP_BASE + 0x08)
+#define OTP_CEB_INPUT           (COMCERTO_OTP_BASE + 0x0C)
+#define OTP_RSTB_INPUT          (COMCERTO_OTP_BASE + 0x10)
+#define OTP_ADDR_INPUT          (COMCERTO_OTP_BASE + 0x14)
+#define OTP_READEN_INPUT        (COMCERTO_OTP_BASE + 0x18)
+#define OTP_DATA_INPUT          (COMCERTO_OTP_BASE + 0x1C)
+#define OTP_DLE_INPUT           (COMCERTO_OTP_BASE + 0x20)
+#define OTP_WEB_INPUT           (COMCERTO_OTP_BASE + 0x24)
+#define OTP_WEB_COUNTER         (COMCERTO_OTP_BASE + 0x28)
+#define OTP_PGMEN_INPUT         (COMCERTO_OTP_BASE + 0x2C)
+#define OTP_PGM2CPUMP_COUNTER   (COMCERTO_OTP_BASE + 0x30)
+#define OTP_CPUMPEN_INPUT       (COMCERTO_OTP_BASE + 0x34)
+#define OTP_CPUMP2WEB_COUNTER   (COMCERTO_OTP_BASE + 0x38)
+#define OTP_WEB2CPUMP_COUNTER   (COMCERTO_OTP_BASE + 0x3C)
+#define OTP_CPUMP2PGM_COUNTER   (COMCERTO_OTP_BASE + 0x40)
+#define OTP_CLE_INPUT           (COMCERTO_OTP_BASE + 0x44)
+#define OTP_SECURE_LOCK_OUTPUT  (COMCERTO_OTP_BASE + 0x48)
+#define OTP_DATA_OUT_COUNTER    (COMCERTO_OTP_BASE + 0x4C)
+#define OTP_DATA_OUTPUT         (COMCERTO_OTP_BASE + 0x50)
+#define OTP_HW_SEC_MODE_STATUS  (COMCERTO_OTP_BASE + 0x54)
+
+void otp_wr(u32 s_addr, u8 *prog_data) ;
+
+int otp_read(u32 s_addr, u8 *read_data, int size) ;
+
+#endif
+

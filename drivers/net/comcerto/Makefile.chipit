@@ -1,0 +1,43 @@
+#PLATFORM?=C2000
+#PLATFORM?=EMULATION
+PLATFORM?=PCI
+
+
+ifeq ($(PLATFORM),C2000)
+CROSS_COMPILE?=/home/rsousa/projects/openwrt/openwrt-mainline-cvs/staging_dir/toolchain-arm_gcc-3.4.6_uClibc-0.9.28/usr/bin/arm-openwrt-linux-
+KERNELDIR?=/home/rsousa/projects/openwrt/openwrt-mainline-cvs/build_dir/linux-2.6-comcerto1000/linux-2.6.33.5
+ARCH=arm
+else
+ARCH=x86
+KERNELDIR=/lib/modules/`uname -r`/build
+endif
+
+# The following must be a relative path, or the kernel build system will fail
+PFE_DIR?=../pfe
+
+all: modules
+
+modules clean:
+	make CROSS_COMPILE=$(CROSS_COMPILE) V=1 ARCH=$(ARCH) -C $(KERNELDIR) M=`pwd` $@
+
+#EXTRA_CFLAGS += -I$(src)/$(PFE_DIR)/c2000 -I$(src)/$(PFE_DIR)/common -I$(src) -DENDIAN_LITTLE -DGCC_TOOLCHAIN -DCOMCERTO_2000 -DCOMCERTO_2000_CONTROL
+
+obj-m += sbl_pfe.o 
+
+sbl_pfe-y += pfe_firmware.o pfe_driver.o pfe_unit.o pfe_proc.o pfe.o pfe_pci.o
+
+
+ifeq ($(PLATFORM),C2000)
+pfe-y += pfe_platform.o
+EXTRA_CLAGS+=-DPLATFORM_C2000
+else ifeq ($(PLATFORM),PCI)
+pfe-y += pfe_pci.o
+EXTRA_CFLAGS+=-DCONFIG_PLATFORM_PCI -DCONFIG_UTIL_PE_DISABLED 
+else ifeq ($(PLATFORM),EMULATION)
+pfe-y += pfe_emulation.o
+EXTRA_CFLAGS+=-DPLATFORM_EMULATION
+endif
+
+pfe_release_tar:
+	pfe_files="`find $(PFE_DIR)/c2000 -name '*.h'; find $(PFE_DIR)/common -name '*.h'` $(pfe_ctrl_objs:.o=.c)"; tar -czf pfe.tar.gz $$pfe_files
+

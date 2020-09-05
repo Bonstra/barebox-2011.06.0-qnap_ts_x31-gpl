@@ -1,0 +1,12 @@
+menu "OTP driver                "
+
+config OTP
+	bool "Enable OTP driver support"
+	default y
+
+config DRIVER_OTP
+	depends on ARCH_COMCERTO
+	default n
+	bool "Comcerto OTP driver"
+
+endmenu

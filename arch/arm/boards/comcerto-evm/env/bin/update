@@ -1,0 +1,88 @@
+#!/bin/sh
+
+type=""
+device_type=""
+check=n
+mode=tftp
+
+. /env/config
+
+while getopt "ht:d:f:a:s:m:c" Option
+do
+if [ ${Option} = t ]; then
+	type=${OPTARG}
+elif [ ${Option} = d ]; then
+	device_type=${OPTARG}
+elif [ ${Option} = f ]; then
+	imagename=${OPTARG}
+elif [ ${Option} = a ]; then
+	address=${OPTARG}
+elif [ ${Option} = s ]; then
+	size=${OPTARG}
+elif [ ${Option} = c ]; then
+	check=y
+elif [ ${Option} = m ]; then
+	mode=${OPTARG}
+else
+	. /env/bin/_update_help
+	exit 0
+fi
+done
+
+if [ x${type} = xboot1_kernel -o x${type} = xboot2_kernel ]; then
+	image=$kernelimage
+elif [ x${type} = xboot1_rootfs2 -o x${type} = xboot2_rootfs2 ]; then
+	image=$rootfsimage
+elif [ x${type} = xconfig ]; then
+	image=
+elif [ x${type} = xbarebox ]; then
+	image=$bareboximage
+	if [ x${image} = x ]; then
+		image=barebox.bin
+	fi
+elif [ x${type} = xuloader ]; then
+	image=$uloaderimage
+elif [ x${type} = xbareboxenv ]; then
+	image=$bareboxenvimage
+	if [ x${image} = x ]; then
+		image=bareboxenv.bin
+	fi
+	type=env
+else
+	. /env/bin/_update_help
+	exit 1
+fi
+
+if [ x${imagename} != x ]; then
+	image=${imagename}
+fi
+
+if [ x${device_type} = xnand ]; then
+	part=/dev/nand0.${type}.bb
+elif [ x${device_type} = xnor ]; then
+	part=/dev/nor0.${type}
+else
+	. /env/bin/_update_help
+	exit 1
+fi
+
+if [ x${mode} != xtftp ] && [ x${mode} != xxmodem ] && [ x${mode} != xddr ]; then
+	echo "unsupported mode ${mode}."
+	. /env/bin/_update_help
+	exit 1
+fi
+
+. /env/bin/_update || exit 1
+
+if [ x${check} = xy ]; then
+	if [ x${mode} = xddr ]; then
+		crc32 -f $part
+		crc32 $address+$size
+	elif [ x${mode} = xtftp ]; then
+		crc32 -f $part
+	else
+		crc32 -f $image -F $part
+	fi
+else
+	true
+fi

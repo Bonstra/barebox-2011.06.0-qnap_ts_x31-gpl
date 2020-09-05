@@ -1,0 +1,67 @@
+
+Date:  02/16/2012
+- slb/pfe driver has frame work to verify on Chipit.
+- This will generate .ko file to load. Verified for 3.0.2 Kernel version.
+- This kernel module creates a few proc entries, to control pfe driver for unit test verification.
+
+Status: 
+-------
+- Chipit verification is not yet completed fully.
+- FW loading and PFE init is verified.
+- read class pe DMEM memory is good.
+- Able to send packets from host (hif) to PFE. and Class PE receives the packets.
+- hif tx descriptor chain traverse by TX BDP and TX DMA looks ok. 
+- The content of the packet loaded in PBUF is not completely good. Few locations are corrupted. Need investigation.
+- Some times, class-pe hangs (lockups) observed. Need investigation.
+- rx header contenet in the pbuf is good. (ddr address, pkt_len, phy_portno)
+- class-pe to Host path not yet verified.
+- GEMAC interaction not yet verified.
+
+Files:
+------
+Makefile.chipit - Makefile for PCI verification module (slb_pfe.ko)
+Readme.chipit - This file
+
+pfe - pfe_lib directory
+pfe.c - pfe_lib file
+pfe_driver.c - pfe control driver
+pfe_firmware.c - pfe fw loader
+pfe_pci.c - pfe pci specific 
+pfe_proc.c - Handles proc interface for sbl_pfe driver
+pfe_unit.c - Some unit testing function
+
+hal.h
+pfe_driver.h
+pfe_firmware.h
+pfe_mod.h
+
+
+To compile:
+-----------
+$cp Makefile.chipit  Makeifle
+$make
+
+
+To load:
+--------
+$insmod sbl_pfe.ko
+
+
+To verify:
+----------
+$cat /proc/pfe/pkt
+==>  This will dump TX DMA status.
+
+$echo <pkt_len>  > /proc/pfe/pkt
+==> this will send(tx) a packet from host to pfe.
+
+$cat /proc/pfe/dump
+==> This will dump 4 class-pe program counnters
+
+$echo <class_id> > /proc/pfe/dump
+==> this will dump PBUF[0] memory (256 bytes) of given class_id
+
+As the testing is processing... we can add more control as per the requirement. 
+
+
+

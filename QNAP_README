@@ -1,0 +1,15 @@
+Build barebox.bin:
+make ARCH=arm CROSS_COMPILE=/opt/cross-project/arm/mindspeed/toolchain-arm_v7-a_gcc-4.5-linaro_glibc-2.14.1_eabi/bin/arm-openwrt-linux- comcerto-2k_evm_defconfig
+make ARCH=arm CROSS_COMPILE=/opt/cross-project/arm/mindspeed/toolchain-arm_v7-a_gcc-4.5-linaro_glibc-2.14.1_eabi/bin/arm-openwrt-linux- 
+
+Build env.bin:
+scripts/bareboxenv -s -p 0x20000 arch/arm/boards/comcerto-evm/env/ env.bin
+
+Update barebox.bin
+tftp barebox.bin /dev/mem
+update_spi 0x0 0x2 0x0 0x40000
+
+Update env.bin
+tftp env.bin /dev/mem
+update_spi 0x0 0xa 0x0 0x20000
+

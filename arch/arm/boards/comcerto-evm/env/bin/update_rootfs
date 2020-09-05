@@ -1,0 +1,4 @@
+#!/bin/sh
+#QNAP
+#. /env/bin/update -t rootfs -d $1
+. /env/bin/update -t rootfs2 -d $1

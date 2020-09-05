@@ -1,0 +1,69 @@
+#!/bin/sh
+
+if [ x$mode = xddr ]; then
+	if [ -z "$part" -o -z "$address" -o -z "$size" ]; then
+		echo "define \$part, \$address and \$size"
+		exit 1
+	fi
+else
+	if [ -z "$part" -o -z "$image" ]; then
+		echo "define \$part and \$image"
+		exit 1
+	fi
+fi
+
+if [ ! -e "$part" ]; then
+	echo "Partition $part does not exist"
+	exit 1
+fi
+
+if [ x$mode = xtftp ]; then
+	if [ x$ip = xdhcp ]; then
+		dhcp
+	fi
+
+	ping $eth0.serverip
+	if [ $? -ne 0 ] ; then
+		echo "Server did not reply! Update aborted."
+		exit 1
+	fi
+
+elif [ x$mode = xxmodem ]; then
+	loadb -f $image -c
+	if [ $? -ne 0 ] ; then
+		echo "loadb failed or cancelled! Update aborted."
+		exit 1
+	fi
+fi
+
+unprotect $part
+
+echo
+echo "erasing partition $part"
+echo
+erase $part
+
+if [ x$mode = xddr ]; then
+	echo
+	echo "flashing $size@$address to $part"
+	echo
+else
+	echo
+	echo "flashing $image to $part"
+	echo
+fi
+
+if [ x$mode = xtftp ]; then
+	tftp $image $part
+	if [ $? -ne 0 ] ; then
+		echo "!!!Probable use of old NAND layout.!!!"
+		echo "Use 'erase_old_nand_fmt' command to clean NAND."
+		exit 1
+	fi
+elif [ x$mode = xddr ]; then
+	memcpy $address -d $part 0 $size
+else
+	cp $image $part
+fi
+
+protect $part

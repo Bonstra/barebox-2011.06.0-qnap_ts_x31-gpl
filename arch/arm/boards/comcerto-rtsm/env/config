@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# use 'dhcp' to do dhcp in barebox and in kernel
+# use 'none' if you want to skip kernel ip autoconfiguration
+ip=none
+
+# or set your networking parameters here
+#eth0.ipaddr=192.168.2.22
+#eth0.netmask=255.255.255.0
+#eth0.serverip=192.168.2.10
+#eth0.gateway=192.168.2.1
+
+# can be either 'nfs', 'tftp' or 'nor'
+kernel_loc=nor
+# can be either 'net', 'nor' or 'initrd'
+rootfs_loc=nor
+
+# barebox images
+uloaderimage=microloader-c2krtsm.bin
+bareboximage=barebox-c2krtsm.bin
+
+# can be either 'jffs2' or 'ubifs'
+rootfs_type=jffs2
+rootfsimage=root.$rootfs_type-128k
+
+# The image type of the kernel. Can be uimage, zimage, raw, or raw_lzo
+kernelimage_type=uimage
+kernelimage=uImage
+
+#nfsroot="$eth0.serverip:/opt/work/busybox/rootfs_arm"
+
+nor_parts="128k(uloader)ro,512k(barebox)ro,128k(env),4M(kernel),-(rootfs)"
+nor_device="comcertoflash.0"
+rootfs_mtdblock_nor=4
+
+autoboot_timeout=3
+
+bootargs="console=ttyS0,115200n8, init=/bin/busybox sh"
+

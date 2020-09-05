@@ -1,0 +1,62 @@
+menu "SPI drivers                   "
+
+config SPI
+	bool "Enable SPI driver support"
+	default y
+
+config DRIVER_SPI_IMX
+	bool "i.MX SPI Master driver"
+	depends on ARCH_IMX
+	depends on SPI
+
+config DRIVER_SPI_IMX_0_0
+	bool
+	depends on ARCH_IMX27
+	default y
+
+config DRIVER_SPI_IMX_2_3
+	bool
+	depends on ARCH_IMX51
+	default y
+
+config DRIVER_SPI_C2K
+	bool "C2K SPI driver"
+	depends on SPI
+	default y
+
+config DRIVER_FAST_SPI_C2K
+	bool "C2K FAST SPI driver"
+	depends on SPI
+	default n
+
+config C2K_SPI_API
+	bool "C2K SPI API support"
+	depends on DRIVER_SPI_C2K || DRIVER_FAST_SPI_C2K
+	default y
+
+config C2K_SPI_COMMON
+	bool "C2K SPI common"
+	depends on SPI
+	depends on DRIVER_SPI_C2K || DRIVER_FAST_SPI_C2K
+	default y
+
+config CSI_FLASH
+	bool "Common SPI Interface (CSI) driver"
+	depends on SPI
+	depends on DRIVER_SPI_C2K || DRIVER_FAST_SPI_C2K
+	default n
+
+config SPI_FLASH
+	bool "C2K SPI Flash driver"
+	depends on SPI
+	depends on DRIVER_SPI_C2K || DRIVER_FAST_SPI_C2K
+	depends on !COMCERTO_NAND_ULOADER
+	default y
+
+config FAST_SPI_FLASH
+	bool "C2K Fast SPI Flash driver"
+	depends on DRIVER_FAST_SPI_C2K
+	depends on !COMCERTO_NAND_ULOADER
+	default y
+
+endmenu

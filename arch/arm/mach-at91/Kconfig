@@ -1,0 +1,226 @@
+if ARCH_AT91
+
+config ARCH_TEXT_BASE
+	hex
+	default 0x73f00000 if ARCH_AT91SAM9G45
+	default 0x23f00000
+
+config BOARDINFO
+	default "Atmel 91SAM9260-EK" if MACH_AT91SAM9260EK
+	default "Atmel at91sam9261-ek" if MACH_AT91SAM9261EK
+	default "Atmel at91sam9263-ek" if MACH_AT91SAM9263EK
+	default "Atmel at91sam9g10-ek" if MACH_AT91SAM9G10EK
+	default "Atmel at91sam9g20-ek" if MACH_AT91SAM9G20EK
+	default "Atmel at91sam9m10g45-ek" if MACH_AT91SAM9M10G45EK
+	default "Bucyrus MMC-CPU" if MACH_MMCCPU
+	default "Ronetix PM9261" if MACH_PM9261
+	default "Ronetix PM9263" if MACH_PM9263
+	default "Ronetix PM9G45" if MACH_PM9G45
+
+config HAVE_NAND_ATMEL_BUSWIDTH_16
+	bool
+
+comment "Atmel AT91 System-on-Chip"
+
+choice
+	prompt "Atmel AT91 Processor"
+
+config ARCH_AT91SAM9260
+	bool "AT91SAM9260"
+	select CPU_ARM926T
+	select HAS_MACB
+
+config ARCH_AT91SAM9261
+	bool "AT91SAM9261"
+	select CPU_ARM926T
+
+config ARCH_AT91SAM9263
+	bool "AT91SAM9263"
+	select CPU_ARM926T
+	select HAS_MACB
+
+config ARCH_AT91SAM9G10
+	bool "AT91SAM9G10"
+	select CPU_ARM926T
+
+config ARCH_AT91SAM9G20
+	bool "AT91SAM9G20"
+	select CPU_ARM926T
+	select HAS_MACB
+
+config ARCH_AT91SAM9G45
+	bool "AT91SAM9G45 or AT91SAM9M10"
+	select CPU_ARM926T
+	select HAS_MACB
+
+endchoice
+
+# ----------------------------------------------------------
+
+if ARCH_AT91SAM9260
+
+choice
+
+	prompt "AT91SAM9260 Board Type"
+
+config MACH_AT91SAM9260EK
+	bool "Atmel AT91SAM9260-EK"
+	select HAVE_NAND_ATMEL_BUSWIDTH_16
+	help
+	  Say y here if you are using Atmel's AT91SAM9260-EK Evaluation board
+
+endchoice
+
+endif
+
+# ----------------------------------------------------------
+
+if ARCH_AT91SAM9261
+
+choice
+	prompt "AT91SAM9261 Board Type"
+
+config MACH_AT91SAM9261EK
+	bool "Atmel AT91SAM9261-EK Evaluation Kit"
+	select HAS_DM9000
+	select HAVE_NAND_ATMEL_BUSWIDTH_16
+	help
+	  Select this if you are using Atmel's AT91SAM9261-EK Evaluation Kit.
+	  <http://www.atmel.com/dyn/products/tools_card.asp?tool_id=3820>
+
+config MACH_PM9261
+	bool "Ronetix PM9261"
+	select HAS_DM9000
+	select MACH_HAS_LOWLEVEL_INIT
+	help
+	  Say y here if you are using the Ronetix PM9261 Board
+
+endchoice
+
+endif
+
+# ----------------------------------------------------------
+
+if ARCH_AT91SAM9G10
+
+choice
+	prompt "AT91SAM9G10 Board Type"
+
+config MACH_AT91SAM9G10EK
+	bool "Atmel AT91SAM9G10-EK Evaluation Kit"
+	select HAVE_NAND_ATMEL_BUSWIDTH_16
+	select HAS_DM9000
+	help
+	  Select this if you are using Atmel's AT91SAM9G10-EK Evaluation Kit.
+	  <http://www.atmel.com/dyn/products/tools_card.asp?tool_id=4588>
+
+endchoice
+
+endif
+
+# ----------------------------------------------------------
+
+if ARCH_AT91SAM9G20
+
+choice
+
+	prompt "AT91SAM9G20 Board Type"
+
+config MACH_AT91SAM9G20EK
+	bool "Atmel AT91SAM9G20-EK Evaluation Kit"
+	select HAVE_NAND_ATMEL_BUSWIDTH_16
+	help
+	  Select this if you are using Atmel's AT91SAM9G20-EK Evaluation Kit
+	  that embeds only one SD/MMC slot.
+
+endchoice
+
+endif
+
+# ----------------------------------------------------------
+
+if ARCH_AT91SAM9263
+
+choice
+	prompt "AT91SAM9263 Board Type"
+
+config MACH_AT91SAM9263EK
+	bool "Atmel AT91SAM9263-EK"
+	select MACH_HAS_LOWLEVEL_INIT
+	select HAVE_NAND_ATMEL_BUSWIDTH_16
+	help
+	  Say y here if you are using Atmel's AT91SAM9263-EK Evaluation board
+
+config MACH_MMCCPU
+	bool "Bucyrus MMC-CPU"
+	help
+	  Say y here if you are using the Bucyrus MMC-CPU
+
+config MACH_PM9263
+	bool "Ronetix PM9263"
+	select MACH_HAS_LOWLEVEL_INIT
+	help
+	  Say y here if you are using the Ronetix PM9263 Board
+
+endchoice
+
+endif
+
+if ARCH_AT91SAM9G45
+
+choice
+	prompt "AT91SAM9G45 or AT91SAM9M10 Board Type"
+
+config MACH_AT91SAM9M10G45EK
+	bool "Atmel AT91SAM9M10G45-EK Evaluation Kit"
+	select HAVE_NAND_ATMEL_BUSWIDTH_16
+	help
+	  Select this if you are using Atmel's AT91SAM9M10G45-EK Evaluation Kit
+	  or AT91SAM9G45-EKES or AT91SAM9M10-EKES (for those 2 select the LG LCD)
+	  <http://atmel.com/dyn/products/tools_card_v2.asp?tool_id=4735>
+
+config MACH_PM9G45
+	bool "Ronetix PM9G45"
+	help
+	  Say y here if you are using the Ronetix PM9G45 Board
+
+endchoice
+
+endif
+
+# ----------------------------------------------------------
+
+comment "AT91 Board Options"
+
+config MTD_NAND_ATMEL_BUSWIDTH_16
+	bool "Enable 16-bit data bus interface to NAND flash"
+	depends on HAVE_NAND_ATMEL_BUSWIDTH_16
+	help
+	  On AT91SAM926x boards both types of NAND flash can be present
+	  (8 and 16 bit data bus width).
+
+config AT91_HAVE_2MMC
+	bool "Have 2 MMC"
+	depends on MACH_AT91SAM9G20EK
+	help
+	  Select this if you are using an Atmel AT91SAM9G20-EK Evaluation Kit
+	  with 2 SD/MMC Slots. This is the case for AT91SAM9G20-EK rev. C and
+	  onwards.
+
+choice
+	prompt "LCD type"
+	depends on MACH_AT91SAM9M10G45EK
+
+config LCD_TRULY_TFT1N4633E
+	bool "truly TFT1N4633-E"
+	help
+	  Found on AT91SAM9M10G45-EK
+
+config LCD_LG_LB043WQ1
+	bool "LG philips LB043WQ1"
+	help
+	  Found on AT91SAM9G45-EKES and AT91SAM9M10-EKES
+
+endchoice
+
+endif
