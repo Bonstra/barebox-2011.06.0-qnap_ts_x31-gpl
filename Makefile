@@ -672,8 +672,10 @@ barebox.bin: barebox FORCE
 uloader.bin: uloader
 
 uloader:
-	$(shell cp barebox.bin ./tools/ImageGenarator/.; cd $(srctree)/tools/ImageGenarator/; \
-		 chmod 755 *.sh; ./uldr_gen.sh 1>/dev/null;)
+	$(MAKE) -C tools/ImageGenarator header
+	cp barebox.bin tools/ImageGenarator/
+	chmod 755 tools/ImageGenarator/*.sh
+	cd $(srctree)/tools/ImageGenarator/; ./uldr_gen.sh
 
 
 ifdef CONFIG_X86

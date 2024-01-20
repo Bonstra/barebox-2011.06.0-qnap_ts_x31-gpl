@@ -24,6 +24,8 @@
 # Note: RSA key size is determined from the given private key.
 ################################################################################
 
+C2KIMAGE_GEN=$(pwd)/$(dirname $0)/c2kimage_gen
+
 usage()
 {
 	echo "Usage..."
@@ -84,7 +86,7 @@ legacy)
 	image=$4
 
 	echo "c2kimage_gen $1 $base_off $start_off $image"
-	./c2kimage_gen $1 $base_off $start_off $image
+	${C2KIMAGE_GEN} $1 $base_off $start_off $image
 	;;
 
 nonlegacy)
@@ -99,7 +101,7 @@ nonlegacy)
 	        check_image $image
 
         	#Call header generation utility
-	        ./c2kimage_gen $1 $timestamp $image $2
+		${C2KIMAGE_GEN} $1 $timestamp $image $2
 	        echo "c2kimage_gen $1 $timestamp $image $2"
 	        ;;
 
@@ -119,7 +121,7 @@ nonlegacy)
 	        fi
 
         	#Call header generation utility
-	        ./c2kimage_gen $1 $timestamp $image $2 $hash_file
+	        ${C2KIMAGE_GEN} $1 $timestamp $image $2 $hash_file
         	echo "c2kimage_gen $1 $timestamp $image $2 $hash_file"
 	        ;;
 
@@ -148,7 +150,7 @@ nonlegacy)
 	        #extract the public modulus(N) from the private key.
 	        openssl rsa -in $private_key -modulus | awk -F"=" '{if ($1 == "Modulus"){print $2}}' > $public_modulus
 
-	        ./c2kimage_gen $1 $timestamp $image $2 $sig_file $public_modulus $keymode
+	        ${C2KIMAGE_GEN} $1 $timestamp $image $2 $sig_file $public_modulus $keymode
 	        echo "c2kimage_gen $1 $timestamp $image $2 $sig_file $public_modulus $keymode"
 	        ;;
 
@@ -172,7 +174,7 @@ nonlegacy)
 	        openssl rsa -in $privatekey -modulus | awk -F"=" '{if ($1 == "Modulus"){print $2}}' > $public_modulus
 
 	        #Call header generation utility
-	        ./c2kimage_gen $1 $timestamp $image $2 $publickey $public_modulus
+	        ${C2KIMAGE_GEN} $1 $timestamp $image $2 $publickey $public_modulus
 	        echo "c2kimage_gen $1 $timestamp $image $2 $publickey $public_modulus"
 	        #Calculate SHA256 hash on public key file.
 	        openssl dgst -binary -sha256 < $publickey > $hashfile
