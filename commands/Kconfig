@@ -334,7 +334,7 @@ config CMD_GO
 config CMD_BOOTB
 	default y
 	tristate
-	depends on (COMCERTO_ULOADER || COMCERTO_NAND_ULOADER)
+	depends on (COMCERTO_ULOADER || COMCERTO_NAND_ULOADER || COMCERTO_JTAG_ULOADER)
 	prompt "Boot Barebox"
 	help
 	  compile in the 'bootb' command to start Barebox

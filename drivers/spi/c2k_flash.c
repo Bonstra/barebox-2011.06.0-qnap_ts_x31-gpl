@@ -61,7 +61,7 @@ u8 read_rdsr(struct spi_device *spi)
         return s25fl128_rdsr_cmd[3];
 }
 
-#ifndef CONFIG_COMCERTO_ULOADER
+#if !defined(CONFIG_COMCERTO_ULOADER) && !defined(CONFIG_COMCERTO_JTAG_ULOADER)
 /* Erase sector_num sector */
 int nor_s25fl128_sector_erase(struct spi_device *spi, int sector_num)
 {
@@ -226,7 +226,7 @@ int read_bytes_page_addr(struct spi_device *spi, u8 *b, int num_buytes, u8 p, un
         return ret;
 }
 
-#ifndef CONFIG_COMCERTO_ULOADER
+#if !defined(CONFIG_COMCERTO_ULOADER) && !defined(CONFIG_COMCERTO_JTAG_ULOADER)
 static int spi_copy_write(char *src, unsigned int len, unsigned int sec, unsigned int off)
 {
 	unsigned int l=0;
@@ -315,7 +315,7 @@ int spi_copy_read(char *dst, unsigned int len, unsigned int sec, unsigned int of
 }
 EXPORT_SYMBOL(spi_copy_read);
 
-#ifndef CONFIG_COMCERTO_ULOADER
+#if !defined(CONFIG_COMCERTO_ULOADER) && !defined(CONFIG_COMCERTO_JTAG_ULOADER)
 static void spi_flash_write(unsigned char *src, ulong sec, ulong offset, ulong count)
 {
 	int wl = 0;

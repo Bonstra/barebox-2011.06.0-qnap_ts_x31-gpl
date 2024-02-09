@@ -98,6 +98,18 @@ config COMCERTO_NAND_ULOADER
 #       select COMCERTO_DDR_ECC if !MACH_COMCERTO_C2K_RTSM
 	help
 
+config COMCERTO_JTAG_ULOADER
+	bool "JTAG ULoader Code"
+	select HAVE_NOSHELL
+	select COMCERTO_PLL if !MACH_COMCERTO_C2K_RTSM
+	select COMCERTO_DDR if !MACH_COMCERTO_C2K_RTSM
+	help
+		Build a ULoader which will load Barebox via the JTAG TAP.
+
+		The JTAG ULoader will execute a BKPT instruction to cause the CPU to halt
+		in debug mode, allowing the host to write Barebox image directly into DDR.
+		When done, the host can resume execution to run the bootloader.
+
 endchoice
 
 endmenu

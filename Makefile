@@ -451,8 +451,8 @@ endif
 # command line.
 # This allow a user to issue only 'make' to build a kernel
 # Defaults barebox but it is usually overridden in the arch makefile
-ifeq ($(CONFIG_COMCERTO_ULOADER)$(CONFIG_COMCERTO_NAND_ULOADER),y)
-all: barebox.bin uloader.bin
+ifeq ($(CONFIG_COMCERTO_ULOADER)$(CONFIG_COMCERTO_NAND_ULOADER)$(CONFIG_COMCERTO_JTAG_ULOADER),y)
+all: uloader.bin
 else
 all: barebox.bin
 endif
@@ -671,7 +671,7 @@ barebox.bin: barebox FORCE
 
 uloader.bin: uloader
 
-uloader:
+uloader: barebox.bin
 	$(MAKE) -C tools/ImageGenarator header
 	cp barebox.bin tools/ImageGenarator/
 	chmod 755 tools/ImageGenarator/*.sh
